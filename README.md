@@ -57,3 +57,31 @@ O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para 
 **Exemplo de estrutura de diretório:**
 
 </details>
+
+
+
+
+<details>
+<summary><strong>Exemplo 01</strong></summary>
+
+### Formatos Suportados
+O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.
+
+**Exemplo de estrutura de diretório:**
+
+</details>
+
+
+
+
+
+
+<details>
+<summary><strong>Exemplo 02</strong></summary>
+
+### Formatos Suportados
+O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.
+
+**Exemplo de estrutura de diretório:**
+
+</details>
