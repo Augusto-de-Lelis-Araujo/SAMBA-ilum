@@ -4,12 +4,12 @@ Breve descrição do que seu código faz. Por exemplo: "Uma coleção de scripts
 
 
 ## Tutorial
-
 Clique nos tópicos abaixo para expandir e ver os detalhes de cada seção.
+
+
 
 <details>
 <summary><strong>Instalação</strong></summary>
-
 
 ### Pré-requisitos
 Certifique-se de que você possui os seguintes softwares instalados:
@@ -17,7 +17,6 @@ Certifique-se de que você possui os seguintes softwares instalados:
 - Um ambiente virtual (recomendado, ex: `venv` ou `conda`)
 - Git
   
-
 ### Passos para Instalação
 
 1.  **Clone o repositório:**
@@ -45,6 +44,10 @@ Certifique-se de que você possui os seguintes softwares instalados:
     ```
 </details>
 
+
+
+
+
 <details>
 <summary><strong>Arquivos Estruturais</strong></summary>
 
@@ -52,3 +55,5 @@ Certifique-se de que você possui os seguintes softwares instalados:
 O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.
 
 **Exemplo de estrutura de diretório:**
+
+</details>
