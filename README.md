@@ -81,6 +81,7 @@ or
 python3 -m samba_ilum
 ```
 
+```text
 =============================================================
 SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
 Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
@@ -104,6 +105,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 # --------------------------------------------------------------------
 # [3] Customize internal WorkFlow inputs (INPUTS folder)
 ######################################################################
+```
 
 </details>
 
