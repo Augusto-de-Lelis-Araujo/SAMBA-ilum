@@ -192,7 +192,7 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
 #----------------------------------
 ```
-      <details>
+      </details>
       
    </details>
 
