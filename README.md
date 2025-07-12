@@ -10,6 +10,7 @@ Clique nos tópicos abaixo para expandir e ver os detalhes de cada seção.
 
 <details>
 <summary><strong>Pré-requisitos</strong></summary>
+
   
 Certifique-se de que você possui os seguintes softwares instalados:
 - Python 3.8+
