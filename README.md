@@ -125,12 +125,14 @@ SAMBA_WorkFlow.input
 
     <details>
     <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
+    
     </details>
     
 -----------------------------------
 
    <details>
    <summary><strong>SAMBA_WorkFlow.input</strong></summary>
+     
    </details>
    
 -----------------------------------
