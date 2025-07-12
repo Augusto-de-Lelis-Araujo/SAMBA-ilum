@@ -121,12 +121,12 @@ This option generates the following input files for the SAMBA code:
 SAMBA_HeteroStructure.input
 SAMBA_WorkFlow.input
 ```
------------------------------------
+-----------------------------------   SAMBA_HeteroStructure.input
 
-    <details>
-    <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
-    
-    </details>
+   <details>
+   <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
+     
+   </details>
     
 -----------------------------------
 
