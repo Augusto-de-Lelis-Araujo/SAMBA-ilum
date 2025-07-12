@@ -8,14 +8,18 @@
 - Felipe Castro de Lima ([ORCID](https://orcid.org/0000-0002-2937-2620))
 - Pedro Henrique Sophia ([ORCID](https://orcid.org/0009-0007-5428-0596))
 
-Meet:
+</details>
+
+<details>
+<summary><strong>Meet Institutional and Research Network:</strong></summary>
 - [Ilum - School of Science](https://ilum.cnpem.br/en/)
 - [CNPEM - The Brazilian Center for Research in Energy and Materials](https://cnpem.br/en/)
 - [INCT - Materials Informatics](https://inct-mi.pesquisa.ufabc.edu.br/)
 - [midb.cloud database](https://midb.cloud/)
 
--------------------------------
+</details>
 
+-------------------------------
 
 </details>
 
@@ -23,7 +27,6 @@ SAMBA is an open-source Python 3 code capable of:
 - Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
 - Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
 - Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
-
 
 ## Tutorial
 Click on the topics below to expand and see the details for each section.
