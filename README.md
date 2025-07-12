@@ -18,7 +18,7 @@ Certifique-se de que você possui os seguintes softwares instalados:
 - Git
 
 The latest version of the SAMBA code can be installed using the Python Package Index via the command:
-# pip install samba_ilum
+### pip install samba_ilum
 
 During the installation, SAMBA checks the existence of the following Python modules:
 - vasprocar
@@ -29,10 +29,9 @@ During the installation, SAMBA checks the existence of the following Python modu
 - plotly
 
 For run the code, the user must use the command below in the work directory.
-# python -m samba_ilum
+### python -m samba_ilum
 or
-# python3 -m samba_ilum
-
+### python3 -m samba_ilum
  
 ### Passos para Instalação
 
@@ -52,22 +51,6 @@ or
     Execute o script de teste para garantir que tudo está funcionando corretamente.
     ```bash
     python run_tests.py
-    ```
-</details>
-
- 
-### Passos para Instalação
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    cd seu-repositorio
-    ```
-
-2.  **Crie e ative um ambiente virtual (opcional, mas recomendado):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # No Windows: venv\Scripts\activate
     ```
 </details>
 
