@@ -116,26 +116,26 @@ The following sections provide a more detailed explanation of each option.
 <details>
 <summary><strong>Option [0]: Generate SAMBA execution inputs</strong></summary>
 
-    This option generates the following input files for the SAMBA code:
-    ```text
-    SAMBA_HeteroStructure.input
-    SAMBA_WorkFlow.input
-    ```
-    -----------------------------------
+This option generates the following input files for the SAMBA code:
+```text
+SAMBA_HeteroStructure.input
+SAMBA_WorkFlow.input
+```
+-----------------------------------
 
     <details>
     <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
     
     </details>
     
-    -----------------------------------
+-----------------------------------
 
    <details>
    <summary><strong>SAMBA_WorkFlow.input</strong></summary>
      
    </details>
    
-    -----------------------------------
+-----------------------------------
 
 </details>
 
