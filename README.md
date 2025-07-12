@@ -122,13 +122,13 @@ SAMBA_HeteroStructure.input
 SAMBA_WorkFlow.input
 ```
 
-<details>
-<summary><strong>Option [0]: Generate SAMBA execution inputs</strong></summary>
-</details>
+   <details>
+   <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
+   </details>
 
-<details>
-<summary><strong>SAMBA_WorkFlow.input</strong></summary>
-</details>
+   <details>
+   <summary><strong>SAMBA_WorkFlow.input</strong></summary>
+   </details>
 
 </details>
 
