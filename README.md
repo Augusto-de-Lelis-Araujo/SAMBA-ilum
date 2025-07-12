@@ -50,7 +50,7 @@ Make sure you have the following requirements:
 <details>
 <summary><strong>Instalação</strong></summary>
   
-The latest version of the SAMBA code can be installed using the Python Package Index via the command:
+The latest version of the SAMBA code can be installed using the Python Package Index ([link](https://pypi.org/project/SAMBA-ilum/)) via the command:
 ```bash
 pip install samba_ilum
 ```
