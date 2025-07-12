@@ -313,7 +313,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 </details>
 
-Por meio deste arquivo de input, o usuário controla os detalhes referentes aos diferentes cálculos de DFT, onde:
+Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
 
 - **dir_virtual_python**
 - **dir_o**
