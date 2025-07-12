@@ -203,11 +203,11 @@ Por meio deste arquivo de input, o usuário controla os detalhes referentes a ge
 - **cell_fator** refere-se ao fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
 - **crit_mod_vector** Define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
 - **crit_distorc_lattice** Define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
-- **crit_angle_perc** Define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes,
-- **crit_angle_diff** Define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**,
-- **crit_area** Define a tolerância percentual na diferença de área, entre as duas redes,
-- **ions_crit_i e ions_crit_f** Limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais,
-- **angle_min e angle_max** Limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos,
+- **crit_angle_perc** Define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
+- **crit_angle_diff** Define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
+- **crit_area** Define a tolerância percentual na diferença de área, entre as duas redes;
+- **ions_crit_i e ions_crit_f** Limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
+- **angle_min e angle_max** Limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
 - **mismatch_type** Esse parâmetro define como o lattice mismatch será resolvida: quem será deformado, e quem permanecerá com sua rede original, onde:
 
   **mismatch_type=0** a distorção estrutural é distribuida uniformemente entre os materiais do empilhamento.
@@ -216,7 +216,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes referentes a ge
   
   **mismatch_type=2** a distorção estrutural é aplicada sobre a monocamada superior do empilhamento.
   
-- **rot_angle_calc** Define a referência geométrica usada para medir o ângulo de rotação entre as camadas.
+- **rot_angle_calc** Define a referência geométrica usada para medir o ângulo de rotação entre as camadas;
   
   **rot_angle_calc='center_cell'** defino o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células.
   
