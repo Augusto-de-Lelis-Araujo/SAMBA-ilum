@@ -81,13 +81,14 @@ or
 python3 -m samba_ilum
 ```
 
+- When running the code, the following screen is shown to the user.
+
 ```text
 =============================================================
 SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
 Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
-
    _____ ___    __  _______  ___       _ __
   / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
