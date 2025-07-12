@@ -1,10 +1,15 @@
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Article available in ?????: in soon
 
+<details>
+<summary><strong>Description</strong></summary>
+  
 SAMBA is an open-source Python 3 code capable of:
 - Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
 - Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
 - Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
+
+</details>
 
 <details>
 <summary><strong>Authors</strong></summary>
