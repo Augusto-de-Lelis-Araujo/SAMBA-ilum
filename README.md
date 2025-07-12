@@ -1,5 +1,5 @@
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-## Article available in ?????: in soon
+## Article available in soon
 
 <details>
 <summary><strong>Description</strong></summary>
