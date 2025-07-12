@@ -31,7 +31,7 @@ During the installation, SAMBA checks the existence of the following Python modu
 - numpy
 - matplotlib
 - plotly
-- 
+
 </details>
 
 <details>
