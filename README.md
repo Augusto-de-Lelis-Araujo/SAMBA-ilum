@@ -201,7 +201,95 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 <details>
 <summary><strong>SAMBA_WorkFlow.input</strong></summary>
-<!-- conteúdo aqui -->
+
+<details>
+<summary><strong>Sample file</strong></summary>
+
+<pre><code># SAMBA Copyright (C) 2025
+
+
+#=======================================================
+# Python virtual environment directory -----------------
+dir_virtual_python = '/home/dlelis/codes/python_virtual'
+#=======================================================
+# Workflow Output Directory ----------------------------
+dir_o = 'WorkFlow_output'
+#=======================================================
+# information to be added to the database --------------
+replace_type_pseudo = 'PAW_PBE'; replace_type_XC = 'GGA'
+#=======================================================
+
+
+#=======================================================
+type_lattice = 2                            # [1] 1D lattices (Periodic in X);   [2] 2D lattices (Periodic in XY);   [3] 3D lattices - Bulk
+#=======================================================
+tasks = ['relax', 'scf', 'bands', 'dos']    # tasks = ['z-scan', 'xy-scan', 'relax', 'scf', 'bands', 'dos', 'bader']
+type  = ['sem_SO','com_SO']                 # type  = ['sem_SO','com_SO']
+#=======================================================
+ispin = 2                 # [1] for non-spin-polarized calculation; [2] for spin-polarized calculation
+#=======================================================
+dipol = 'none'            # Use the options:  'none',  'center_cell'  or  'center_mass'
+#=======================================================
+magnet_mode = 'default'   # Use the options:  'default',  'MAGMOM=0'  or  'NUPDOWN=0'
+#=======================================================
+U_correction = 0          # Hubbard Correction (U): [0] to disable, [1] to enable
+#=======================================================
+vdW = 0               # Van der Waals correction used:  [0] disables van der Waals correction.
+                      # Correction applied to all calculations (with and without OS)
+#-------------------------------------------------------
+vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the non-local functional vdW_DF.
+                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2', 'rVV10', 'SCAN+rVV10', 'r2SCAN+rVV10', 'PBE+rVV10L'
+                      # Note:  Functional applied only in structural optimization calculations ('xyz-scan', 'xy-scan', 'z-scan', 'a-scan', 'relax')
+                      # Note:  vdW != 0 will override any choice of vdWDF
+#=======================================================
+ENCUT_min = 500       # Minimum value for cut-off energy in eV
+                      # Note:  If (ENCUT_min < ENCUT*encut_factor), then ENCUT_min = ENCUT*encut_factor
+                      #            ENCUT refers to the highest cutting energy value present in the POTCAR file
+fator_encut = 1.3     # Multiplication factor for the criterion of the cutting energy used
+#=======================================================
+type_k_dens  = 1      # [1] KPOINTS (Monkhorst-Pack);   [2] KPOINTS (Gamma);   [3] INCAR (KSPACING Monkhorst-Pack);   [4] INCAR (KSPACING Gamma)
+k_dens_relax = 12     # Relaxation calculation:             number of k-points per Å^-1
+k_dens_scf   = 12     # Self-consistent calculation (scf):  number of k-points per Å^-1
+k_dens_dos   = 12     # DOS Calculation:                    number of k-points per Å^-1
+k_dens_bader = 12     # Bader Charge Calculation:           number of k-points perr Å^-1
+n_kpoints    = 50     # Band calculation (nscf):            number of k-points in each section of the band plot
+nions_split  = 100    # number of ions in the POSCAR file, so that the band calculation is performed in steps (split)
+vacuo        = 15.0   # Vacuum applied to Heterostructure
+NCORE        = 8      # Number of "cores" per "node"
+
+
+#============================
+# a-scan parameters =========
+# Functional for 3D bulk ====
+#============================
+k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
+factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
+
+
+#============================
+# z-scan parameters =========
+#============================
+k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
+
+
+#============================
+# xy-scan parameters ========
+#============================
+k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
+r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
+r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
+
+
+#============================
+# xyz-scan parameters =======
+#============================
+k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
+displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
+displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
+displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
+
+</details>
+  
 </details>
 
 -----------------------------------------------
