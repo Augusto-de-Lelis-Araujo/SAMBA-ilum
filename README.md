@@ -42,8 +42,8 @@ Click on the topics below to expand and see the details for each section.
 
 <details>
 <summary><strong>Installation</strong></summary>
-  
-The latest version of the SAMBA code can be installed using the Python Package Index ([link](https://pypi.org/project/SAMBA-ilum/)) via the command:
+
+The latest version of SAMBA code can be installed using the Python Package Index via the **command below**, while the source code is available for download via the [link](https://pypi.org/project/SAMBA-ilum/).  
 ```bash
 pip install samba_ilum
 ```
