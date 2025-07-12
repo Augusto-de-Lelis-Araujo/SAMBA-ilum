@@ -116,56 +116,54 @@ The following sections provide a more detailed explanation of each option.
 <details>
 <summary><strong>Option [0]: Generate SAMBA execution inputs</strong></summary>
 
-This option generates the following input files for the SAMBA code:
-```text
-SAMBA_HeteroStructure.input
-SAMBA_WorkFlow.input
-```
------------------------------------
+<p>This option generates the following input files for the SAMBA code:</p>
+<ul>
+  <li>SAMBA_HeteroStructure.input</li>
+  <li>SAMBA_WorkFlow.input</li>
+</ul>
 
-   <details>
-   <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
+<hr/>
 
-      <details>
-      <summary><strong>Sample file</strong></summary>
+<details>
+<summary><strong>SAMBA_HeteroStructure.input</strong></summary>
 
-      ```text
-      =============================================================
-      SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
-      Adalberto Fazzio's research group (Ilum|CNPEM)
-      Author: Augusto de Lelis Araujo -----------------------------
-      =============================================================
-         _____ ___    __  _______  ___       _ __
-        / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
-        \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
-       ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
-      /____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
-      Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
-      
-      ######################################################################
-      # What do you want to run? ? =========================================
-      # ====================================================================
-      # [0] Generate SAMBA execution inputs
-      # --------------------------------------------------------------------
-      # [1] Heterostructure Generator
-      # [2] WorkFlow: High Throughput DFT (inputs + job)
-      # --------------------------------------------------------------------
-      # [3] Customize internal WorkFlow inputs (INPUTS folder)
-      ######################################################################
-      ```
+<details>
+<summary><strong>Sample file</strong></summary>
 
-      </details>
-     
-   </details>
-    
------------------------------------
+<pre><code>=============================================================
+SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
+Adalberto Fazzio's research group (Ilum|CNPEM)
+Author: Augusto de Lelis Araujo -----------------------------
+=============================================================
+   _____ ___    __  _______  ___       _ __
+  / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
+  \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
+ ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
+/____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
+Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
-   <details>
-   <summary><strong>SAMBA_WorkFlow.input</strong></summary>
-     
-   </details>
-   
------------------------------------
+######################################################################
+# What do you want to run? ? =========================================
+# ====================================================================
+# [0] Generate SAMBA execution inputs
+# --------------------------------------------------------------------
+# [1] Heterostructure Generator
+# [2] WorkFlow: High Throughput DFT (inputs + job)
+# --------------------------------------------------------------------
+# [3] Customize internal WorkFlow inputs (INPUTS folder)
+######################################################################
+</code></pre>
+
+</details>
+
+</details>
+
+<hr/>
+
+<details>
+<summary><strong>SAMBA_WorkFlow.input</strong></summary>
+<!-- conteúdo aqui -->
+</details>
 
 </details>
 
