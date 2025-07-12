@@ -17,6 +17,7 @@ Certifique-se de que você possui os seguintes softwares instalados:
 - Um ambiente virtual (recomendado, ex: `venv` ou `conda`)
 - Git
 
+### Instalação
 The latest version of the SAMBA code can be installed using the Python Package Index via the command:
 ```bash
 pip install samba_ilum
@@ -30,6 +31,7 @@ During the installation, SAMBA checks the existence of the following Python modu
 - matplotlib
 - plotly
 
+### Run the code
 For run the code, the user must use the command below in the work directory.
 ```bash
 python -m samba_ilum
