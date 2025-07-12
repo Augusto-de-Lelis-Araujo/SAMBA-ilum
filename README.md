@@ -124,10 +124,10 @@ SAMBA_WorkFlow.input
 -----------------------------------
 
     <details>
-    <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
+        <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
 
         <details>
-        <summary><strong>Sample file</strong></summary>
+            <summary><strong>Sample file</strong></summary>
 
             ```text
             # SAMBA Copyright (C) 2025 - Closed source
