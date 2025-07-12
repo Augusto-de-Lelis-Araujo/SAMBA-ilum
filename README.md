@@ -18,7 +18,9 @@ Certifique-se de que você possui os seguintes softwares instalados:
 - Git
 
 The latest version of the SAMBA code can be installed using the Python Package Index via the command:
-```bash pip install samba_ilum ```
+```bash
+pip install samba_ilum
+```
 
 During the installation, SAMBA checks the existence of the following Python modules:
 - vasprocar
