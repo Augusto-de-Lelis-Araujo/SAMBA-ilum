@@ -55,12 +55,12 @@ The latest version of the SAMBA code can be installed using the Python Package I
 pip install samba_ilum
 ```
 During the installation, SAMBA checks the existence of the following Python modules:
-- [vasprocar](https://pypi.org/project/vasprocar/)
-- [pymatgen](https://pypi.org/project/pymatgen/)
-- [scipy](https://pypi.org/project/scipy/)
-- [numpy](https://pypi.org/project/numpy/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-- [plotly](https://pypi.org/project/plotly/)
+- vasprocar [link](https://pypi.org/project/vasprocar/)
+- pymatgen [link](https://pypi.org/project/pymatgen/)
+- scipy [link](https://pypi.org/project/scipy/)
+- numpy [link](https://pypi.org/project/numpy/)
+- matplotlib [link](https://pypi.org/project/matplotlib/)
+- plotly [link](https://pypi.org/project/plotly/)
 
 </details>
 
