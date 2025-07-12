@@ -41,18 +41,6 @@ SAMBA is an open-source Python 3 code capable of:
 Click on the topics below to expand and see the details for each section.
 
 <details>
-<summary><strong>Requirements</strong></summary>
-
-Make sure you have the following requirements:
-- Linux or Windows environment for bilayer generation
-- Linux environment for high-throughput DFT (requires VASPkit installed)
-- Python 3.8+
-- Python virtual environment is recommended (`venv` or `conda`)
-- Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
-
-</details>
-
-<details>
 <summary><strong>Instalação</strong></summary>
   
 The latest version of the SAMBA code can be installed using the Python Package Index ([link](https://pypi.org/project/SAMBA-ilum/)) via the command:
@@ -66,6 +54,13 @@ During the installation, SAMBA checks the existence of the following Python modu
 - numpy [link](https://pypi.org/project/numpy/)
 - matplotlib [link](https://pypi.org/project/matplotlib/)
 - plotly [link](https://pypi.org/project/plotly/)
+
+  **Requirements:** Make sure you have the following requirements
+- Linux or Windows environment for bilayer generation
+- Linux environment for high-throughput DFT (requires VASPkit installed)
+- Python 3.8+
+- Python virtual environment is recommended (`venv` or `conda`)
+- Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
 
 </details>
 
