@@ -8,7 +8,11 @@
 - Felipe Castro de Lima ([ORCID](https://orcid.org/0000-0002-2937-2620))
 - Pedro Henrique Sophia ([ORCID](https://orcid.org/0009-0007-5428-0596))
 
-Meet [Ilum - School of Science] (https://ilum.cnpem.br/en/), [CNPEM - The Brazilian Center for Research in Energy and Materials] (https://cnpem.br/en/), [INCT - Materials Informatics] (https://inct-mi.pesquisa.ufabc.edu.br/) as well as its database [midb.cloud] (https://midb.cloud/)
+Meet:
+- [Ilum - School of Science](https://ilum.cnpem.br/en/)
+- [CNPEM - The Brazilian Center for Research in Energy and Materials](https://cnpem.br/en/)
+- [INCT - Materials Informatics](https://inct-mi.pesquisa.ufabc.edu.br/)
+- [midb.cloud database](https://midb.cloud/)
 
 -------------------------------
 
