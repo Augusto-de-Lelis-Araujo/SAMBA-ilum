@@ -205,7 +205,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes referentes a ge
 - **crit_distorc_lattice** Define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
 - **crit_angle_perc** Define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
 - **crit_angle_diff** Define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
-- **crit_area** Define a tolerância percentual na diferença de área, entre as duas redes;
+- **crit_area** Define a tolerância percentual (%) na diferença de área, entre as duas redes;
 - **ions_crit_i e ions_crit_f** Limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
 - **angle_min e angle_max** Limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
 - **mismatch_type** Esse parâmetro define como o lattice mismatch será resolvida: quem será deformado, e quem permanecerá com sua rede original, onde:
