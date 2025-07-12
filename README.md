@@ -44,7 +44,7 @@ Make sure you have the following requirements:
 - Linux environment for high-throughput DFT (requires VASPkit installed)
 - Python 3.8+
 - Python virtual environment is recommended (`venv` or `conda`)
-- Pseudopotential files (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
+- Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
 
 </details>
 
