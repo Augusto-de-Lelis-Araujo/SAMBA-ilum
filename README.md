@@ -200,7 +200,6 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 <pre><code># SAMBA Copyright (C) 2025
 
-
 #=======================================================
 # Python virtual environment directory -----------------
 dir_virtual_python = '/home/dlelis/codes/python_virtual'
@@ -211,7 +210,6 @@ dir_o = 'WorkFlow_output'
 # information to be added to the database --------------
 replace_type_pseudo = 'PAW_PBE'; replace_type_XC = 'GGA'
 #=======================================================
-
 
 #=======================================================
 type_lattice = 2                            # [1] 1D lattices (Periodic in X);   [2] 2D lattices (Periodic in XY);   [3] 3D lattices - Bulk
@@ -250,7 +248,6 @@ nions_split  = 100    # number of ions in the POSCAR file, so that the band calc
 vacuo        = 15.0   # Vacuum applied to Heterostructure
 NCORE        = 8      # Number of "cores" per "node"
 
-
 #============================
 # a-scan parameters =========
 # Functional for 3D bulk ====
@@ -258,12 +255,10 @@ NCORE        = 8      # Number of "cores" per "node"
 k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
 factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
 
-
 #============================
 # z-scan parameters =========
 #============================
 k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
-
 
 #============================
 # xy-scan parameters ========
@@ -271,7 +266,6 @@ k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
 k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
 r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
 r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
-
 
 #============================
 # xyz-scan parameters =======
@@ -321,39 +315,24 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 
 <details>
-<summary><strong>Arquivos Estruturais</strong></summary>
-
-### Formatos Suportados
-O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.
-
-**Exemplo de estrutura de diretório:**
-
+  <summary><strong>Arquivos Estruturais</strong></summary>
+  <p><strong>Formatos Suportados</strong></p>
+  <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
+  <p><strong>Exemplo de estrutura de diretório:</strong></p>
 </details>
 
 
-
-
 <details>
-<summary><strong>Exemplo 01</strong></summary>
-
-### Formatos Suportados
-O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.
-
-**Exemplo de estrutura de diretório:**
-
+  <summary><strong>Exemplo 01</strong></summary>
+  <p><strong>Formatos Suportados</strong></p>
+  <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
+  <p><strong>Exemplo de estrutura de diretório:</strong></p>
 </details>
 
 
-
-
-
-
 <details>
-<summary><strong>Exemplo 02</strong></summary>
-
-### Formatos Suportados
-O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.
-
-**Exemplo de estrutura de diretório:**
-
+  <summary><strong>Exemplo 02</strong></summary>
+  <p><strong>Formatos Suportados</strong></p>
+  <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
+  <p><strong>Exemplo de estrutura de diretório:</strong></p>
 </details>
