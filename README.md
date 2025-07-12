@@ -12,8 +12,10 @@ Clique nos tópicos abaixo para expandir e ver os detalhes de cada seção.
 <summary><strong>Pré-requisitos</strong></summary>
 
 Certifique-se de que você possui os seguintes softwares instalados:
+- Linux or Windows environment for bilayer generation
+- Linux environment for high-throughput DFT (requires VASPkit installed)
 - Python 3.8+
-- Um ambiente virtual (recomendado, ex: `venv` ou `conda`)
+- Python virtual environment is recommended (`venv` or `conda`)
 
 </details>
 
