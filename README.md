@@ -129,69 +129,70 @@ SAMBA_WorkFlow.input
       <details>
       <summary><strong>Sample file</strong></summary>
 
-```text
-# SAMBA Copyright (C) 2025 - Closed source
+         ```text
+         # SAMBA Copyright (C) 2025 - Closed source
 
-#=========================================================================================================================
-# Important notes !!! ====================================================================================================
-#=========================================================================================================================
-# Use only 2D lattices whose vectors (A1,A2) lie in the KxKy plane, and whose vector A3 lies in the z-axis direction -----
-# A1 = (A1x, A1y, 0.0)  |  A2 = (A2x, A2y, 0.0)  |  A3 = (0.0, 0.0, A3z)
-#-------------------------------------------------------------------------------------------------------------------------
-# Use a 2D unit cell for each material, non-unit cells limit the number of structures generated, in addition to introducing
-# "slowness" in the code execution ---------------------------------------------------------------------------------------
-#=========================================================================================================================
+         #=========================================================================================================================
+         # Important notes !!! ====================================================================================================
+         #=========================================================================================================================
+         # Use only 2D lattices whose vectors (A1,A2) lie in the KxKy plane, and whose vector A3 lies in the z-axis direction -----
+         # A1 = (A1x, A1y, 0.0)  |  A2 = (A2x, A2y, 0.0)  |  A3 = (0.0, 0.0, A3z)
+         #-------------------------------------------------------------------------------------------------------------------------
+         # Use a 2D unit cell for each material, non-unit cells limit the number of structures generated, in addition to introducing
+         # "slowness" in the code execution ---------------------------------------------------------------------------------------
+         #=========================================================================================================================
 
-#=========================================================================================================================
-# Tuning parameters: =====================================================================================================
-#=========================================================================================================================
-dir_o = 'Structures'                   # Heterostructures Output Directory
-dir_poscar = 'POSCAR'                  # Location directory of POSCAR files to be used
+         #=========================================================================================================================
+         # Tuning parameters: =====================================================================================================
+         #=========================================================================================================================
+         dir_o = 'Structures'                   # Heterostructures Output Directory
+         dir_poscar = 'POSCAR'                  # Location directory of POSCAR files to be used
 
-#=============================================================================================================
-# Enable or Disable code execution in Loop: functional only to generate bilayers (n_Lattice = 2) =============
-#=============================================================================================================
-loop_ht = 0                            # [0] Disables; [1] Enables the loop, generating heterostructures for all combinations of
+         #=============================================================================================================
+         # Enable or Disable code execution in Loop: functional only to generate bilayers (n_Lattice = 2) =============
+         #=============================================================================================================
+         loop_ht = 0                            # [0] Disables; [1] Enables the loop, generating heterostructures for all combinations of
                                        #                                    POSCAR files contained in the "dir_poscar" directory
-#===============================================================
-# Parameters if the loop is Disabled ===========================
-#===============================================================
-if (loop_ht == 0):
-   n_Lattice = 2                       # number of materials to be stacked, use 2 or 3.
-   Lattice1  = 'C2.vasp'               # 1st Material "Substrate: Material initially kept fixed
-   Lattice2  = 'hBN.vasp'              # 2nd Material "Material to be deposited on the Substrate"
-   Lattice3  = 'SnTe.vasp'             # 3rd Material "Material to be deposited on the 2nd Material"
+         #===============================================================
+         # Parameters if the loop is Disabled ===========================
+         #===============================================================
+         if (loop_ht == 0):
+            n_Lattice = 2                       # number of materials to be stacked, use 2 or 3.
+            Lattice1  = 'C2.vasp'               # 1st Material "Substrate: Material initially kept fixed
+            Lattice2  = 'hBN.vasp'              # 2nd Material "Material to be deposited on the Substrate"
+            Lattice3  = 'SnTe.vasp'             # 3rd Material "Material to be deposited on the 2nd Material"
 
-#===============================================================
-# Other parameters =============================================
-#===============================================================
-separacao1 = 3.00                      # Separation distance (in Angs.) between the 1st and 2nd material.
-separacao2 = 3.00                      # Separation distance (in Angs.) between the 2nd and 3rd material.
-vacuum     = 15.0                      # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
-#----------------------------------
-cell_fator = [10, 10]                  # Multiplication factor of the unit cell as a function of vectors A1, A2.
-                                       # Note: Very high values ​​can lead to excessive code slowness.
-#----------------------------------
-crit_mod_vector  = 3                   # Percentage variation % of the module between the vectors (A and B) of the lattices: A1_with_A2 and B1_with_B2
-crit_distorc_lattice = 3               # Percentage variation % of the module between the vectors (A and B) of the same lattice: A1_with_B1 and A2_with_B2
-crit_angle_perc = 2                    # Percentage variation % of the angle formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
-crit_angle_diff = 2                    # Variation (in module) of the angle in degrees (º) formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
-crit_area = 5                          # Percentage variation % of the area of ​​the lattices that will make up the Heterostructure: Area1_with_Area2
-#----------------------------------
-ions_crit_i = 1                        # Criterion for the minimum number of atoms allowed in the Heterostructure.
-ions_crit_f = 100                      # Criterion for the maximum number of atoms allowed in the Heterostructure.
-                                       # Note: When looping many structures, I advise sweeping small ranges of ions for example: (1, 10); (10, 20); (50,60)
-#----------------------------------
-                                       # By default we will always have: angle > 0.0 and angle < 180.0
-angle_min = 15.0                       # Minimum opening angle between vectors A1 and A2
-angle_max = 165.0                      # Maximum opening angle between vectors A1 and A2
-#----------------------------------
-mismatch_type = 0                      # Applied deformation: [0] Distributed proportionally among the materials
-                                       #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
-#----------------------------------    
-rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
-#----------------------------------
-```
+         #===============================================================
+         # Other parameters =============================================
+         #===============================================================
+         separacao1 = 3.00                      # Separation distance (in Angs.) between the 1st and 2nd material.
+         separacao2 = 3.00                      # Separation distance (in Angs.) between the 2nd and 3rd material.
+         vacuum     = 15.0                      # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
+         #----------------------------------
+         cell_fator = [10, 10]                  # Multiplication factor of the unit cell as a function of vectors A1, A2.
+                                                # Note: Very high values ​​can lead to excessive code slowness.
+         #----------------------------------
+         crit_mod_vector  = 3                   # Percentage variation % of the module between the vectors (A and B) of the lattices: A1_with_A2 and B1_with_B2
+         crit_distorc_lattice = 3               # Percentage variation % of the module between the vectors (A and B) of the same lattice: A1_with_B1 and A2_with_B2
+         crit_angle_perc = 2                    # Percentage variation % of the angle formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
+         crit_angle_diff = 2                    # Variation (in module) of the angle in degrees (º) formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
+         crit_area = 5                          # Percentage variation % of the area of ​​the lattices that will make up the Heterostructure: Area1_with_Area2
+         #----------------------------------
+         ions_crit_i = 1                        # Criterion for the minimum number of atoms allowed in the Heterostructure.
+         ions_crit_f = 100                      # Criterion for the maximum number of atoms allowed in the Heterostructure.
+                                                # Note: When looping many structures, I advise sweeping small ranges of ions for example: (1, 10); (10, 20); (50,60)
+         #----------------------------------
+                                                # By default we will always have: angle > 0.0 and angle < 180.0
+         angle_min = 15.0                       # Minimum opening angle between vectors A1 and A2
+         angle_max = 165.0                      # Maximum opening angle between vectors A1 and A2
+         #----------------------------------
+         mismatch_type = 0                      # Applied deformation: [0] Distributed proportionally among the materials
+                                                #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
+         #----------------------------------    
+         rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
+         #----------------------------------
+         ```
+         
       </details>
       
    </details>
