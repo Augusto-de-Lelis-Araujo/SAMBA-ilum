@@ -194,9 +194,8 @@ SAMBA_WorkFlow.input
             ```
             
         </details>
-      
     </details>
-
+</details>
 -----------------------------------
 
    <details>
