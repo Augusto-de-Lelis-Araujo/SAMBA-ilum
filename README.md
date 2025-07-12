@@ -12,6 +12,7 @@
 
 <details>
 <summary><strong>Meet Institutional and Research Network:</strong></summary>
+  
 - [Ilum - School of Science](https://ilum.cnpem.br/en/)
 - [CNPEM - The Brazilian Center for Research in Energy and Materials](https://cnpem.br/en/)
 - [INCT - Materials Informatics](https://inct-mi.pesquisa.ufabc.edu.br/)
