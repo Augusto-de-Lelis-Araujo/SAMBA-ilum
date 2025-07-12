@@ -193,9 +193,12 @@ Por meio deste arquivo de input, o usuário controla os detalhes referentes a ge
 - **dir_poscar** refere-se ao nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
 - **dir_o** é o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
 - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
+  
   Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
+
   Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
 - **separation_1** refere-se a distância de separação vertical (em Å) entre as monolayers no empilhamento;
+  
 - **vacuum** refere-se a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
 - **cell_fator** refere-se ao fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
 - **crit_mod_vector** Define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
