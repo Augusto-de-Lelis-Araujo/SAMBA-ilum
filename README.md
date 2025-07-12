@@ -115,14 +115,12 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
   </ul>
   <hr/>
 
-  <details>
-    <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
-    <details>
-      <summary><strong>Sample file</strong></summary>
-      <pre><code>
-=============================================================
+<details>
+<summary><strong>SAMBA_HeteroStructure.input</strong></summary>
+<details>
+<summary><strong>Sample file</strong></summary>
+<pre><code>=============================================================
 # SAMBA Copyright (C) 2025
-
 #=========================================================================================================================
 # Important notes !!! ====================================================================================================
 #=========================================================================================================================
@@ -171,16 +169,16 @@ angle_min = 15.0                       # min twist angle
 angle_max = 165.0                      # max twist angle
 mismatch_type = 0                      # deformation control
 rot_angle_calc = 'center_cell'         # rotation reference
-      </code></pre>
-    </details>
-  </details>
+</code></pre>
+</details>
+</details>
 
-  <hr/>
+<hr/>
 
-  <details>
-    <summary><strong>SAMBA_WorkFlow.input</strong></summary>
-    <!-- conteúdo aqui -->
-  </details>
+<details>
+<summary><strong>SAMBA_WorkFlow.input</strong></summary>
+<!-- conteúdo aqui -->
+</details>
 </details>
 
 <hr/>
