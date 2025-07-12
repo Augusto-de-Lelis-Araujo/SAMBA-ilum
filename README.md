@@ -1,6 +1,8 @@
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Article available in ?????: in soon
 
+<img src="etc/figures/logo.png">
+
 <details>
 <summary><strong>Description</strong></summary>
   
@@ -122,8 +124,3 @@ O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para 
 **Exemplo de estrutura de diretório:**
 
 </details>
-
-
-------------------------------------------------------------------------
-
-<img src="etc/figures/logo.png">
