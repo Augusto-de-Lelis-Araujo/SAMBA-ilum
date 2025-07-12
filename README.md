@@ -336,3 +336,5 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
   <p><strong>Exemplo de estrutura de diretório:</strong></p>
 </details>
+
+<img src="etc/figures/institucional.png" alt="Institutional Network">
