@@ -130,8 +130,7 @@ The following sections provide a more detailed explanation of each option.
 <details>
 <summary><strong>Sample file</strong></summary>
 
-<pre><code>
-=============================================================
+<pre><code>=============================================================
 # SAMBA Copyright (C) 2025
 
 #=========================================================================================================================
@@ -192,10 +191,7 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
                                        #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
 #----------------------------------    
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
-#----------------------------------
-
-
-</code></pre>
+#----------------------------------</code></pre>
 
 </details>
 
