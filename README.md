@@ -92,3 +92,8 @@ O código utiliza arquivos no formato `POSCAR` (usado pelo VASP) ou `.xyz` para 
 **Exemplo de estrutura de diretório:**
 
 </details>
+
+
+------------------------------------------------------------------------
+
+<img src="etc/figures/logo.png">
