@@ -121,7 +121,7 @@ This option generates the following input files for the SAMBA code:
 SAMBA_HeteroStructure.input
 SAMBA_WorkFlow.input
 ```
-
+-----------------------------------
    <details>
    <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
    </details>
@@ -129,6 +129,7 @@ SAMBA_WorkFlow.input
    <details>
    <summary><strong>SAMBA_WorkFlow.input</strong></summary>
    </details>
+-----------------------------------
 
 </details>
 
