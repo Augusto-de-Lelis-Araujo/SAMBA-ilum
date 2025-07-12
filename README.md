@@ -1,10 +1,10 @@
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Article available in ?????: in soon
 
-<img src="etc/figures/logo.png">
-
 <details>
 <summary><strong>Description</strong></summary>
+
+<img src="etc/figures/logo.png">
   
 SAMBA is an open-source Python 3 code capable of:
 - Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
