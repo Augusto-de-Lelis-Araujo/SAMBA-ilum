@@ -126,35 +126,35 @@ SAMBA_WorkFlow.input
    <details>
    <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
 
-       <details>
-       <summary><strong>Sample file</strong></summary>
+      <details>
+      <summary><strong>Sample file</strong></summary>
 
-       ```text
-       =============================================================
-       SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
-       Adalberto Fazzio's research group (Ilum|CNPEM)
-       Author: Augusto de Lelis Araujo -----------------------------
-       =============================================================
-          _____ ___    __  _______  ___       _ __
-         / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
-         \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
-        ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
-       /____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
-       Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
-       
-       ######################################################################
-       # What do you want to run? ? =========================================
-       # ====================================================================
-       # [0] Generate SAMBA execution inputs
-       # --------------------------------------------------------------------
-       # [1] Heterostructure Generator
-       # [2] WorkFlow: High Throughput DFT (inputs + job)
-       # --------------------------------------------------------------------
-       # [3] Customize internal WorkFlow inputs (INPUTS folder)
-       ######################################################################
-       ```
+      ```text
+      =============================================================
+      SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
+      Adalberto Fazzio's research group (Ilum|CNPEM)
+      Author: Augusto de Lelis Araujo -----------------------------
+      =============================================================
+         _____ ___    __  _______  ___       _ __
+        / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
+        \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
+       ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
+      /____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
+      Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
+      
+      ######################################################################
+      # What do you want to run? ? =========================================
+      # ====================================================================
+      # [0] Generate SAMBA execution inputs
+      # --------------------------------------------------------------------
+      # [1] Heterostructure Generator
+      # [2] WorkFlow: High Throughput DFT (inputs + job)
+      # --------------------------------------------------------------------
+      # [3] Customize internal WorkFlow inputs (INPUTS folder)
+      ######################################################################
+      ```
 
-       </details>
+      </details>
      
    </details>
     
