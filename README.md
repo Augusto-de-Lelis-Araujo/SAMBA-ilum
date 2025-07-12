@@ -159,8 +159,8 @@ if (loop_ht == 0):
 #===============================================================
 # Other parameters =============================================
 #===============================================================
-<span style="color: rede;">separation_1</span> = 3.00                    # Separation distance (in Angs.) between the 1st and 2nd material.
-<span style="color: rede;">separation_2</span> = 3.0                     # Separation distance (in Angs.) between the 2nd and 3rd material.
+separation_1 = 3.00                    # Separation distance (in Angs.) between the 1st and 2nd material.
+separation_2 = 3.00                    # Separation distance (in Angs.) between the 2nd and 3rd material.
 vacuum       = 15.0                    # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
 #----------------------------------
 cell_fator = [10, 10]                  # Multiplication factor of the unit cell as a function of vectors A1, A2.
