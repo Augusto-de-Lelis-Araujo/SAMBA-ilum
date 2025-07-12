@@ -10,9 +10,9 @@ SAMBA is an open-source Python 3 code capable of:
 Click on the topics below to expand and see the details for each section.
 
 <details>
-<summary><strong>Prerequisites</strong></summary>
+<summary><strong>Requirements</strong></summary>
 
-Make sure you have the following prerequisites:
+Make sure you have the following requirements:
 - Linux or Windows environment for bilayer generation
 - Linux environment for high-throughput DFT (requires VASPkit installed)
 - Python 3.8+
@@ -28,12 +28,12 @@ The latest version of the SAMBA code can be installed using the Python Package I
 pip install samba_ilum
 ```
 During the installation, SAMBA checks the existence of the following Python modules:
-- vasprocar
-- pymatgen
-- scipy
-- numpy
-- matplotlib
-- plotly
+- [vasprocar](https://pypi.org/project/vasprocar/)
+- [pymatgen](https://pypi.org/project/pymatgen/)
+- [scipy](https://pypi.org/project/scipy/)
+- [numpy](https://pypi.org/project/numpy/)
+- [matplotlib](https://pypi.org/project/matplotlib/)
+- [plotly](https://pypi.org/project/plotly/)
 
 </details>
 
