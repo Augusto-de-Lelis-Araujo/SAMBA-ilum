@@ -41,7 +41,7 @@ SAMBA is an open-source Python 3 code capable of:
 Click on the topics below to expand and see the details for each section.
 
 <details>
-<summary><strong>Instalação</strong></summary>
+<summary><strong>Installation</strong></summary>
   
 The latest version of the SAMBA code can be installed using the Python Package Index ([link](https://pypi.org/project/SAMBA-ilum/)) via the command:
 ```bash
