@@ -281,7 +281,7 @@ k_dens_dos   = 12     # DOS Calculation:                    number of k-points p
 k_dens_bader = 12     # Bader Charge Calculation:           number of k-points perr Å^-1
 n_kpoints    = 50     # Band calculation (nscf):            number of k-points in each section of the band plot
 nions_split  = 100    # number of ions in the POSCAR file, so that the band calculation is performed in steps (split)
-vacuo        = 15.0   # Vacuum applied to Heterostructure
+vacuum       = 15.0   # Vacuum applied to Heterostructure
 NCORE        = 8      # Number of "cores" per "node"
 
 #============================
@@ -312,6 +312,41 @@ displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
 
 </details>
+
+Por meio deste arquivo de input, o usuário controla os detalhes referentes aos diferentes cálculos de DFT, onde:
+
+- **dir_virtual_python**
+- **dir_o**
+- **type_lattice**
+- **tasks**
+- **type**
+- **ispin**
+- **dipol**
+- **magnet_mode**
+- **U_correction**
+- **vdW**
+- **vdWDF**
+- **ENCUT_min**
+- **fator_encut**
+- **type_k_dens**
+- **k_dens_relax**
+- **k_dens_scf**
+- **k_dens_dos**
+- **k_dens_bader**
+- **n_kpoints**
+- **nions_split**
+- **vacuum**
+- **NCORE**
+- **k_dens_a_scan**
+- **factor_var**
+- **k_dens_z_scan**
+- **k_dens_xy_scan**
+- **r_displacement_A1**
+- **r_displacement_A2**
+- **k_dens_xyz_scan = 6**
+- **displacement_Z**
+- **displacement_xyz_A1**
+- **displacement_xyz_A2**
   
 </details>
 
