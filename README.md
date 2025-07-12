@@ -108,10 +108,10 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 ######################################################################
 ```
 
-- Option [0] provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.
-- Option [1] runs the Bilayer Generator, where the selected monolayers are combined to generate bilayers for different twist angles.
-- Option [2] runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.
-- Option [4] provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.
+- **Option [0]** provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.
+- **Option [1]** runs the Bilayer Generator, where the selected monolayers are combined to generate bilayers for different twist angles.
+- **Option [2]** runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.
+- **Option [4]** provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.
 
 The following sections provide a more detailed explanation of each option.
 
