@@ -29,6 +29,8 @@ SAMBA is an open-source Python 3 code capable of:
 - INCT - Materials Informatics [link](https://inct-mi.pesquisa.ufabc.edu.br/)
 - midb.cloud database [link](https://midb.cloud/)
 
+<img src="etc/figures/institucional.png">
+
 </details>
 
 -------------------------------
