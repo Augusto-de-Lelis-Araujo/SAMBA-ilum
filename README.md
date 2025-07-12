@@ -31,10 +31,14 @@ During the installation, SAMBA checks the existence of the following Python modu
 - plotly
 
 For run the code, the user must use the command below in the work directory.
-### python -m samba_ilum
+```bash
+python -m samba_ilum
+```
 or
-### python3 -m samba_ilum
- 
+```bash
+python3 -m samba_ilum
+```
+
 ### Passos para Instalação
 
 1.  **Clone o repositório:**
