@@ -1,86 +1,82 @@
-# SAMBA (Simulation and Automated Methods for Bilayer Analysis) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-## Article available in soon
+<h1>SAMBA (Simulation and Automated Methods for Bilayer Analysis)
+  <a href="https://www.gnu.org/licenses/gpl-3.0">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
+  </a>
+</h1>
+
+<h2>Article available in soon</h2>
 
 <details>
-<summary><strong>Description</strong></summary>
-
-SAMBA is an open-source Python 3 code capable of:
-- Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
-- Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
-- Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
-
-<img src="etc/figures/logo.png">
-
+  <summary><strong>Description</strong></summary>
+  <p>SAMBA is an open-source Python 3 code capable of:</p>
+  <ul>
+    <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
+    <li>Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.</li>
+    <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
+  </ul>
+  <img src="etc/figures/logo.png" alt="SAMBA logo">
 </details>
 
 <details>
-<summary><strong>Authors</strong></summary>
-  
-- Augusto de Lelis Araújo ([ORCID](https://orcid.org/0000-0002-6835-6113))
-- Adalberto Fazzio ([ORCID](https://orcid.org/0000-0001-5384-7676))
-- Felipe Castro de Lima ([ORCID](https://orcid.org/0000-0002-2937-2620))
-- Pedro Henrique Sophia ([ORCID](https://orcid.org/0009-0007-5428-0596))
-
+  <summary><strong>Authors</strong></summary>
+  <ul>
+    <li>Augusto de Lelis Araújo (<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>)</li>
+    <li>Adalberto Fazzio (<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>)</li>
+    <li>Felipe Castro de Lima (<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>)</li>
+    <li>Pedro Henrique Sophia (<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>)</li>
+  </ul>
 </details>
 
 <details>
-<summary><strong>Meet Institutional and Research Network:</strong></summary>
-  
-- Ilum - School of Science [link](https://ilum.cnpem.br/en/)
-- CNPEM - The Brazilian Center for Research in Energy and Materials [link](https://cnpem.br/en/)
-- INCT - Materials Informatics [link](https://inct-mi.pesquisa.ufabc.edu.br/)
-- midb.cloud database [link](https://midb.cloud/)
-
-<img src="etc/figures/institucional.png">
-
+  <summary><strong>Meet Institutional and Research Network:</strong></summary>
+  <ul>
+    <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/">link</a></li>
+    <li>CNPEM - The Brazilian Center for Research in Energy and Materials <a href="https://cnpem.br/en/">link</a></li>
+    <li>INCT - Materials Informatics <a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a></li>
+    <li>midb.cloud database <a href="https://midb.cloud/">link</a></li>
+  </ul>
+  <img src="etc/figures/institucional.png" alt="Institutional Network">
 </details>
 
--------------------------------
+<hr/>
 
-## Tutorial
-Click on the topics below to expand and see the details for each section.
+<h2>Tutorial</h2>
+<p>Click on the topics below to expand and see the details for each section.</p>
 
 <details>
-<summary><strong>Installation</strong></summary>
+  <summary><strong>Installation</strong></summary>
+  <p>The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the <a href="https://pypi.org/project/SAMBA-ilum/">link</a>.</p>
+  <pre><code>pip install samba_ilum</code></pre>
 
-The latest version of SAMBA code can be installed using the Python Package Index via the **command below**, while the source code is available for download via the [link](https://pypi.org/project/SAMBA-ilum/).  
-```bash
-pip install samba_ilum
-```
+  <p><strong>Requirements:</strong> Make sure you have the following requirements:</p>
+  <ul>
+    <li>Linux or Windows environment for bilayer generation</li>
+    <li>Linux environment for high-throughput DFT (requires VASPkit installed)</li>
+    <li>Python 3.8+</li>
+    <li>Python virtual environment is recommended (venv or conda)</li>
+    <li>Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)</li>
+  </ul>
 
-**Requirements:** Make sure you have the following requirements
-- Linux or Windows environment for bilayer generation
-- Linux environment for high-throughput DFT (requires VASPkit installed)
-- Python 3.8+
-- Python virtual environment is recommended (`venv` or `conda`)
-- Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
-
-During the installation, SAMBA checks the existence of the following Python modules:
-- vasprocar [link](https://pypi.org/project/vasprocar/)
-- pymatgen [link](https://pypi.org/project/pymatgen/)
-- scipy [link](https://pypi.org/project/scipy/)
-- numpy [link](https://pypi.org/project/numpy/)
-- matplotlib [link](https://pypi.org/project/matplotlib/)
-- plotly [link](https://pypi.org/project/plotly/)
-
+  <p>During the installation, SAMBA checks the existence of the following Python modules:</p>
+  <ul>
+    <li><a href="https://pypi.org/project/vasprocar/">vasprocar</a></li>
+    <li><a href="https://pypi.org/project/pymatgen/">pymatgen</a></li>
+    <li><a href="https://pypi.org/project/scipy/">scipy</a></li>
+    <li><a href="https://pypi.org/project/numpy/">numpy</a></li>
+    <li><a href="https://pypi.org/project/matplotlib/">matplotlib</a></li>
+    <li><a href="https://pypi.org/project/plotly/">plotly</a></li>
+  </ul>
 </details>
 
 <details>
-<summary><strong>Run the code</strong></summary>
-  
-For run the code, the user must use the command below in the work directory.
-```bash
-python -m samba_ilum
-```
-or
-```bash
-python3 -m samba_ilum
-```
+  <summary><strong>Run the code</strong></summary>
+  <p>To run the code, the user must use the command below in the working directory:</p>
+  <pre><code>python -m samba_ilum</code></pre>
+  <p>or</p>
+  <pre><code>python3 -m samba_ilum</code></pre>
 
-When running the code, the following screen is shown to the user.
-
-```text
-=============================================================
+  <p>When running the code, the following screen is shown to the user:</p>
+  <pre><code>=============================================================
 SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
 Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
@@ -91,7 +87,6 @@ Author: Augusto de Lelis Araujo -----------------------------
  ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
 /____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
 Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
-
 ######################################################################
 # What do you want to run? ===========================================
 # ====================================================================
@@ -101,16 +96,14 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 # [2] WorkFlow: High Throughput DFT (inputs + job)
 # --------------------------------------------------------------------
 # [3] Customize internal WorkFlow inputs (INPUTS folder)
-######################################################################
-```
+######################################################################</code></pre>
 
-- **Option [0]** provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.
-- **Option [1]** runs the Bilayer Generator, where the selected monolayers are combined to generate bilayers for different twist angles.
-- **Option [2]** runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.
-- **Option [4]** provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.
-
-The following sections provide a more detailed explanation of each option.
-
+  <ul>
+    <li><strong>Option [0]</strong>: provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.</li>
+    <li><strong>Option [1]</strong>: runs the Bilayer Generator, where the selected monolayers are combined to generate bilayers for different twist angles.</li>
+    <li><strong>Option [2]</strong>: runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.</li>
+    <li><strong>Option [4]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
+  </ul>
 </details>
 
 <details>
