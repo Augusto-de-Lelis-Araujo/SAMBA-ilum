@@ -6,6 +6,7 @@ SAMBA is an open-source Python 3 code capable of:
 - Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
 - Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
 
+
 <details>
 <summary><strong>Authors</strong></summary>
   
@@ -14,7 +15,8 @@ SAMBA is an open-source Python 3 code capable of:
 - Felipe Castro de Lima ([ORCID](https://orcid.org/0000-0002-2937-2620))
 - Pedro Henrique Sophia ([ORCID](https://orcid.org/0009-0007-5428-0596))
 
-<details>
+</details>
+
 
 ## Tutorial
 Click on the topics below to expand and see the details for each section.
