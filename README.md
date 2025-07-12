@@ -120,9 +120,6 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 <details>
 <summary><strong>SAMBA_HeteroStructure.input</strong></summary>
 
-<details>
-<summary><strong>Sample file</strong></summary>
-
 Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
 - "dir_poscar" refere-se ao nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
@@ -130,8 +127,10 @@ Por meio deste arquivo de input, o usuário controla os detalhes referentes a ge
 - "loop_ht" define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
   Para loop_ht=0, o usuário deve informar em "Lattice1" e "Lattice2", o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada.
   Para loop_ht=0, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por "dir_poscar"
--
-  
+
+<details>
+<summary><strong>Sample file</strong></summary>
+
 <pre><code>=============================================================
 # SAMBA Copyright (C) 2025
 
