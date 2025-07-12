@@ -24,10 +24,10 @@ SAMBA is an open-source Python 3 code capable of:
 <details>
 <summary><strong>Meet Institutional and Research Network:</strong></summary>
   
-- [Ilum - School of Science](https://ilum.cnpem.br/en/)
-- [CNPEM - The Brazilian Center for Research in Energy and Materials](https://cnpem.br/en/)
-- [INCT - Materials Informatics](https://inct-mi.pesquisa.ufabc.edu.br/)
-- [midb.cloud database](https://midb.cloud/)
+- Ilum - School of Science [link](https://ilum.cnpem.br/en/)
+- CNPEM - The Brazilian Center for Research in Energy and Materials [link](https://cnpem.br/en/)
+- INCT - Materials Informatics [link](https://inct-mi.pesquisa.ufabc.edu.br/)
+- midb.cloud database [link](https://midb.cloud/)
 
 </details>
 
