@@ -102,7 +102,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
     <li><strong>Option [0]</strong>: provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.</li>
     <li><strong>Option [1]</strong>: runs the Bilayer Generator, where the selected monolayers are combined to generate bilayers for different twist angles.</li>
     <li><strong>Option [2]</strong>: runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.</li>
-    <li><strong>Option [4]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
+    <li><strong>Option [3]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
   </ul>
 </details>
 
@@ -283,58 +283,18 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <details>
-  <summary><strong>Arquivos Estruturais</strong></summary>
-  <p><strong>Formatos Suportados</strong></p>
-  <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
-  <p><strong>Exemplo de estrutura de diretório:</strong></p>
+<summary><strong>Option [1]: running the Bilayer Generator</strong></summary>
 </details>
 
-
 <details>
-  <summary><strong>Exemplo 01</strong></summary>
-  <p><strong>Formatos Suportados</strong></p>
-  <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
-  <p><strong>Exemplo de estrutura de diretório:</strong></p>
+<summary><strong>Option [2]: running the High-throughput DFT</strong></summary>
 </details>
 
-
 <details>
-  <summary><strong>Exemplo 02</strong></summary>
-  <p><strong>Formatos Suportados</strong></p>
-  <p>O código utiliza arquivos no formato <code>POSCAR</code> (usado pelo VASP) ou <code>.xyz</code> para ler as coordenadas atômicas iniciais. A estrutura do arquivo deve seguir o padrão convencional.</p>
-  <p><strong>Exemplo de estrutura de diretório:</strong></p>
+<summary><strong>Option [3]: Customizing DFT Calculation Inputs</strong></summary>
 </details>
+
+-----------------------------------------------
 
 <img src="etc/figures/institucional.png" alt="Institutional Network">
