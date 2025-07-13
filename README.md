@@ -343,7 +343,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **k_dens_xy_scan**
 - **r_displacement_A1**
 - **r_displacement_A2**
-- **k_dens_xyz_scan = 6**
+- **k_dens_xyz_scan**
 - **displacement_Z**
 - **displacement_xyz_A1**
 - **displacement_xyz_A2**
