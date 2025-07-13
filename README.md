@@ -7,7 +7,7 @@
 <h2>Article available in soon</h2>
 
 <details>
-  <summary><strong>Description</strong></summary>
+  <summary><strong>🔵 Description</strong></summary>
   <p>SAMBA is an open-source Python 3 code capable of:</p>
   <ul>
     <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
