@@ -295,9 +295,11 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
   - Devem ser escritos em coordenadas diretas;
 
-  - **Opcional**: O usuário pode inserir um identificador (**ID**) para vincular as bicamadas geradas às respectivas monocamadas de origem. Para isto, basta inserir a ID na primeira linha do arquivo POSCAR após a palavra SAMBA. O código reconhece como ID, a última string desta linha inicial do arquivo.
+  - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial.
 
-  - **Opcional**: E aconselhável a utilização de células unitárias, pois a utilização de supercélulas, além de omitir possíveis configurações pode tornar a execução do código mais lenta. Ao ser executado, o código SAMBA irá identificar se as células presentes na pasta definida por **dir_poscar** são unitárias ou não, e irá preguntar ao usuário se deseja continuar ou não com o cálculo;
+  - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim.
+
+  - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
 
   <details>
   <summary><strong>POSCAR file (example)</strong></summary>
