@@ -381,10 +381,21 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 
   **vdWDF='none'** (no correction);
   
-  Para ativar a correção, escolha um dos seguintes funcionais semilocal de troca-correlação ('DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'), para mais detalhes a respeito de cada funcional conuslte o <a href="https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals" target="_blank">link</a>;
-- **ENCUT_min**
-- **fator_encut**
-- **type_k_dens**
+  Para ativar a correção, escolha um dos seguintes funcionais semilocal de troca-correlação ('DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'), para mais detalhes a respeito de cada funcional consulte o <a href="https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals" target="_blank">link</a>;
+- **ENCUT_min** Valor minimo para a energia de corte (em eV) utilizado para a expansão em ondas planas da função de onda;
+- **fator_encut** Fator de multiplicação aplicado a energia de corte;
+  
+  **Note:**  If (ENCUT_min < ENCUT*fator_encut), then ENCUT_min = ENCUT*encut_factor, where ENCUT refers to the highest cutting energy value present in the POTCAR file;
+- **type_k_dens** define o método utilizado para os vetores de Bloch (pontos-k) usados para amostrar a zona de Brillouin em cálculos auto-consistentes (scf), escolha entre (para mais detalhes consulte o <a href="[https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals](https://www.vasp.at/wiki/index.php/KPOINTS)" target="_blank">link</a>):
+
+  **type_k_dens=1** para utilizar Monkhorst-Pack;
+  
+  **type_k_dens=1** para utilizar Gamm;
+  
+  **type_k_dens=1** para utilizar KSPACING Monkhorst-Pack;
+  
+  **type_k_dens=1** para utilizar KSPACING Gamma;
+  
 - **k_dens_relax**
 - **k_dens_scf**
 - **k_dens_dos**
