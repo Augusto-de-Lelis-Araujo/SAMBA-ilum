@@ -524,25 +524,25 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   <details>
      <summary><strong>pseudo files (example)</strong></summary>
 
-     <pre><code>POTCAR_H
-     POTCAR_C
-     POTCAR_O
-     POTCAR_Al
-     POTCAR_Bi
-     POTCAR_Pd
-     POTCAR_Se
-     POTCAR_Cd
-     POTCAR_Te
-     POTCAR_S
-     POTCAR_Au
-     POTCAR_Ge
-     POTCAR_Si
-     POTCAR_Mg
-     POTCAR_Pb
-     POTCAR_Hg
-     POTCAR_Sn
-     POTCAR_Cr
-     ...</code></pre>  
+        <pre><code>POTCAR_H
+        POTCAR_C
+        POTCAR_O
+        POTCAR_Al
+        POTCAR_Bi
+        POTCAR_Pd
+        POTCAR_Se
+        POTCAR_Cd
+        POTCAR_Te
+        POTCAR_S
+        POTCAR_Au
+        POTCAR_Ge
+        POTCAR_Si
+        POTCAR_Mg
+        POTCAR_Pb
+        POTCAR_Hg
+        POTCAR_Sn
+        POTCAR_Cr
+        ...</code></pre>  
 
   </details>
 
