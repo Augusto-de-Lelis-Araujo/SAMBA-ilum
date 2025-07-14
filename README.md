@@ -83,11 +83,11 @@
     <li><a href="https://pypi.org/project/scipy/">scipy</a></li>
     <li><a href="https://pypi.org/project/numpy/">numpy</a></li>
     <li><a href="https://pypi.org/project/matplotlib/">matplotlib</a></li>
-    <li><a href="https://pypi.org/project/plotly/">plotly</a></li>
-
-  ------------------------------------
-    
+    <li><a href="https://pypi.org/project/plotly/">plotly</a></li> 
   </ul>
+
+------------------------------------
+  
 </details>
 
 
@@ -139,13 +139,15 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 <details>
 <summary><strong>Option [0]: Generate SAMBA execution inputs</strong></summary>
 
+------------------------------------
+
 <p>This option generates the following input files for the SAMBA code:</p>
 <ul>
   <li>SAMBA_HeteroStructure.input</li>
   <li>SAMBA_WorkFlow.input</li>
 </ul>
 
-
+------------------------------------
 
 </details>
 
@@ -458,8 +460,13 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 
 <details>
 <summary><strong>Option [3]: Customizing DFT Calculation Inputs</strong></summary>
+
+------------------------------------
+
+------------------------------------
+
 </details>
 
------------------------------------------------
+------------------------------------
 
 <img src="etc/figures/institucional.png" alt="Institutional Network">
