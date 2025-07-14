@@ -20,7 +20,6 @@
   <img src="etc/figures/logo.png" alt="SAMBA logo">
   
   ------------------------------------
-  
 </details>
 
 <details>
@@ -36,7 +35,6 @@
   </ul>
 
   ------------------------------------
-  
 </details>
 
 <details>
@@ -51,10 +49,7 @@
     <li>midb.cloud database <a href="https://midb.cloud/">link</a></li>
     <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/" target="_blank">link</a></li>
   </ul>
-  <img src="etc/figures/institucional.png" alt="Institutional Network">
-
-  ------------------------------------
-  
+  <img src="etc/figures/institucional.png" alt="Institutional Network"> 
 </details>
 
 <hr/>
@@ -66,6 +61,9 @@
 
 <details>
   <summary><strong>Installation</strong></summary>
+
+  ------------------------------------
+  
   <p>The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the <a href="https://pypi.org/project/SAMBA-ilum/">link</a>.</p>
   <pre><code>pip install samba_ilum</code></pre>
 
@@ -86,6 +84,8 @@
     <li><a href="https://pypi.org/project/numpy/">numpy</a></li>
     <li><a href="https://pypi.org/project/matplotlib/">matplotlib</a></li>
     <li><a href="https://pypi.org/project/plotly/">plotly</a></li>
+
+    ------------------------------------
   </ul>
 </details>
 
