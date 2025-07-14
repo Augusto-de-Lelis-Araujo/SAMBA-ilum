@@ -85,7 +85,7 @@
   <p><strong>Requirements:</strong> Make sure you have the following requirements:</p>
   <ul>
     <li>Linux or Windows environment for bilayer generation</li>
-    <li>Linux environment for high-throughput DFT (requires VASPkit installed)</li>
+    <li>Linux environment for high-throughput DFT (requires VASPKIT installed <a href="https://vaspkit.com/installation.html" target="_blank">link</a>)</li>
     <li>Python 3.8+</li>
     <li>Python virtual environment is recommended (venv or conda)</li>
     <li>Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)</li>
@@ -527,7 +527,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   - Os arquivos POSCAR devem ser escritos em coordenadas diretas;
   - O usuário deve fornecer os arquivos de pseudopotencial (para cada ion presente nos arquivos POSCAR) dentro de uma pasta chamada "**POTCAR**";
   - Os arquivos de pseudopotencial, devem ser rotulados seguindo o padrão presente em em **pseudo files (example)**);
-  - O código deve ser executado em ambiente Linux, com o pacote VASPKit devidamente instalado, para a configuração do VASPKit consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
+  - O código deve ser executado em **ambiente Linux**, com o pacote **VASPKIT** devidamente instalado, para a configuração do VASPKIT consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
 
   <details>
   <summary><strong>pseudo files (example)</strong></summary>
