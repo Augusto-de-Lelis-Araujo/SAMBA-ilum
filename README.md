@@ -355,7 +355,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
 - **vdW** specifies a vdW dispersion term of the atom-pairwise or many-body type, where:
   **vdW=0** (no correction);
-  **vdW=integer>0** define o método utilizado para a correção de dispersão adicionada à energia total, às forças atômicas e ao tensor de tensão. Para consultar os diferentes métodos implementados no VASP, consulte o <li><a href="[https://orcid.org/0000-0002-6835-6113](https://www.vasp.at/wiki/index.php/IVDW">Link</a>)</li>.
+  **vdW=integer>0** define o método utilizado para a correção de dispersão adicionada à energia total, às forças atômicas e ao tensor de tensão. Para consultar os diferentes métodos implementados no VASP, consulte o <a href="https://www.vasp.at/wiki/index.php/IVDW" target="_blank">link</a>.
 - **vdWDF**
 - **ENCUT_min**
 - **fator_encut**
