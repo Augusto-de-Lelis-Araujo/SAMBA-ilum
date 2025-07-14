@@ -287,7 +287,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 </details>
 
 <details>
-  <summary><strong>Structure of files and directories for code execution</strong>strong></summary>
+  <summary><strong>Structure of files and directories for code execution</strong></summary>
 
   Os arquivos POSCAR para geração das bicamadas devem seguir os seguintes critérios (compare os critérios com o modelo presente em **POSCAR file (example)**):
 
@@ -295,9 +295,9 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
   - Devem ser escritos em coordenadas diretas;
 
-  - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial.
+  - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
 
-  - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim.
+  - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
 
   - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
 
@@ -517,6 +517,43 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
   
 </details>
+
+<details>
+  <summary><strong>Structure of files and directories for code execution</strong></summary>
+
+  Para a geração dos inputs necessários a execução dos cálculos High-Throughput DFT, os seguintes critérios devem ser satisfeitos:
+
+  - O usuário deve inserir os arquivos POSCAR dentro de uma pasta chamada **Structures**;
+  - Os arquivos POSCAR devem ser escritos em coordenadas diretas;
+  - O usuário deve fornecer os arquivos de pseudopotencial (para cada ion presente nos arquivos POSCAR) dentro de uma pasta chamada "**POTCAR**";
+  - Os arquivos de pseudopotencial, devem ser rotulados seguindo o padrão presente em em **pseudo files (example)**);
+  - O código deve ser executado em ambiente Linux, com o pacote VASPKit devidamente instalado, para a configuração do VASPKit consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
+
+  <details>
+  <summary><strong>pseudo files (example)</strong></summary>
+
+  <pre><code>POTCAR_H
+POTCAR_C
+POTCAR_O
+POTCAR_Al
+POTCAR_Bi
+POTCAR_Pd
+POTCAR_Se
+POTCAR_Cd
+POTCAR_Te
+POTCAR_S
+POTCAR_Au
+POTCAR_Ge
+POTCAR_Si
+POTCAR_Mg
+POTCAR_Pb
+POTCAR_Hg
+POTCAR_Sn
+POTCAR_Cr
+...
+</code></pre>  
+
+  </details>
 
 ------------------------------------
 </details>
