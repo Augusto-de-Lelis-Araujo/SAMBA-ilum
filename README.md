@@ -287,7 +287,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 </details>
 
 <details>
-  <summary><strong>Structure of files and directories for code execution</summary>
+  <summary><strong>Structure of files and directories for code execution</strong>strong></summary>
 
   Os arquivos POSCAR para geração das bicamadas devem seguir os seguintes critérios (compare os critérios com o modelo presente em **POSCAR file (example)**):
 
@@ -300,7 +300,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   - **Opcional**: O usuário pode inserir um identificador (**ID**) para vincular as bicamadas geradas às respectivas monocamadas de origem. Para isto, basta inserir a ID na primeira linha do arquivo POSCAR após a palavra SAMBA. O código reconhece como ID, a última string desta linha inicial do arquivo.
 
   <details>
-  <summary><strong>POSCAR file (example)</summary>
+  <summary><strong>POSCAR file (example)</strong>strong></summary>
 
   <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
 1.0 
