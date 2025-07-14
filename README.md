@@ -341,8 +341,11 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);
 - **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
 - **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
+
   **type=['sem_SO','com_SO']** define que todos os cálculos são realizados desconsiderando o SOC;
+  
   **type=['com_SO']** define que o SOC é incluído nos cálculos;
+  
   **type=['sem_SO','com_SO']** define que todos os cálculos são realizados, tanto "com" quanto "sem" SOC;
 - **ispin** define a polarização de spin do cálculo, onde:
   **ispin=1**: non-spin-polarized calculations are performed (for calculations without SOC);
