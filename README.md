@@ -299,6 +299,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   - **Opcional**: O usuário pode inserir um identificador (**ID**) para vincular as bicamadas geradas às respectivas monocamadas de origem. Para isto, basta inserir a ID na primeira linha do arquivo POSCAR após a palavra SAMBA. O código reconhece como ID, a última string desta linha inicial do arquivo.
 
+</details>   
+
   <details>
   <summary><strong>POSCAR file (example)</summary>
 
