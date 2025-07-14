@@ -25,16 +25,25 @@
 
 <details>
   <summary><strong>Authors</strong></summary>
+
+  ------------------------------------
+  
   <ul>
     <li>Augusto de Lelis Araújo (<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>)</li>
     <li>Adalberto Fazzio (<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>)</li>
     <li>Felipe Castro de Lima (<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>)</li>
     <li>Pedro Henrique Sophia (<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>)</li>
   </ul>
+
+  ------------------------------------
+  
 </details>
 
 <details>
   <summary><strong>Meet Institutional and Research Network:</strong></summary>
+
+  ------------------------------------
+  
   <ul>
     <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/">link</a></li>
     <li>CNPEM - The Brazilian Center for Research in Energy and Materials <a href="https://cnpem.br/en/">link</a></li>
@@ -43,6 +52,9 @@
     <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/" target="_blank">link</a></li>
   </ul>
   <img src="etc/figures/institucional.png" alt="Institutional Network">
+
+  ------------------------------------
+  
 </details>
 
 <hr/>
