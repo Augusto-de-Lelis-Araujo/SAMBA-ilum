@@ -123,7 +123,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 </details>
 
-<details style="margin-left: 20px; margin-top: 8px;">
+<details>
 <summary><strong>Option [1]: running the Bilayer Generator</strong></summary>
 
 <details>
@@ -234,7 +234,6 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 </details>
 
-<p>...</p> 
 </details>
 
 
