@@ -6,6 +6,9 @@
 
 <h2>Article available in soon</h2>
 
+
+
+
 <details>
   <summary><strong>Description</strong></summary>
   
@@ -22,6 +25,9 @@
   ------------------------------------
 </details>
 
+
+
+
 <details>
   <summary><strong>Authors</strong></summary>
 
@@ -37,6 +43,9 @@
   ------------------------------------
 </details>
 
+
+
+
 <details>
   <summary><strong>Meet Institutional and Research Network:</strong></summary>
 
@@ -51,8 +60,7 @@
   </ul>
   <img src="etc/figures/institucional.png" alt="Institutional Network"> 
 
-------------------------------------
-
+  ------------------------------------
 </details>
 
 
@@ -60,6 +68,9 @@
 
 <h2>Tutorial</h2>
 <p>Click on the topics below to expand and see the details for each section.</p>
+
+
+
 
 <details>
   <summary><strong>Installation</strong></summary>
@@ -93,8 +104,20 @@
   </ul>
 
 ------------------------------------
-  
 </details>
+
+
+
+
+<details>
+  <summary><strong>
+Structure of files and directories for code execution</summary>
+
+------------------------------------
+
+------------------------------------
+</details>
+
 
 
 
@@ -141,8 +164,10 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
   </ul>
 
 ------------------------------------
-
 </details>
+
+
+
 
 <details>
 <summary><strong>Option [0]: Generate SAMBA execution inputs</strong></summary>
@@ -231,7 +256,6 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 #----------------------------------</code></pre>
 
 ------------------------------------
-
 </details>
 
 <details>
@@ -276,8 +300,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 </details>
 
 ------------------------------------
-
 </details>
+
 
 
 
@@ -367,7 +391,6 @@ displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
 
 ------------------------------------
-
 </details>
 
 <details>
@@ -466,8 +489,8 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 </details>
 
 ------------------------------------
-  
 </details>
+
 
 
 
@@ -479,6 +502,8 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 ------------------------------------
 
 </details>
+
+
 
 
 <img src="etc/figures/institucional.png" alt="Institutional Network">
