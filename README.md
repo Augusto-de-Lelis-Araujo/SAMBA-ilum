@@ -123,10 +123,10 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 </details>
 
-<details>
+<details style="margin-left: 20px; margin-top: 8px;">
 <summary><strong>Option [1]: running the Bilayer Generator</strong></summary>
 
-<details style="margin-left: 20px; margin-top: 8px;">
+<details>
 <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
 <pre><code>=============================================================
@@ -232,9 +232,9 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   
   **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
 
-<p>...</p>
 </details>
-  
+
+<p>...</p> 
 </details>
 
 
