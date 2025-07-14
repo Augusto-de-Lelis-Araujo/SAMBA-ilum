@@ -324,7 +324,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 </details>
 
 <details>
-<summary><strong>SAMBA_WorkFlow.input</strong></summary>
+<summary><strong>SAMBA_WorkFlow.input (description and adjustments)</strong></summary>
 
 Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
 
@@ -352,7 +352,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
   **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
 - **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
-- **vdW**
+- **vdW** 
 - **vdWDF**
 - **ENCUT_min**
 - **fator_encut**
