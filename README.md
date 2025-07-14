@@ -50,9 +50,11 @@
     <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/" target="_blank">link</a></li>
   </ul>
   <img src="etc/figures/institucional.png" alt="Institutional Network"> 
+
+------------------------------------
+
 </details>
 
-<hr/>
 
 
 
@@ -467,6 +469,5 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 
 </details>
 
-------------------------------------
 
 <img src="etc/figures/institucional.png" alt="Institutional Network">
