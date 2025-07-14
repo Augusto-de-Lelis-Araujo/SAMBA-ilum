@@ -542,8 +542,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
      POTCAR_Hg
      POTCAR_Sn
      POTCAR_Cr
-     ...
-     </code></pre>  
+     ...</code></pre>  
 
   </details>
 
