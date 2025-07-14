@@ -8,7 +8,9 @@
 
 <details>
   <summary><strong>Description</strong></summary>
+  
   ------------------------------------
+  
   <p>SAMBA is an open-source Python 3 code capable of:</p>
   <ul>
     <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
@@ -16,7 +18,9 @@
     <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
   </ul>
   <img src="etc/figures/logo.png" alt="SAMBA logo">
+  
   ------------------------------------
+  
 </details>
 
 <details>
