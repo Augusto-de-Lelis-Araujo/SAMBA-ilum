@@ -286,8 +286,6 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 </details>
 
-------------------------------------
-
 <details>
   <summary><strong>Structure of files and directories for code execution</summary>
 
