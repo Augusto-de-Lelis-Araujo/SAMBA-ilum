@@ -40,6 +40,8 @@
 
 <hr/>
 
+
+
 <h2>Tutorial</h2>
 <p>Click on the topics below to expand and see the details for each section.</p>
 
@@ -67,6 +69,8 @@
     <li><a href="https://pypi.org/project/plotly/">plotly</a></li>
   </ul>
 </details>
+
+
 
 <details>
   <summary><strong>Run the code</strong></summary>
@@ -119,144 +123,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 <hr/>
 
-<details>
-<summary><strong>SAMBA_WorkFlow.input</strong></summary>
 
-<details>
-<summary><strong>Sample file</strong></summary>
-
-<pre><code># SAMBA Copyright (C) 2025
-
-#=======================================================
-# Python virtual environment directory -----------------
-dir_virtual_python = '/home/dlelis/codes/python_virtual'
-#=======================================================
-# Workflow Output Directory ----------------------------
-dir_o = 'WorkFlow_output'
-#=======================================================
-# information to be added to the database --------------
-replace_type_pseudo = 'PAW_PBE'; replace_type_XC = 'GGA'
-#=======================================================
-
-#=======================================================
-type_lattice = 2                            # [1] 1D lattices (Periodic in X);   [2] 2D lattices (Periodic in XY);   [3] 3D lattices - Bulk
-#=======================================================
-tasks = ['relax', 'scf', 'bands', 'dos']    # tasks = ['z-scan', 'xy-scan', 'relax', 'scf', 'bands', 'dos', 'bader']
-type  = ['sem_SO','com_SO']                 # type  = ['sem_SO','com_SO']
-#=======================================================
-ispin = 2                 # [1] for non-spin-polarized calculation; [2] for spin-polarized calculation
-#=======================================================
-dipol = 'none'            # Use the options:  'none',  'center_cell'  or  'center_mass'
-#=======================================================
-magnet_mode = 'default'   # Use the options:  'default',  'MAGMOM=0'  or  'NUPDOWN=0'
-#=======================================================
-U_correction = 0          # Hubbard Correction (U): [0] to disable, [1] to enable
-#=======================================================
-vdW = 0               # Van der Waals correction used:  [0] disables van der Waals correction.
-                      # Correction applied to all calculations (with and without OS)
-#-------------------------------------------------------
-vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the non-local functional vdW_DF.
-                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2', 'rVV10', 'SCAN+rVV10', 'r2SCAN+rVV10', 'PBE+rVV10L'
-                      # Note:  Functional applied only in structural optimization calculations ('xyz-scan', 'xy-scan', 'z-scan', 'a-scan', 'relax')
-                      # Note:  vdW != 0 will override any choice of vdWDF
-#=======================================================
-ENCUT_min = 500       # Minimum value for cut-off energy in eV
-                      # Note:  If (ENCUT_min < ENCUT*encut_factor), then ENCUT_min = ENCUT*encut_factor
-                      #            ENCUT refers to the highest cutting energy value present in the POTCAR file
-fator_encut = 1.3     # Multiplication factor for the criterion of the cutting energy used
-#=======================================================
-type_k_dens  = 1      # [1] KPOINTS (Monkhorst-Pack);   [2] KPOINTS (Gamma);   [3] INCAR (KSPACING Monkhorst-Pack);   [4] INCAR (KSPACING Gamma)
-k_dens_relax = 12     # Relaxation calculation:             number of k-points per Å^-1
-k_dens_scf   = 12     # Self-consistent calculation (scf):  number of k-points per Å^-1
-k_dens_dos   = 12     # DOS Calculation:                    number of k-points per Å^-1
-k_dens_bader = 12     # Bader Charge Calculation:           number of k-points per Å^-1
-n_kpoints    = 50     # Band calculation (nscf):            number of k-points in each section of the band plot
-nions_split  = 100    # number of ions in the POSCAR file, so that the band calculation is performed in steps (split)
-vacuum       = 15.0   # Vacuum applied to Heterostructure
-NCORE        = 8      # Number of "cores" per "node"
-
-#============================
-# a-scan parameters =========
-# Functional for 3D bulk ====
-#============================
-k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
-factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
-
-#============================
-# z-scan parameters =========
-#============================
-k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
-
-#============================
-# xy-scan parameters ========
-#============================
-k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
-r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
-r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
-
-#============================
-# xyz-scan parameters =======
-#============================
-k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
-displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
-displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
-displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
-
-</details>
-
-Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
-
-- **dir_virtual_python** define o caminho onde o ambiente virtual python esta localizado;
-- **dir_o** define o nome do diretório de saída (a ser criado pelo código), onde os arquivos de input do cálculo high-throughput DFT serão gerados;
-- **replace_type_pseudo** e **replace_type_XC** são informações do cálculo de DFT a serem inseridos nos arquivos .json;
-- **type_lattice** define o tipo de rede a ser analisada, onde:
-  **type_lattice=1** define que as estruturas analisadas são redes 1D (periódicas em X);
-  **type_lattice=2** define que as estruturas analisadas são redes 2D (periódicas em XY);
-  **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);
-- **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
-- **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
-  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados desconsiderando o SOC;
-  **type=['com_SO']** define que o SOC é incluído nos cálculos;
-  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados, tanto "com" quanto "sem" SOC;
-- **ispin** define a polarização de spin do cálculo, onde:
-  **ispin=1**: non-spin-polarized calculations are performed (for calculations without SOC);
-  **ispin=2**: spin-polarized calculations (collinear) are performed (for calculations without SOC);
-- **dipol** define se a correção de dipolo é incluida ou não nos cálculos, onde:
-  **dipol='none'** desativa a correção de dipolo;
-  **dipol='center_cell'** ativa a correção de dipolo; definindo o centro da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
-  **dipol='center_mass'** ativa a correção de dipolo; definindo o centro de massa da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
-- **magnet_mode** define como a magnetização é cálculada para cálculos não-colineares ou com polarização de spin ativada, onde:
-  **magnet_mode='default'** define o padrão do VASP onde a tag MAGMOM é definida como número_de_ions**x**1.0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**1.0 "cálculo com SOC";
-  **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
-  **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
-- **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
-- **vdW**
-- **vdWDF**
-- **ENCUT_min**
-- **fator_encut**
-- **type_k_dens**
-- **k_dens_relax**
-- **k_dens_scf**
-- **k_dens_dos**
-- **k_dens_bader**
-- **n_kpoints**
-- **nions_split**
-- **vacuum**
-- **NCORE**
-- **k_dens_a_scan**
-- **factor_var**
-- **k_dens_z_scan**
-- **k_dens_xy_scan**
-- **r_displacement_A1**
-- **r_displacement_A2**
-- **k_dens_xyz_scan**
-- **displacement_Z**
-- **displacement_xyz_A1**
-- **displacement_xyz_A2**
-  
-</details>
-
------------------------------------------------
 
 </details>
 
@@ -374,9 +241,151 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   
 </details>
 
+
+
 <details>
 <summary><strong>Option [2]: running the High-throughput DFT</strong></summary>
+
+<details>
+<summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
+
+<pre><code># SAMBA Copyright (C) 2025
+
+#=======================================================
+# Python virtual environment directory -----------------
+dir_virtual_python = '/home/dlelis/codes/python_virtual'
+#=======================================================
+# Workflow Output Directory ----------------------------
+dir_o = 'WorkFlow_output'
+#=======================================================
+# information to be added to the database --------------
+replace_type_pseudo = 'PAW_PBE'; replace_type_XC = 'GGA'
+#=======================================================
+
+#=======================================================
+type_lattice = 2                            # [1] 1D lattices (Periodic in X);   [2] 2D lattices (Periodic in XY);   [3] 3D lattices - Bulk
+#=======================================================
+tasks = ['relax', 'scf', 'bands', 'dos']    # tasks = ['z-scan', 'xy-scan', 'relax', 'scf', 'bands', 'dos', 'bader']
+type  = ['sem_SO','com_SO']                 # type  = ['sem_SO','com_SO']
+#=======================================================
+ispin = 2                 # [1] for non-spin-polarized calculation; [2] for spin-polarized calculation
+#=======================================================
+dipol = 'none'            # Use the options:  'none',  'center_cell'  or  'center_mass'
+#=======================================================
+magnet_mode = 'default'   # Use the options:  'default',  'MAGMOM=0'  or  'NUPDOWN=0'
+#=======================================================
+U_correction = 0          # Hubbard Correction (U): [0] to disable, [1] to enable
+#=======================================================
+vdW = 0               # Van der Waals correction used:  [0] disables van der Waals correction.
+                      # Correction applied to all calculations (with and without OS)
+#-------------------------------------------------------
+vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the non-local functional vdW_DF.
+                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2', 'rVV10', 'SCAN+rVV10', 'r2SCAN+rVV10', 'PBE+rVV10L'
+                      # Note:  Functional applied only in structural optimization calculations ('xyz-scan', 'xy-scan', 'z-scan', 'a-scan', 'relax')
+                      # Note:  vdW != 0 will override any choice of vdWDF
+#=======================================================
+ENCUT_min = 500       # Minimum value for cut-off energy in eV
+                      # Note:  If (ENCUT_min < ENCUT*encut_factor), then ENCUT_min = ENCUT*encut_factor
+                      #            ENCUT refers to the highest cutting energy value present in the POTCAR file
+fator_encut = 1.3     # Multiplication factor for the criterion of the cutting energy used
+#=======================================================
+type_k_dens  = 1      # [1] KPOINTS (Monkhorst-Pack);   [2] KPOINTS (Gamma);   [3] INCAR (KSPACING Monkhorst-Pack);   [4] INCAR (KSPACING Gamma)
+k_dens_relax = 12     # Relaxation calculation:             number of k-points per Å^-1
+k_dens_scf   = 12     # Self-consistent calculation (scf):  number of k-points per Å^-1
+k_dens_dos   = 12     # DOS Calculation:                    number of k-points per Å^-1
+k_dens_bader = 12     # Bader Charge Calculation:           number of k-points per Å^-1
+n_kpoints    = 50     # Band calculation (nscf):            number of k-points in each section of the band plot
+nions_split  = 100    # number of ions in the POSCAR file, so that the band calculation is performed in steps (split)
+vacuum       = 15.0   # Vacuum applied to Heterostructure
+NCORE        = 8      # Number of "cores" per "node"
+
+#============================
+# a-scan parameters =========
+# Functional for 3D bulk ====
+#============================
+k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
+factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
+
+#============================
+# z-scan parameters =========
+#============================
+k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
+
+#============================
+# xy-scan parameters ========
+#============================
+k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
+r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
+r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
+
+#============================
+# xyz-scan parameters =======
+#============================
+k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
+displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
+displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
+displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
+
 </details>
+
+<details>
+<summary><strong>SAMBA_WorkFlow.input</strong></summary>
+
+Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
+
+- **dir_virtual_python** define o caminho onde o ambiente virtual python esta localizado;
+- **dir_o** define o nome do diretório de saída (a ser criado pelo código), onde os arquivos de input do cálculo high-throughput DFT serão gerados;
+- **replace_type_pseudo** e **replace_type_XC** são informações do cálculo de DFT a serem inseridos nos arquivos .json;
+- **type_lattice** define o tipo de rede a ser analisada, onde:
+  **type_lattice=1** define que as estruturas analisadas são redes 1D (periódicas em X);
+  **type_lattice=2** define que as estruturas analisadas são redes 2D (periódicas em XY);
+  **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);
+- **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
+- **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
+  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados desconsiderando o SOC;
+  **type=['com_SO']** define que o SOC é incluído nos cálculos;
+  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados, tanto "com" quanto "sem" SOC;
+- **ispin** define a polarização de spin do cálculo, onde:
+  **ispin=1**: non-spin-polarized calculations are performed (for calculations without SOC);
+  **ispin=2**: spin-polarized calculations (collinear) are performed (for calculations without SOC);
+- **dipol** define se a correção de dipolo é incluida ou não nos cálculos, onde:
+  **dipol='none'** desativa a correção de dipolo;
+  **dipol='center_cell'** ativa a correção de dipolo; definindo o centro da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
+  **dipol='center_mass'** ativa a correção de dipolo; definindo o centro de massa da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
+- **magnet_mode** define como a magnetização é cálculada para cálculos não-colineares ou com polarização de spin ativada, onde:
+  **magnet_mode='default'** define o padrão do VASP onde a tag MAGMOM é definida como número_de_ions**x**1.0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**1.0 "cálculo com SOC";
+  **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
+  **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
+- **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
+- **vdW**
+- **vdWDF**
+- **ENCUT_min**
+- **fator_encut**
+- **type_k_dens**
+- **k_dens_relax**
+- **k_dens_scf**
+- **k_dens_dos**
+- **k_dens_bader**
+- **n_kpoints**
+- **nions_split**
+- **vacuum**
+- **NCORE**
+- **k_dens_a_scan**
+- **factor_var**
+- **k_dens_z_scan**
+- **k_dens_xy_scan**
+- **r_displacement_A1**
+- **r_displacement_A2**
+- **k_dens_xyz_scan**
+- **displacement_Z**
+- **displacement_xyz_A1**
+- **displacement_xyz_A2**
+  
+</details>
+  
+</details>
+
+
 
 <details>
 <summary><strong>Option [3]: Customizing DFT Calculation Inputs</strong></summary>
