@@ -108,6 +108,8 @@
   <p>or</p>
   <pre><code>python3 -m samba_ilum</code></pre>
 
+  ------------------------------------
+
   <p>When running the code, the following screen is shown to the user:</p>
   <pre><code>=============================================================
 SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
