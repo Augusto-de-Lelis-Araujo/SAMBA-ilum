@@ -95,12 +95,12 @@
 
   <p>During the installation, SAMBA checks the existence of the following Python modules:</p>
   <ul>
-    <li>vasprocar<a href="https://pypi.org/project/vasprocar/">link</a></li>
-    <li>pymatgen<a href="https://pypi.org/project/pymatgen/">link</a></li>
-    <li>scipy<a href="https://pypi.org/project/scipy/">link</a></li>
-    <li>numpy<a href="https://pypi.org/project/numpy/">link</a></li>
-    <li>matplotlib<a href="https://pypi.org/project/matplotlib/">link</a></li>
-    <li>plotly<a href="https://pypi.org/project/plotly/">link</a></li> 
+    <li>VASProcar <a href="https://pypi.org/project/vasprocar/">link</a></li>
+    <li>pymatgen <a href="https://pypi.org/project/pymatgen/">link</a></li>
+    <li>SciPy <a href="https://pypi.org/project/scipy/">link</a></li>
+    <li>NumPy <a href="https://pypi.org/project/numpy/">link</a></li>
+    <li>Matplotlib <a href="https://pypi.org/project/matplotlib/">link</a></li>
+    <li>Plotly <a href="https://pypi.org/project/plotly/">link</a></li> 
   </ul>
 
 ------------------------------------
