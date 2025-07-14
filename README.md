@@ -521,10 +521,10 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 <details>
   <summary><strong>Structure of files and directories for code execution</strong></summary>
 
-    <details>
-  <summary><strong>pseudo files (example)</strong></summary>
+  <details>
+     <summary><strong>pseudo files (example)</strong></summary>
 
-  <pre><code>POTCAR_H
+     <pre><code>POTCAR_H
 POTCAR_C
 POTCAR_O
 POTCAR_Al
@@ -545,7 +545,7 @@ POTCAR_Cr
 ...
 </code></pre>  
 
-  </details>
+     </details>
 
   Para a geração dos inputs necessários a execução dos cálculos High-Throughput DFT, os seguintes critérios devem ser satisfeitos:
 
