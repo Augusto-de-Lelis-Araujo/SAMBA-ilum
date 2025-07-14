@@ -338,7 +338,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   
   **type_lattice=2** define que as estruturas analisadas são redes 2D (periódicas em XY);
   
-  **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);
+  **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);s
 - **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
 - **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
 
@@ -348,7 +348,9 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   
   **type=['sem_SO','com_SO']** define que todos os cálculos são realizados, tanto "com" quanto "sem" SOC;
 - **ispin** define a polarização de spin do cálculo, onde:
+
   **ispin=1**: non-spin-polarized calculations are performed (for calculations without SOC);
+  
   **ispin=2**: spin-polarized calculations (collinear) are performed (for calculations without SOC);
 - **dipol** define se a correção de dipolo é incluida ou não nos cálculos, onde:
   
@@ -364,7 +366,12 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
   
   **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
-- **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
+- **U_correction**: Ativa ou desativa a correção de Hubbard, para metais de transição com elétrons 3d/4d/5d ou Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, onde:
+
+  **U_correction=0** (no correction);
+  
+  **U_correction=1** ativa a correção, aplicado aos seguintes ions (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
+  
 - **vdW** specifies a vdW dispersion term of the atom-pairwise or many-body type, where:
 
   **vdW=0** (no correction);
