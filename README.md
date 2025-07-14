@@ -349,7 +349,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   **dipol='center_cell'** ativa a correção de dipolo; definindo o centro da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
   **dipol='center_mass'** ativa a correção de dipolo; definindo o centro de massa da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
 - **magnet_mode** define como a magnetização é cálculada para cálculos não-colineares ou com polarização de spin ativada, onde:
-  **magnet_mode='default'** define o padrão do VASP onde a tag MAGMOM é definida como número_de_ions**x**1.0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**1.0 "cálculo com SOC";
+  **magnet_mode='default'** define o padrão do VASP onde a tag MAGMOM é definida como número_de_ions&#42;1.0 para ISPIN=2 "cálculo com polarização de spin", ou 3&#42;número_de_ions&#42;1.0 "cálculo com SOC";
   **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
   **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
 - **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
