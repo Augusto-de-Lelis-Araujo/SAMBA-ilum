@@ -554,8 +554,11 @@ POTCAR_Cr
 </code></pre>  
 
   </details>
+  
+</details>
 
 ------------------------------------
+
 </details>
 
 
