@@ -390,18 +390,20 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 
   **type_k_dens=1** para utilizar Monkhorst-Pack;
   
-  **type_k_dens=1** para utilizar Gamm;
+  **type_k_dens=1** para utilizar Gamma;
   
   **type_k_dens=1** para utilizar KSPACING Monkhorst-Pack;
   
   **type_k_dens=1** para utilizar KSPACING Gamma;
   
-- **k_dens_relax**
-- **k_dens_scf**
-- **k_dens_dos**
-- **k_dens_bader**
-- **n_kpoints**
-- **nions_split**
+- **k_dens_relax** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin no cálculo de relaxação estrutural;
+- **k_dens_scf** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin no cálculo da densidade de carga;
+- **k_dens_dos** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin no cálculo da densidade de estados;
+- **k_dens_bader** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin nos cálculos de densidade de carga para obtenção da carga de Bader;
+- **n_kpoints** define o número de ponto-k para cada linha de alta-simetria (intervalo de pontos-k) no cálculo da estrutura de bandas;
+- **nions_split** define o núemro de átomos minimo na estrutura, para que o cálculo da estrutura de bandas seja segmentado/splitado em diferentes cálculos, cada um referente a uma determinada linha de alta-simetria (intervalo de pontos-k) definido no arquivo KPOINTS;
+
+  **Observação:** Este método é utili para o cálculo da estrutura de bandas em sistemas muito grandes (grande número de ions) onde o poder computacional disponível é limitado.
 - **vacuum**
 - **NCORE**
 - **k_dens_a_scan**
