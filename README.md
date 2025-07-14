@@ -127,6 +127,8 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 <details>
 <summary><strong>Option [1]: running the Bilayer Generator</strong></summary>
 
+------------------------------------
+
 <details>
 <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
@@ -235,12 +237,16 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 </details>
 
+------------------------------------
+
 </details>
 
 
 
 <details>
 <summary><strong>Option [2]: running the High-throughput DFT</strong></summary>
+
+------------------------------------
 
 <details>
 <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
@@ -418,6 +424,8 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
   
 </details>
+
+------------------------------------
   
 </details>
 
