@@ -521,31 +521,32 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 <details>
   <summary><strong>Structure of files and directories for code execution</strong></summary>
 
+
   <details>
-     <summary><strong>pseudo files (example)</strong></summary>
+  <summary><strong>pseudo files (example)</strong></summary>
 
-        <pre><code>POTCAR_H
-        POTCAR_C
-        POTCAR_O
-        POTCAR_Al
-        POTCAR_Bi
-        POTCAR_Pd
-        POTCAR_Se
-        POTCAR_Cd
-        POTCAR_Te
-        POTCAR_S
-        POTCAR_Au
-        POTCAR_Ge
-        POTCAR_Si
-        POTCAR_Mg
-        POTCAR_Pb
-        POTCAR_Hg
-        POTCAR_Sn
-        POTCAR_Cr
-        ...</code></pre>  
+  <pre><code>POTCAR_H
+POTCAR_C
+POTCAR_O
+POTCAR_Al
+POTCAR_Bi
+POTCAR_Pd
+POTCAR_Se
+POTCAR_Cd
+POTCAR_Te
+POTCAR_S
+POTCAR_Au
+POTCAR_Ge
+POTCAR_Si
+POTCAR_Mg
+POTCAR_Pb
+POTCAR_Hg
+POTCAR_Sn
+POTCAR_Cr
+...</code></pre>  
 
-  </details>
-
+  </details>  
+  
   Para a geração dos inputs necessários a execução dos cálculos High-Throughput DFT, os seguintes critérios devem ser satisfeitos:
 
   - O usuário deve inserir os arquivos POSCAR dentro de uma pasta chamada **Structures**;
