@@ -276,7 +276,7 @@ vdW = 0               # Van der Waals correction used:  [0] disables van der Waa
                       # Correction applied to all calculations (with and without OS)
 #-------------------------------------------------------
 vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the non-local functional vdW_DF.
-                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2', 'rVV10', 'SCAN+rVV10', 'r2SCAN+rVV10', 'PBE+rVV10L'
+                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'
                       # Note:  Functional applied only in structural optimization calculations ('xyz-scan', 'xy-scan', 'z-scan', 'a-scan', 'relax')
                       # Note:  vdW != 0 will override any choice of vdWDF
 #=======================================================
@@ -355,8 +355,10 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
 - **vdW** specifies a vdW dispersion term of the atom-pairwise or many-body type, where:
   **vdW=0** (no correction);
-  **vdW=integer>0** define o método utilizado para a correção de dispersão adicionada à energia total, às forças atômicas e ao tensor de tensão. Para consultar os diferentes métodos implementados no VASP, consulte o <a href="https://www.vasp.at/wiki/index.php/IVDW" target="_blank">link</a>.
-- **vdWDF**
+  **vdW=integer>0** define o método utilizado para a correção de dispersão adicionada à energia total, às forças atômicas e ao tensor de tensão. Para consultar os diferentes métodos implementados no VASP, consulte o <a href="https://www.vasp.at/wiki/index.php/IVDW" target="_blank">link</a>;
+- **vdWDF** defines the semilocal exchange-correlation functional for vdW correction, where:
+  **vdWDF='none'** (no correction);
+  Para ativar a correção, escolha um dos seguintes funcionais semilocal de troca-correlação ('DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'), para mais detalhes a respeito de cada funcional conuslte o <a href="https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals" target="_blank">link</a>;
 - **ENCUT_min**
 - **fator_encut**
 - **type_k_dens**
