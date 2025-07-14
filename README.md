@@ -69,6 +69,8 @@
   <p>The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the <a href="https://pypi.org/project/SAMBA-ilum/">link</a>.</p>
   <pre><code>pip install samba_ilum</code></pre>
 
+  ------------------------------------
+
   <p><strong>Requirements:</strong> Make sure you have the following requirements:</p>
   <ul>
     <li>Linux or Windows environment for bilayer generation</li>
@@ -77,6 +79,8 @@
     <li>Python virtual environment is recommended (venv or conda)</li>
     <li>Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)</li>
   </ul>
+
+  ------------------------------------
 
   <p>During the installation, SAMBA checks the existence of the following Python modules:</p>
   <ul>
