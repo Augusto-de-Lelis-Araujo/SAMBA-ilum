@@ -126,7 +126,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 <details>
 <summary><strong>Option [1]: running the Bilayer Generator</strong></summary>
 
-<details>
+<details style="margin-left: 20px; margin-top: 8px;">
 <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
 <pre><code>=============================================================
