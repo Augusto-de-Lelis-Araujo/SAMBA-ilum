@@ -231,7 +231,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
   
   **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
-  
+
+<p>...</p>
 </details>
   
 </details>
