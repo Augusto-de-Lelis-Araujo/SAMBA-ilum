@@ -352,7 +352,9 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
   **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
 - **U_correction**: Onde **U_correction=0** desativa e **U_correction=1** ativa a correção de dipolo, aplicado a metais de transição com elétrons 3d/4d/5d e Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, sendo estes (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
-- **vdW** 
+- **vdW** specifies a vdW dispersion term of the atom-pairwise or many-body type, where:
+  **vdW=0** (no correction);
+  **vdW=integer>0** define o método utilizado para a correção de dispersão adicionada à energia total, às forças atômicas e ao tensor de tensão. Para consultar os diferentes métodos implementados no VASP, consulte o <li(<a href="[https://orcid.org/0000-0002-6835-6113](https://www.vasp.at/wiki/index.php/IVDW)">Link</a>)</li>;
 - **vdWDF**
 - **ENCUT_min**
 - **fator_encut**
