@@ -85,7 +85,8 @@
     <li><a href="https://pypi.org/project/matplotlib/">matplotlib</a></li>
     <li><a href="https://pypi.org/project/plotly/">plotly</a></li>
 
-    ------------------------------------
+  ------------------------------------
+    
   </ul>
 </details>
 
@@ -93,6 +94,9 @@
 
 <details>
   <summary><strong>Run the code</strong></summary>
+
+  ------------------------------------
+  
   <p>To run the code, the user must use the command below in the working directory:</p>
   <pre><code>python -m samba_ilum</code></pre>
   <p>or</p>
@@ -127,6 +131,9 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
     <li><strong>Option [2]</strong>: runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.</li>
     <li><strong>Option [3]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
   </ul>
+
+------------------------------------
+
 </details>
 
 <details>
