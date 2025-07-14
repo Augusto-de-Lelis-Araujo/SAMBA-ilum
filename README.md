@@ -210,17 +210,17 @@ Por meio deste arquivo de input, o usuário controla os detalhes referentes a ge
 - **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
 - **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
 
-  **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento.
+  **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
   
-  **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento.
+  **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
   
-  **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento.
+  **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
   
 - **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
   
-  **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células.
+  **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
   
-  **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células.
+  **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
   
   **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
   
@@ -315,14 +315,29 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
 
-- **dir_virtual_python**
-- **dir_o**
-- **type_lattice**
-- **tasks**
-- **type**
-- **ispin**
-- **dipol**
-- **magnet_mode**
+- **dir_virtual_python** define o caminho onde o ambiente virtual python esta localizado;
+- **dir_o** define o nome do diretório de saída (a ser criado pelo código), onde os arquivos de input do cálculo high-throughput DFT serão gerados;
+- **replace_type_pseudo** e **replace_type_XC** são informações do cálculo de DFT a serem inseridos nos arquivos .json;
+- **type_lattice** define o tipo de rede a ser analisada, onde:
+  **type_lattice=1** define que as estruturas analisadas são redes 1D (periódicas em X);
+  **type_lattice=2** define que as estruturas analisadas são redes 2D (periódicas em XY);
+  **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);
+- **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
+- **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
+  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados desconsiderando o SOC;
+  **type=['com_SO']** define que o SOC é incluído nos cálculos;
+  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados, tanto "com" quanto "sem" SOC;
+- **ispin** define a polarização de spin do cálculo, onde:
+  **ispin=1**: non-spin-polarized calculations are performed (for calculations without SOC);
+  **ispin=2**: spin-polarized calculations (collinear) are performed (for calculations without SOC);
+- **dipol** define se a correção de dipolo é incluida ou não nos cálculos, onde:
+  **dipol='none'** desativa a correção de dipolo;
+  **dipol='center_cell'** ativa a correção de dipolo; definindo o centro da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
+  **dipol='center_mass'** ativa a correção de dipolo; definindo o centro de massa da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
+- **magnet_mode** define como a magnetização é cálculada para cálculos não-colineares ou com polarização de spin ativada, onde:
+  **magnet_mode='default'** define o padrão do VASP onde a tag MAGMOM é definida como número_de_ions*1 para ISPIN=2 "cálculo com polarização de spin", ou 3*número_de_ions*1 "cálculo com SOC";
+  **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais de todos os ions da rede como sendo zero;
+  **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
 - **U_correction**
 - **vdW**
 - **vdWDF**
