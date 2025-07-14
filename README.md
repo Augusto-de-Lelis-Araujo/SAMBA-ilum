@@ -199,17 +199,17 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
-- **dir_poscar** refere-se ao nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
-- **dir_o** é o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
+- **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
+- **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
 - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
   
   Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
 
   Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
   
-- **separation_1** refere-se a distância de separação vertical (em Å) entre as monolayers no empilhamento;
-- **vacuum** refere-se a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
-- **cell_fator** refere-se ao fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
+- **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
+- **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
+- **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
 - **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
 - **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
 - **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
@@ -396,26 +396,26 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   
   **type_k_dens=1** para utilizar KSPACING Gamma;
   
-- **k_dens_relax** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin no cálculo de relaxação estrutural;
-- **k_dens_scf** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin no cálculo da densidade de carga;
-- **k_dens_dos** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin no cálculo da densidade de estados;
-- **k_dens_bader** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para a zona de Brillouin nos cálculos de densidade de carga para obtenção da carga de Bader;
+- **k_dens_relax** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo de relaxação estrutural;
+- **k_dens_scf** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de carga;
+- **k_dens_dos** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de estados;
+- **k_dens_bader** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin nos cálculos de densidade de carga para obtenção da carga de Bader;
 - **n_kpoints** define o número de ponto-k para cada linha de alta-simetria (intervalo de pontos-k) no cálculo da estrutura de bandas;
 - **nions_split** define o núemro de átomos minimo na estrutura, para que o cálculo da estrutura de bandas seja segmentado/splitado em diferentes cálculos, cada um referente a uma determinada linha de alta-simetria (intervalo de pontos-k) definido no arquivo KPOINTS;
 
   **Observação:** Este método é utili para o cálculo da estrutura de bandas em sistemas muito grandes (grande número de ions) onde o poder computacional disponível é limitado.
-- **vacuum**
-- **NCORE**
-- **k_dens_a_scan**
-- **factor_var**
-- **k_dens_z_scan**
-- **k_dens_xy_scan**
-- **r_displacement_A1**
-- **r_displacement_A2**
-- **k_dens_xyz_scan**
-- **displacement_Z**
-- **displacement_xyz_A1**
-- **displacement_xyz_A2**
+- **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10 Å;
+- **NCORE** define o número of "cores" por "node", utilizado pelo VASP para processar as bandas em paralelo.
+- **k_dens_a_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1, A2 e A3), para amostrar a zona de Brillouin no cálculo a-scan (a-scan é uma varredura pelo parâmetro de rede "a" ideal, indicado para sistemas bulk 3D);
+- **factor_var** define a variação percentual (%) máxima em relação ao parâmetro de rede inicial, co cálculo a-scan;
+- **k_dens_z_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo z-scan;
+- **k_dens_xy_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo xy-scan;
+- **r_displacement_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
+- **r_displacement_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
+- **k_dens_xyz_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo xyz-scan (xyz-scan é uma combinação dos cálculos z_scan e xy_scan em um único processo);
+- **displacement_Z** define os valores de separação vertical iniciais entre as camadas do empilhamento, no cálculo xyz-scan;
+- **displacement_xyz_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
+- **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
   
 </details>
   
