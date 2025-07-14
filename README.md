@@ -545,7 +545,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
      ...
      </code></pre>  
 
-     </details>
+  </details>
 
   Para a geração dos inputs necessários a execução dos cálculos High-Throughput DFT, os seguintes critérios devem ser satisfeitos:
 
