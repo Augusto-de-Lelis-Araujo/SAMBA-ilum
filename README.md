@@ -30,10 +30,11 @@
 <details>
   <summary><strong>Meet Institutional and Research Network:</strong></summary>
   <ul>
+    <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/">link</a></li>
+    <li>CNPEM - The Brazilian Center for Research in Energy and Materials <a href="https://cnpem.br/en/">link</a></li>
+    <li>INCT - Materials Informatics <a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a></li>
+    <li>midb.cloud database <a href="https://midb.cloud/">link</a></li>
     <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/" target="_blank">link</a></li>
-    <li>CNPEM - The Brazilian Center for Research in Energy and Materials <a href="https://cnpem.br/en/" target="_blank">link</a></li>
-    <li>INCT - Materials Informatics <a href="https://inct-mi.pesquisa.ufabc.edu.br/" target="_blank">link</a></li>
-    <li>midb.cloud database <a href="https://midb.cloud/" target="_blank">link</a></li>
   </ul>
   <img src="etc/figures/institucional.png" alt="Institutional Network">
 </details>
