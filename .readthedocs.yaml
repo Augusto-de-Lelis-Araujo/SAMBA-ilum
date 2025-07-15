@@ -6,7 +6,7 @@ version: 2
 
 # Define que estamos usando o MkDocs para construir a documentação
 mkdocs:
-  configuration: mkdocs.yml
+  configuration: docs/mkdocs.yml
 
 # Configura o ambiente de construção (build)
 build:
