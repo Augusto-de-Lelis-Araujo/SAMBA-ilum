@@ -629,9 +629,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   This action will create the **WorkFlow_INPUTS** folder. It contains the **INCAR files** for the different VASP calculation steps and the inputs for **VASProcar**, the code responsible for post-processing the data and generating plots. As long as the WorkFlow_INPUTS folder exists in the working directory, its files will be used as the default for the high-throughput DFT calculations.
 
   **Note:** In the generated INCAR files, tags starting with "**replace**" or "**#**" are placeholders that SAMBA **replaces automatically**. If you wish to set a specific value for one of these parameters, you must replace the placeholder (e.g., replace_ispin) with the corresponding official VASP tag (e.g., ispin) and then set the desired value. For details on all INCAR tags, consult the official VASP documentation at the link **<a href="https://www.vasp.at/wiki/index.php/Category:INCAR_tag" target="_blank">link</a>**.
-
-  ------------------------------------
-  
+ 
 </details>
 
 ------------------------------------
@@ -642,7 +640,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 
 
 <details>
-<summary><strong>Option [3]: Customizing DFT Calculation Inputs</strong></summary>
+<summary><strong>Setting up the Linux environment for high-throughput DFT calculations</strong></summary>
 
 ------------------------------------
 
