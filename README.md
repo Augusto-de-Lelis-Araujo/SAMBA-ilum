@@ -653,9 +653,11 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 -----------------------------------
 
 ◉ **1st)** No ambiente Linux onde os cálculos de DFT serão executados, de load em uma versão do pacote python superior a 3.8 (ou uma versão recente do pacote CONDA), por meio do comando: **module load** nome_pacote
-  <pre><code>example:  module load python/3.8.11-intel-2021.3.0</code></pre>
+  <pre><code>example:  module load python_3.8.11-intel-2021.3.0</code></pre>
+  ou
+  <pre><code>example:  module load CONDA_2025.5.1</code></pre>
 
-◉ **2nd)** Selecione um diretório de interese,e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
+◉ **2nd)** Selecione um diretório de interese, e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
    <pre><code>example:  python -m venv python_virtual</code></pre>  
      
    Salve o caminho do ambiente Python criado, pois é este caminho que você deve utilizar na tag **dir_virtual_python** do **SAMBA_WorkFlow.input**
@@ -664,23 +666,24 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 ◉ **3rd)** Ative o ambiente Python, por meio do comando: **source** caminho_do_ambiente_python + **/bin/activate**
   <pre><code>example:  source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
 
-◉ **4th)** Ative o ambiente Python, e instale os pacotes **SAMBA**, **VASProcar** e **pymatgen**:
+◉ **4th)** Após ativar o ambiente Python, instale os seguintes pacotes **SAMBA**, **VASProcar** e **pymatgen**, por meio dos comandos:
   <pre><code>pip install --upgrade samba_ilum</code></pre>
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
-◉ **5th)** Instalação do pacote **VASPKIT**.
+◉ **5th)** Por fim, instale o pacote **VASPKIT**.
 
-  Faça o download do pacote VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o (**<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**).
+  Faça o download do VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o (**<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**).
 
-  exemplo de instalação do arquivo baixado (vaspkit.1.5.1.tar.gz) no diretório (/home/dlelis/codes). Após realizar o download do VASPKIT, mova o arquivo para algum diretório de interesse, dentro deste diretório execute os seguintes comandos:
+  Para realizar a instalação basei-se nos comandos abaixo, onde tomei como exemplo o arquivo baixado (vaspkit.1.5.1.tar.gz) a ser instalado no diretório (/home/dlelis/codes).
+  Após realizar o download do VASPKIT, mova o arquivo para o diretório de interesse, e dentro deste diretório execute os seguintes comandos:
   <pre><code>tar -zxvf vaspkit.1.5.1.tar.gz</code></pre>
   <pre><code>cd vaspkit.1.5.1</code></pre>
   <pre><code>cp -f how_to_set_environment_variables ~/.vaspkit</code></pre>
   <pre><code>echo 'export PATH=/home/dlelis/codes/vaspkit.1.5.1/bin/:$PATH' >> ~/.bashrc</code></pre>
   <pre><code>source ~/.bashrc</code></pre>
 
-  Para confirmar a correta instalação do VASPKIT, digite no terminal <pre><code>vaspkit</code></pre> é o código deve ser executado.
+  Para confirmar que a instalação foi configurada corretamente, apenas digite no terminal **vaspkit** que o código deve ser executado.
 
 ------------------------------------
 
