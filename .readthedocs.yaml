@@ -1,0 +1,21 @@
+# Arquivo: .readthedocs.yaml
+# Obrigatório para o Read the Docs funcionar
+
+# Versão da especificação do arquivo de configuração
+version: 2
+
+# Define que estamos usando o MkDocs para construir a documentação
+mkdocs:
+  configuration: mkdocs.yml
+
+# Configura o ambiente de construção (build)
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+
+# Especifica onde encontrar os pacotes Python a serem instalados
+# (Neste caso, para instalar o tema 'mkdocs-material')
+python:
+  install:
+    - requirements: docs/requirements.txt
