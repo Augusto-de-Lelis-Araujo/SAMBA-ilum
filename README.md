@@ -164,6 +164,8 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 <details>
   <summary><strong>1st step): Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
+------------------------------------
+
   **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
 
   **Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
@@ -206,6 +208,8 @@ Direct
   - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
 
 </details>
+
+------------------------------------
 
 </details>
 
