@@ -161,14 +161,14 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 ------------------------------------
 
-- **1st step**: Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation.
+**• 1st step)**: Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation.
 
-  **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
+**Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
   
-  **Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
+**Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
 
 <details>
-  <summary><strong>POSCAR file structure</strong></summary>
+  <summary><strong>Criteria for the POSCAR file</strong></summary>
 
   <details>
   <summary><strong>POSCAR file - example</strong></summary>
