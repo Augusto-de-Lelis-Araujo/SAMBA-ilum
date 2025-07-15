@@ -73,31 +73,29 @@
 
   ------------------------------------
   
-  <p>The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the <a href="https://pypi.org/project/SAMBA-ilum/">link</a>.</p>
+  The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the **<a href="https://pypi.org/project/SAMBA-ilum/">link</a>**.
   <pre><code>pip install samba_ilum</code></pre>
 
   ------------------------------------
 
-  <p><strong>Requirements:</strong> Make sure you have the following requirements:</p>
-  <ul>
-    <li>Linux or Windows environment for bilayer generation</li>
-    <li>Linux environment for high-throughput DFT (requires VASPKIT installed <a href="https://vaspkit.com/installation.html" target="_blank">link</a>)</li>
-    <li>Python 3.8+</li>
-    <li>Python virtual environment is recommended (venv or conda)</li>
-    <li>Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)</li>
-  </ul>
+  <strong>Requirements:</strong> Make sure you have the following requirements:
+
+    Linux or Windows environment for bilayer generation
+    Linux environment for high-throughput DFT (requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**)
+    Python 3.8+
+    Python virtual environment is recommended (venv or conda)
+    Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
 
   ------------------------------------
 
-  <p>During the installation, SAMBA checks the existence of the following Python modules:</p>
-  <ul>
-    <li>VASProcar <a href="https://pypi.org/project/vasprocar/">link</a></li>
-    <li>pymatgen <a href="https://pypi.org/project/pymatgen/">link</a></li>
-    <li>SciPy <a href="https://pypi.org/project/scipy/">link</a></li>
-    <li>NumPy <a href="https://pypi.org/project/numpy/">link</a></li>
-    <li>Matplotlib <a href="https://pypi.org/project/matplotlib/">link</a></li>
-    <li>Plotly <a href="https://pypi.org/project/plotly/">link</a></li> 
-  </ul>
+  During the installation, SAMBA checks the existence of the following Python modules:
+  
+    VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
+    pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
+    SciPy **<a href="https://pypi.org/project/scipy/">link</a>**
+    NumPy **<a href="https://pypi.org/project/numpy/">link</a>**
+    Matplotlib **<a href="https://pypi.org/project/matplotlib/">link</a>**
+    Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
 
 ------------------------------------
 </details>
