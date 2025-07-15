@@ -350,15 +350,32 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary><strong>Generating the inputs for high-throughput DFT calculations</strong></summary>
 
 ------------------------------------
 
-<details>
-<summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
+◉ **1st Step)** Create a working directory, and inside it, create a folder named 'Structures'. In this folder, you will place the POSCAR files for the structures on which you intend to run DFT calculations.
+**Note:** In the POSCAR files, the ions must be specified in direct coordinates.
 
-<pre><code># SAMBA Copyright (C) 2025
+<details>
+  <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
+
+  <pre><code># SAMBA Copyright (C) 2025
 
 #=======================================================
 # Python virtual environment directory -----------------
