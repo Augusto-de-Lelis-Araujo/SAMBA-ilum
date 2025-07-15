@@ -338,7 +338,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   <summary><strong>4th Step) Run the SAMBA code </strong></summary>
 
   - Execute the SAMBA code within the working directory **"python -m samba_ilum"**), and subsequently select **option [1]** to initiate the generation of bilayers;
-  - **Alternatively:** You may create the **run.input file** in the working directory, write **task = 1** in its **first** line, and simply execute the SAMBA code **"python -m samba_ilum"**. This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
+  - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 1"** in its **first** line, and simply execute the SAMBA code **"python -m samba_ilum"**. This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
   - Finally, the structural files for the generated bilayers are saved in the **"Structures"** directory. If the code runs in a **loop**, the structural files for each material combination will be stored in separate folders within the **"Structures"** directory.
 
 </details>
