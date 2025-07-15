@@ -606,9 +606,13 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 <details>
   <summary><strong>5th Step) Run the SAMBA code </strong></summary>
 
+  ------------------------------------
+
   - Execute the SAMBA code within the working directory (**python -m samba_ilum**), and subsequently select **option [2]** to initiate the generation of inputs for the selected DFT calculations for all structures within the Structures folder;
   - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 2"** in its **first** line, and simply execute the SAMBA code (**python -m samba_ilum**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
   - Finally, the input files for the selected DFT calculations for all structures within the Structures folder are saved to the directory defined by the **dir_o** tag in **SAMBA_WorkFlow.input**. The input files for each structure will be stored in separate folders, named after the corresponding structural file.
+
+------------------------------------
 
 </details>
 
