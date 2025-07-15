@@ -669,7 +669,18 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
-◉ **5th)** Instale o pacote **VASPKIT**. Para instalação do pacote VASPKIT consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
+◉ **5th)** Instale o pacote **VASPKIT**, no ambiente onde os cálculos de DFT do VASP serão executados.
+
+Para download do pacote VASPKIT use o **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e para obter maiores informações a respeito do VASPKIT (**<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**).
+
+  exemplo de instalação do arquivo baixado (vaspkit.1.5.1.tar.gz) no diretório (/home/dlelis/codes). Após realizar o download do VASPKIT, mova o arquivo para algum diretório de interesse, dentro deste diretório execute os seguintes comandos:
+  <pre><code>tar -zxvf vaspkit.1.5.1.tar.gz</code></pre>
+  <pre><code>cd vaspkit.1.5.1</code></pre>
+  <pre><code>cp -f how_to_set_environment_variables ~/.vaspkit</code></pre>
+  <pre><code>echo 'export PATH=/home/dlelis/codes/vaspkit.1.5.1/bin/:$PATH' >> ~/.bashrc</code></pre>
+  <pre><code>source ~/.bashrc</code></pre>
+
+  Para confirmar a correta instalação do VASPKIT, digite no terminal <pre><code>vaspkit</code></pre> é o código deve ser executado.
 
 ------------------------------------
 
