@@ -611,19 +611,11 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 </details>
 
 
+◉ **Note)** O código deve ser executado em **ambiente Linux**, com o pacote **VASPKIT** devidamente instalado, para a configuração do VASPKIT consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
+
 <details>
-  <summary><strong>Structure of files and directories for code execution</strong></summary>
-
-
-
+  <summary><strong>Optional:</strong></summary>
   
-  Para a geração dos inputs necessários a execução dos cálculos High-Throughput DFT, os seguintes critérios devem ser satisfeitos:
-
-  - O usuário deve inserir os arquivos POSCAR dentro de uma pasta chamada **Structures**;
-  - Os arquivos POSCAR devem ser escritos em coordenadas diretas;
-
-  - O código deve ser executado em **ambiente Linux**, com o pacote **VASPKIT** devidamente instalado, para a configuração do VASPKIT consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
- 
 </details>
 
 ------------------------------------
