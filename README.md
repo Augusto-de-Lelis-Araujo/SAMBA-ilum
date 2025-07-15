@@ -164,12 +164,14 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 - **1st step**: Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation.
 
   **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
+  
+  **Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
 
 <details>
   <summary><strong>POSCAR file structure</strong></summary>
 
   <details>
-  <summary><strong>POSCAR file (example)</strong></summary>
+  <summary><strong>POSCAR file - example</strong></summary>
 
   <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
 1.0 
@@ -193,8 +195,6 @@ Direct
 0.6666666666666643 0.3333333333333357 0.4048300624147387</code></pre>  
 
   </details>  
-
-  Os arquivos POSCAR para geração das bicamadas devem seguir os seguintes critérios (compare os critérios com o modelo presente em **POSCAR file (example)**):
 
   - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
   - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
