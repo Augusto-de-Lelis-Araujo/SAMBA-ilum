@@ -416,6 +416,8 @@ POTCAR_Cr
 <details>
   <summary><strong>4th Step) Edit the SAMBA_WorkFlow.input input file, specifying the details of the DFT calculations to be performed, using the tags described below:</strong></summary>
 
+------------------------------------
+
 <details>
   <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
 
@@ -560,7 +562,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **ENCUT_min** Valor minimo para a energia de corte (em eV) utilizado para a expansão em ondas planas da função de onda;
 - **fator_encut** Fator de multiplicação aplicado a energia de corte;
   
-  **Note:**  If (ENCUT_min < ENCUT*fator_encut), then ENCUT_min = ENCUT*encut_factor, where ENCUT refers to the highest cutting energy value present in the POTCAR file;
+  **Note:**  If (ENCUT_min < ENCUT&#42;fator_encut), then ENCUT_min = ENCUT&#42;encut_factor, where ENCUT refers to the highest cutting energy value present in the POTCAR file;
 - **type_k_dens** define o método utilizado para os vetores de Bloch (pontos-k) usados para amostrar a zona de Brillouin em cálculos auto-consistentes (scf), escolha entre (para mais detalhes consulte o <a href="[https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals](https://www.vasp.at/wiki/index.php/KPOINTS)" target="_blank">link</a>):
 
   **type_k_dens=1** para utilizar Monkhorst-Pack;
@@ -593,6 +595,8 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
   
 </details>
+
+------------------------------------
 
 </details>
 
