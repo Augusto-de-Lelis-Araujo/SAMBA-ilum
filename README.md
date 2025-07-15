@@ -496,23 +496,23 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   
   **type_k_dens=1** para utilizar KSPACING Gamma;
   
-- **k_dens_relax** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo de relaxação estrutural;
-- **k_dens_scf** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de carga;
-- **k_dens_dos** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de estados;
-- **k_dens_bader** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin nos cálculos de densidade de carga para obtenção da carga de Bader;
+- **k_dens_relax** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo de relaxação estrutural;
+- **k_dens_scf** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de carga;
+- **k_dens_dos** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de estados;
+- **k_dens_bader** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin nos cálculos de densidade de carga para obtenção da carga de Bader;
 - **n_kpoints** define o número de ponto-k para cada linha de alta-simetria (intervalo de pontos-k) no cálculo da estrutura de bandas;
 - **nions_split** define o núemro de átomos minimo na estrutura, para que o cálculo da estrutura de bandas seja segmentado/splitado em diferentes cálculos, cada um referente a uma determinada linha de alta-simetria (intervalo de pontos-k) definido no arquivo KPOINTS;
 
   **Observação:** Este método é utili para o cálculo da estrutura de bandas em sistemas muito grandes (grande número de ions) onde o poder computacional disponível é limitado.
 - **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10 Å;
 - **NCORE** define o número of "cores" por "node", utilizado pelo VASP para processar as bandas em paralelo.
-- **k_dens_a_scan** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1, A2 e A3), para amostrar a zona de Brillouin no cálculo a-scan (a-scan é uma varredura pelo parâmetro de rede "a" ideal, indicado para sistemas bulk 3D);
+- **k_dens_a_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1, A2 e A3), para amostrar a zona de Brillouin no cálculo a-scan (a-scan é uma varredura pelo parâmetro de rede "a" ideal, indicado para sistemas bulk 3D);
 - **factor_var** define a variação percentual (%) máxima em relação ao parâmetro de rede inicial, co cálculo a-scan;
-- **k_dens_z_scan** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo z-scan;
-- **k_dens_xy_scan** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo xy-scan;
+- **k_dens_z_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo z-scan;
+- **k_dens_xy_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo xy-scan;
 - **r_displacement_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
 - **r_displacement_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
-- **k_dens_xyz_scan** define o número de pontos-k por Å$^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo xyz-scan (xyz-scan é uma combinação dos cálculos z_scan e xy_scan em um único processo);
+- **k_dens_xyz_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo xyz-scan (xyz-scan é uma combinação dos cálculos z_scan e xy_scan em um único processo);
 - **displacement_Z** define os valores de separação vertical iniciais entre as camadas do empilhamento, no cálculo xyz-scan;
 - **displacement_xyz_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan.
