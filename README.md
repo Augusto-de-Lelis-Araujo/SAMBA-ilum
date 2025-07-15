@@ -624,9 +624,6 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 </details>
 
-
-◉ **Note)** For the generation of inputs for high-throughput DFT, the code must be run in a **Linux environment** with the **VASPKIT** package properly installed. For VASPKIT configuration, please consult the **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
-
 <details>
   <summary><strong>Optional: Customizing DFT Calculations</strong></summary>
 
@@ -639,6 +636,8 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   **Note:** In the generated INCAR files, tags starting with "**replace**" or "**#**" are placeholders that SAMBA **replaces automatically**. If you wish to set a specific value for one of these parameters, you must replace the placeholder (e.g., replace_ispin) with the corresponding official VASP tag (e.g., ispin) and then set the desired value. For details on all INCAR tags, consult the official VASP documentation at the link **<a href="https://www.vasp.at/wiki/index.php/Category:INCAR_tag" target="_blank">link</a>**.
  
 </details>
+
+◉ **Note)** For the generation of inputs for high-throughput DFT, the code must be run in a **Linux environment** with the **VASPKIT** package properly installed.
 
 ------------------------------------
 
