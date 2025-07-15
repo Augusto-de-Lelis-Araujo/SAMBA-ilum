@@ -373,7 +373,9 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 **Note:** In the POSCAR files, the ions must be specified in direct coordinates.
 
 <details>
-  <summary><strong>2nb Step) Pseudopotential files</strong></summary>
+  <summary><strong>2nd Step) Pseudopotential files</strong></summary>
+
+  ------------------------------------
 
   - Within the working directory, the user must place the pseudopotential files (for every ion present in the POSCAR files) into a folder called **POTCAR**";
   - The pseudopotential files must be named according to the pattern found in **pseudo files - example**";
@@ -401,7 +403,9 @@ POTCAR_Sn
 POTCAR_Cr
 ...</code></pre>  
 
-</details>  
+</details>
+
+------------------------------------
 
 </details>
 
