@@ -650,7 +650,24 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 <details>
 <summary><strong>Setting up the Linux environment for high-throughput DFT calculations</strong></summary>
 
-------------------------------------
+-----------------------------------
+1st) No ambiente Linux, de load em uma versão do python superior a 3.8, por meio do comando: **module load python**/versão_python
+     exemplo: **module load python/3.8.11-intel-2021.3.0**
+
+2nd) Selecione um diretório de interese,e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
+     exemplo: **python -m venv python_virtual**
+     Salve o caminho do ambiente Python, criado, pois é este caminho que você deve utilizar na tag **dir_virtual_python** do **SAMBA_WorkFlow.input**
+     exemplo: **dir_virtual_python = '/home/dlelis/codes/python_virtual'**
+
+3rd) Ative o ambiente Python, por meio do comando: **source** caminho_do_ambiente_python + **/bin/activate**
+     exemplo: **source /home/dlelis/codes/python_virtual/bin/activate**
+
+4th) Ative o ambiente Python, e instale os pacotes **SAMBA**, **VASProcar** e **pymatgen**:
+pip install --upgrade samba_ilum
+pip install --upgrade vasprocar
+pip install --upgrade pymatgen
+
+5th) Instale o pacote **VASPKIT**. Para instalação do pacote VASPKIT consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
 ------------------------------------
 
