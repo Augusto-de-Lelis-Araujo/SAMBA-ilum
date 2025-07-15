@@ -670,8 +670,6 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
-</details>
-
 <details>
   <summary><strong>Instalação do VASPKIT</strong></summary>
 
@@ -692,20 +690,6 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   ------------------------------------
  
 </details>  
-
-◉ **5th)** Por fim, instale o pacote **VASPKIT**.
-
-  Faça o download do VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o (**<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**).
-
-  Para realizar a instalação basei-se nos comandos abaixo, onde tomei como exemplo o arquivo baixado (vaspkit.1.5.1.tar.gz) a ser instalado no diretório (/home/dlelis/codes).
-  Após realizar o download do VASPKIT, mova o arquivo para o diretório de interesse, e dentro deste diretório execute os seguintes comandos:
-  <pre><code>tar -zxvf vaspkit.1.5.1.tar.gz</code></pre>
-  <pre><code>cd vaspkit.1.5.1</code></pre>
-  <pre><code>cp -f how_to_set_environment_variables ~/.vaspkit</code></pre>
-  <pre><code>echo 'export PATH=/home/dlelis/codes/vaspkit.1.5.1/bin/:$PATH' >> ~/.bashrc</code></pre>
-  <pre><code>source ~/.bashrc</code></pre>
-
-  Para confirmar que a instalação foi configurada corretamente, apenas digite no terminal **vaspkit** que o código deve ser executado.
 
 ------------------------------------
 
