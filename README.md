@@ -259,6 +259,8 @@ Direct
 
     **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
 
+    ------------------------------------
+
 </details>
 
 
@@ -513,7 +515,9 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **k_dens_xyz_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo xyz-scan (xyz-scan é uma combinação dos cálculos z_scan e xy_scan em um único processo);
 - **displacement_Z** define os valores de separação vertical iniciais entre as camadas do empilhamento, no cálculo xyz-scan;
 - **displacement_xyz_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
-- **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
+- **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan.
+
+------------------------------------
   
 </details>
 
