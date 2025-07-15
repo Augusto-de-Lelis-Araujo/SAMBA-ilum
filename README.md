@@ -157,7 +157,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 
 <details>
-<summary><strong>Generating bilayers</strong></summary>
+<summary><strong>Generating Twisted Bilayers</strong></summary>
 
 ------------------------------------
 
@@ -350,20 +350,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <details>
-<summary><strong>Option [2]: running the High-throughput DFT</strong></summary>
+<summary><strong>Generating the inputs for high-throughput DFT calculations</strong></summary>
 
 ------------------------------------
 
