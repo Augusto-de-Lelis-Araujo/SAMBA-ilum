@@ -220,6 +220,8 @@ Direct
 <details>
     <summary><strong>3rd step) Edit the input file **SAMBA_HeteroStructure.input**, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
 
+------------------------------------
+
 <details>
     <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
@@ -230,9 +232,9 @@ Direct
 # Important notes !!! ====================================================================================================
 #=========================================================================================================================
 # Use only 2D lattices whose vectors (A1,A2) lie in the KxKy plane, and whose vector A3 lies in the z-axis direction -----
-# A1 = (A1x, A1y, 0.0)  |  A2 = (A2x, A2y, 0.0)  |  A3 = (0.0, 0.0, A3z)
+# A1 = (A1x, A1y, 0.0)   |   A2 = (A2x, A2y, 0.0)   |   A3 = (0.0, 0.0, A3z)
 #-------------------------------------------------------------------------------------------------------------------------
-# Use a 2D unit cell for each material, non-unit cells limit the number of structures generated, in addition to introducing
+# Use a 2D unit cell for each material, non-unit cells limit the number of of structures generated, in addition to introducing
 # "slowness" in the code execution ---------------------------------------------------------------------------------------
 #=========================================================================================================================
 
@@ -246,7 +248,7 @@ dir_poscar = 'POSCAR'                  # Location directory of POSCAR files to b
 # Enable or Disable code execution in Loop: functional only to generate bilayers (n_Lattice = 2) =============
 #=============================================================================================================
 loop_ht = 0                            # [0] Disables; [1] Enables the loop, generating heterostructures for all combinations of
-                                       #                                    POSCAR files contained in the "dir_poscar" directory
+                                       #                                     POSCAR files contained in the "dir_poscar" directory
 #===============================================================
 # Parameters if the loop is Disabled ===========================
 #===============================================================
@@ -264,13 +266,13 @@ separation_2 = 3.00                    # Separation distance (in Angs.) between 
 vacuum       = 15.0                    # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
 #----------------------------------
 cell_fator = [10, 10]                  # Multiplication factor of the unit cell as a function of vectors A1, A2.
-                                       # Note: Very high values ​​can lead to excessive code slowness.
+                                       # Note: Very high values can lead to excessive code slowness.
 #----------------------------------
 crit_mod_vector  = 3                   # Percentage variation % of the module between the vectors (A and B) of the lattices: A1_with_A2 and B1_with_B2
-crit_distorc_lattice = 3              # Percentage variation % of the module between the vectors (A and B) of the same lattice: A1_with_B1 and A2_with_B2
+crit_distorc_lattice = 3               # Percentage variation % of the module between the vectors (A and B) of the same lattice: A1_with_B1 and A2_with_B2
 crit_angle_perc = 2                    # Percentage variation % of the angle formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
 crit_angle_diff = 2                    # Variation (in module) of the angle in degrees (º) formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
-crit_area = 5                          # Percentage variation % of the area of ​​the lattices that will make up the Heterostructure: Area1_with_Area2
+crit_area = 5                          # Percentage variation % of the area of the lattices that will make up the Heterostructure: Area1_with_Area2
 #----------------------------------
 ions_crit_i = 1                        # Criterion for the minimum number of atoms allowed in the Heterostructure.
 ions_crit_f = 100                      # Criterion for the maximum number of atoms allowed in the Heterostructure.
@@ -285,47 +287,46 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
 #----------------------------------    
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
 #----------------------------------</code></pre>
-
 </details>
 
 <details>
-    <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
+<summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
 
-    Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
+Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
-    - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
-    - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
-    - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
+- **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
+- **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
+- **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
 
-      Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
+Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
 
-      Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
+Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
 
-    - **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
-    - **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
-    - **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
-    - **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
-    - **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
-    - **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
-    - **crit_angle_diff** define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
-    - **crit_area** define a tolerância percentual (%) na diferença de área, entre as duas redes;
-    - **ions_crit_i e ions_crit_f** definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
-    - **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
-    - **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
+- **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
+- **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
+- **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
+- **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
+- **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
+- **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
+- **crit_angle_diff** define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
+- **crit_area** define a tolerância percentual (%) na diferença de área, entre as duas redes;
+- **ions_crit_i e ions_crit_f** definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
+- **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
+- **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
 
-      **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
+**mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
 
-      **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
+**mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
 
-      **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
+**mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
 
-    - **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
+- **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
 
-      **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
+**rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
 
-      **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
+**rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
 
-      **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
+**rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
 
 </details>
 
