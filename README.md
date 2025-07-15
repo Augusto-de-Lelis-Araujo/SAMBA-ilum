@@ -373,6 +373,39 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 **Note:** In the POSCAR files, the ions must be specified in direct coordinates.
 
 <details>
+  <summary><strong>2nb Step) Pseudopotential files</strong></summary>
+
+  - Within the working directory, the user must place the pseudopotential files (for every ion present in the POSCAR files) into a folder called **POTCAR**";
+  - The pseudopotential files must be named according to the pattern found in **pseudo files - example**";
+
+<details>
+  <summary><strong>pseudo files (example)</strong></summary>
+
+  <pre><code>POTCAR_H
+POTCAR_C
+POTCAR_O
+POTCAR_Al
+POTCAR_Bi
+POTCAR_Pd
+POTCAR_Se
+POTCAR_Cd
+POTCAR_Te
+POTCAR_S
+POTCAR_Au
+POTCAR_Ge
+POTCAR_Si
+POTCAR_Mg
+POTCAR_Pb
+POTCAR_Hg
+POTCAR_Sn
+POTCAR_Cr
+...</code></pre>  
+
+</details>  
+
+</details>
+
+<details>
   <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
 
   <pre><code># SAMBA Copyright (C) 2025
@@ -554,37 +587,13 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
   <summary><strong>Structure of files and directories for code execution</strong></summary>
 
 
-  <details>
-  <summary><strong>pseudo files (example)</strong></summary>
 
-  <pre><code>POTCAR_H
-POTCAR_C
-POTCAR_O
-POTCAR_Al
-POTCAR_Bi
-POTCAR_Pd
-POTCAR_Se
-POTCAR_Cd
-POTCAR_Te
-POTCAR_S
-POTCAR_Au
-POTCAR_Ge
-POTCAR_Si
-POTCAR_Mg
-POTCAR_Pb
-POTCAR_Hg
-POTCAR_Sn
-POTCAR_Cr
-...</code></pre>  
-
-  </details>  
   
   Para a geração dos inputs necessários a execução dos cálculos High-Throughput DFT, os seguintes critérios devem ser satisfeitos:
 
   - O usuário deve inserir os arquivos POSCAR dentro de uma pasta chamada **Structures**;
   - Os arquivos POSCAR devem ser escritos em coordenadas diretas;
-  - O usuário deve fornecer os arquivos de pseudopotencial (para cada ion presente nos arquivos POSCAR) dentro de uma pasta chamada "**POTCAR**";
-  - Os arquivos de pseudopotencial, devem ser rotulados seguindo o padrão presente em em **pseudo files (example)**);
+
   - O código deve ser executado em **ambiente Linux**, com o pacote **VASPKIT** devidamente instalado, para a configuração do VASPKIT consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
  
 </details>
