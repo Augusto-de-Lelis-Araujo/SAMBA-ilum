@@ -157,25 +157,14 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 
 <details>
-<summary><strong>Option [0]: Generate SAMBA execution inputs</strong></summary>
+<summary><strong>Generating bilayers</strong></summary>
 
 ------------------------------------
 
-<p>This option generates the following input files for the SAMBA code:</p>
-<ul>
-  <li>SAMBA_HeteroStructure.input</li>
-  <li>SAMBA_WorkFlow.input</li>
-</ul>
+- **1st step:** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
-------------------------------------
-
-</details>
-
-<details>
-<summary><strong>Option [1]: running the Bilayer Generator</strong></summary>
-
-------------------------------------
-
+- **2nd step**: Edit the input file **SAMBA_HeteroStructure.input**, specifying the details of the bilayers to be generated using the tags described below.
+  
 <details>
 <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
@@ -242,7 +231,6 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
 #----------------------------------</code></pre>
 
-------------------------------------
 </details>
 
 <details>
