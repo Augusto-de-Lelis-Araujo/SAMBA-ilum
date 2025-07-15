@@ -218,15 +218,14 @@ Direct
 
 
 <details>
-  <summary><strong>3rd step) Edit the input file **SAMBA_HeteroStructure.input**, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
+  <summary><strong>3rd step) Edit the input file SAMBA_HeteroStructure.input, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
 
 ------------------------------------
 
 <details>
   <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
-  <pre><code>=============================================================
-# SAMBA Copyright (C) 2025
+  <pre><code># SAMBA Copyright (C) 2025
 
 #=========================================================================================================================
 # Important notes !!! ====================================================================================================
@@ -293,7 +292,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 <details>
   <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
 
-    Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
+  Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
   - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
   - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
