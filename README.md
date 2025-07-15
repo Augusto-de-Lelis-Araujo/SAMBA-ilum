@@ -162,7 +162,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 ------------------------------------
 
 <details>
-  <summary><strong>1st step) Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
+  <summary><strong>1st Step) Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
   ------------------------------------
 
@@ -214,11 +214,11 @@ Direct
 </details>
 
 
-◉ **2nd step)** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
+◉ **2nd Step)** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
 
 <details>
-  <summary><strong>3rd step) Edit the input file SAMBA_HeteroStructure.input, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
+  <summary><strong>3rd Step) Edit the input file SAMBA_HeteroStructure.input, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
 
 ------------------------------------
 
@@ -335,10 +335,11 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 </details>
 
 <details>
-  <summary><strong>3rd step) Run the SAMBA code </strong></summary>
+  <summary><strong>4th Step) Run the SAMBA code </strong></summary>
 
-  - Execute the SAMBA code within the working directory (**python -m samba_ilum**), and subsequently select **option [1]** to initiate the generation of bilayers;
-  - **Alternatively:** You may create the **run.input file** in the working directory, write **task = 1** in its **first** line, and simply execute the SAMBA code (**python -m samba_ilum**). This is useful for the execution of the SAMBA code on **job schedulers**, such as **OpenPBS** and **Slurm**, utilized in **high-performance computing (HPC)** environments.
+  - Execute the SAMBA code within the working directory **"python -m samba_ilum"**), and subsequently select **option [1]** to initiate the generation of bilayers;
+  - **Alternatively:** You may create the **run.input file** in the working directory, write **task = 1** in its **first** line, and simply execute the SAMBA code **"python -m samba_ilum"**. This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
+  - Finally, the structural files for the generated bilayers are saved in the **"Structures"** directory. If the code runs in a **loop**, the structural files for each material combination will be stored in separate folders within the **"Structures"** directory.
 
 </details>
 
