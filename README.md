@@ -191,6 +191,8 @@ Direct
 <details>
   <summary><strong>Criteria for the POSCAR file</strong></summary>
 
+  ------------------------------------
+  
   - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
   - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
   - Devem ser escritos em coordenadas diretas;
