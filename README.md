@@ -218,7 +218,7 @@ Direct
 
 
 <details>
-  <summary><strong>3rd Step) Edit the input file SAMBA_HeteroStructure.input, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
+  <summary><strong>3rd Step) Edit the input file SAMBA_HeteroStructure.input, specifying the details of the bilayers to be generated using the tags described below:</strong></summary>
 
 ------------------------------------
 
@@ -409,7 +409,12 @@ POTCAR_Cr
 
 </details>
 
+
 ◉ **3rd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [0]** to create the input file **SAMBA_WorkFlow.input**.
+
+
+<details>
+  <summary><strong>4th Step) Edit the SAMBA_WorkFlow.input input file, specifying the details of the DFT calculations to be performed, using the tags described below:</strong></summary>
 
 <details>
   <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
@@ -587,6 +592,8 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **displacement_xyz_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
   
+</details>
+
 </details>
 
 <details>
