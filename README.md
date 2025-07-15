@@ -49,13 +49,11 @@
 
   ------------------------------------
   
-  <ul>
-    <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/">link</a></li>
-    <li>CNPEM - The Brazilian Center for Research in Energy and Materials <a href="https://cnpem.br/en/">link</a></li>
-    <li>INCT - Materials Informatics <a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a></li>
-    <li>midb.cloud database <a href="https://midb.cloud/">link</a></li>
-    <li>Ilum - School of Science <a href="https://ilum.cnpem.br/en/" target="_blank">link</a></li>
-  </ul>
+  - Ilum - School of Science **<a href="https://ilum.cnpem.br/en/">link</a>**
+  - CNPEM - The Brazilian Center for Research in Energy and Materials **<a href="https://cnpem.br/en/">link</a>**
+  - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
+  - midb.cloud database **<a href="https://midb.cloud/">link</a>**
+
   <img src="etc/figures/institucional.png" alt="Institutional Network"> 
 
   ------------------------------------
