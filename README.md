@@ -219,6 +219,50 @@ Direct
 ------------------------------------
 
 <details>
+  <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
+
+  ------------------------------------
+
+  Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
+
+  - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
+  - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
+  - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
+
+    Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
+
+    Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
+
+  - **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
+  - **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
+  - **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
+  - **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
+  - **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
+  - **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
+  - **crit_angle_diff** define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
+  - **crit_area** define a tolerância percentual (%) na diferença de área, entre as duas redes;
+  - **ions_crit_i e ions_crit_f** definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
+  - **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
+  - **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
+
+    **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
+
+    **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
+
+    **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
+
+  - **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
+
+    **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
+
+    **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
+
+    **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
+
+</details>
+
+
+<details>
   <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
   <pre><code># SAMBA Copyright (C) 2025
@@ -285,48 +329,6 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 </details>
 
-<details>
-  <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
-
-  ------------------------------------
-
-  Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
-
-  - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
-  - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
-  - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
-
-    Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
-
-    Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
-
-  - **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
-  - **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
-  - **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
-  - **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
-  - **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
-  - **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
-  - **crit_angle_diff** define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
-  - **crit_area** define a tolerância percentual (%) na diferença de área, entre as duas redes;
-  - **ions_crit_i e ions_crit_f** definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
-  - **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
-  - **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
-
-    **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
-
-    **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
-
-    **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
-
-  - **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
-
-    **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
-
-    **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
-
-    **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
-
-</details>
 
 ------------------------------------
 
@@ -417,89 +419,6 @@ POTCAR_Cr
   <summary><strong>4th Step) Edit the SAMBA_WorkFlow.input input file, specifying the details of the DFT calculations to be performed, using the tags described below:</strong></summary>
 
 ------------------------------------
-
-<details>
-  <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
-
-  <pre><code># SAMBA Copyright (C) 2025
-
-#=======================================================
-# Python virtual environment directory -----------------
-dir_virtual_python = '/home/dlelis/codes/python_virtual'
-#=======================================================
-# Workflow Output Directory ----------------------------
-dir_o = 'WorkFlow_output'
-#=======================================================
-# information to be added to the database --------------
-replace_type_pseudo = 'PAW_PBE'; replace_type_XC = 'GGA'
-#=======================================================
-
-#=======================================================
-type_lattice = 2                            # [1] 1D lattices (Periodic in X);   [2] 2D lattices (Periodic in XY);   [3] 3D lattices - Bulk
-#=======================================================
-tasks = ['relax', 'scf', 'bands', 'dos']    # tasks = ['z-scan', 'xy-scan', 'relax', 'scf', 'bands', 'dos', 'bader']
-type  = ['sem_SO','com_SO']                 # type  = ['sem_SO','com_SO']
-#=======================================================
-ispin = 2                 # [1] for non-spin-polarized calculation; [2] for spin-polarized calculation
-#=======================================================
-dipol = 'none'            # Use the options:  'none',  'center_cell'  or  'center_mass'
-#=======================================================
-magnet_mode = 'default'   # Use the options:  'default',  'MAGMOM=0'  or  'NUPDOWN=0'
-#=======================================================
-U_correction = 0          # Hubbard Correction (U): [0] to disable, [1] to enable
-#=======================================================
-vdW = 0               # Van der Waals correction used:  [0] disables van der Waals correction.
-                      # Correction applied to all calculations (with and without OS)
-#-------------------------------------------------------
-vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the non-local functional vdW_DF.
-                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'
-                      # Note:  Functional applied only in structural optimization calculations ('xyz-scan', 'xy-scan', 'z-scan', 'a-scan', 'relax')
-                      # Note:  vdW != 0 will override any choice of vdWDF
-#=======================================================
-ENCUT_min = 500       # Minimum value for cut-off energy in eV
-                      # Note:  If (ENCUT_min < ENCUT*encut_factor), then ENCUT_min = ENCUT*encut_factor
-                      #            ENCUT refers to the highest cutting energy value present in the POTCAR file
-fator_encut = 1.3     # Multiplication factor for the criterion of the cutting energy used
-#=======================================================
-type_k_dens  = 1      # [1] KPOINTS (Monkhorst-Pack);   [2] KPOINTS (Gamma);   [3] INCAR (KSPACING Monkhorst-Pack);   [4] INCAR (KSPACING Gamma)
-k_dens_relax = 12     # Relaxation calculation:             number of k-points per Å^-1
-k_dens_scf   = 12     # Self-consistent calculation (scf):  number of k-points per Å^-1
-k_dens_dos   = 12     # DOS Calculation:                    number of k-points per Å^-1
-k_dens_bader = 12     # Bader Charge Calculation:           number of k-points per Å^-1
-n_kpoints    = 50     # Band calculation (nscf):            number of k-points in each section of the band plot
-nions_split  = 100    # number of ions in the POSCAR file, so that the band calculation is performed in steps (split)
-vacuum       = 15.0   # Vacuum applied to Heterostructure
-NCORE        = 8      # Number of "cores" per "node"
-
-#============================
-# a-scan parameters =========
-# Functional for 3D bulk ====
-#============================
-k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
-factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
-
-#============================
-# z-scan parameters =========
-#============================
-k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
-
-#============================
-# xy-scan parameters ========
-#============================
-k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
-r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
-r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
-
-#============================
-# xyz-scan parameters =======
-#============================
-k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
-displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
-displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
-displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
-
-------------------------------------
-</details>
 
 <details>
 <summary><strong>SAMBA_WorkFlow.input (description and adjustments)</strong></summary>
@@ -597,6 +516,91 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
   
 </details>
+
+
+<details>
+  <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
+
+  <pre><code># SAMBA Copyright (C) 2025
+
+#=======================================================
+# Python virtual environment directory -----------------
+dir_virtual_python = '/home/dlelis/codes/python_virtual'
+#=======================================================
+# Workflow Output Directory ----------------------------
+dir_o = 'WorkFlow_output'
+#=======================================================
+# information to be added to the database --------------
+replace_type_pseudo = 'PAW_PBE'; replace_type_XC = 'GGA'
+#=======================================================
+
+#=======================================================
+type_lattice = 2                            # [1] 1D lattices (Periodic in X);   [2] 2D lattices (Periodic in XY);   [3] 3D lattices - Bulk
+#=======================================================
+tasks = ['relax', 'scf', 'bands', 'dos']    # tasks = ['z-scan', 'xy-scan', 'relax', 'scf', 'bands', 'dos', 'bader']
+type  = ['sem_SO','com_SO']                 # type  = ['sem_SO','com_SO']
+#=======================================================
+ispin = 2                 # [1] for non-spin-polarized calculation; [2] for spin-polarized calculation
+#=======================================================
+dipol = 'none'            # Use the options:  'none',  'center_cell'  or  'center_mass'
+#=======================================================
+magnet_mode = 'default'   # Use the options:  'default',  'MAGMOM=0'  or  'NUPDOWN=0'
+#=======================================================
+U_correction = 0          # Hubbard Correction (U): [0] to disable, [1] to enable
+#=======================================================
+vdW = 0               # Van der Waals correction used:  [0] disables van der Waals correction.
+                      # Correction applied to all calculations (with and without OS)
+#-------------------------------------------------------
+vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the non-local functional vdW_DF.
+                      # Choice: 'none', 'DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'
+                      # Note:  Functional applied only in structural optimization calculations ('xyz-scan', 'xy-scan', 'z-scan', 'a-scan', 'relax')
+                      # Note:  vdW != 0 will override any choice of vdWDF
+#=======================================================
+ENCUT_min = 500       # Minimum value for cut-off energy in eV
+                      # Note:  If (ENCUT_min < ENCUT*encut_factor), then ENCUT_min = ENCUT*encut_factor
+                      #            ENCUT refers to the highest cutting energy value present in the POTCAR file
+fator_encut = 1.3     # Multiplication factor for the criterion of the cutting energy used
+#=======================================================
+type_k_dens  = 1      # [1] KPOINTS (Monkhorst-Pack);   [2] KPOINTS (Gamma);   [3] INCAR (KSPACING Monkhorst-Pack);   [4] INCAR (KSPACING Gamma)
+k_dens_relax = 12     # Relaxation calculation:             number of k-points per Å^-1
+k_dens_scf   = 12     # Self-consistent calculation (scf):  number of k-points per Å^-1
+k_dens_dos   = 12     # DOS Calculation:                    number of k-points per Å^-1
+k_dens_bader = 12     # Bader Charge Calculation:           number of k-points per Å^-1
+n_kpoints    = 50     # Band calculation (nscf):            number of k-points in each section of the band plot
+nions_split  = 100    # number of ions in the POSCAR file, so that the band calculation is performed in steps (split)
+vacuum       = 15.0   # Vacuum applied to Heterostructure
+NCORE        = 8      # Number of "cores" per "node"
+
+#============================
+# a-scan parameters =========
+# Functional for 3D bulk ====
+#============================
+k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
+factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
+
+#============================
+# z-scan parameters =========
+#============================
+k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
+
+#============================
+# xy-scan parameters ========
+#============================
+k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
+r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
+r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
+
+#============================
+# xyz-scan parameters =======
+#============================
+k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
+displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
+displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
+displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
+
+------------------------------------
+</details>
+
 
 ------------------------------------
 
