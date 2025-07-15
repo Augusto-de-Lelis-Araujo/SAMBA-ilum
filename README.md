@@ -171,7 +171,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
   <details>
     <summary><strong>POSCAR file - example</strong></summary>
 
-    <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
+       <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
   1.0 
    7.419406617232910 0.00000000000000 0.0 
   -3.709703308616455 6.42539461153006 0.0 
