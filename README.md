@@ -78,24 +78,24 @@
 
   ------------------------------------
 
-  <strong>Requirements:</strong> Make sure you have the following requirements:
-
-    Linux or Windows environment for bilayer generation
-    Linux environment for high-throughput DFT (requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**)
-    Python 3.8+
-    Python virtual environment is recommended (venv or conda)
-    Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
+  **Requirements**: Make sure you have the following requirements:
+  
+  - Linux or Windows environment for bilayer generation
+  - Linux environment for high-throughput DFT (requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**)
+  - Python 3.8+
+  - Python virtual environment is recommended (venv or conda)
+  - Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
 
   ------------------------------------
 
   During the installation, SAMBA checks the existence of the following Python modules:
   
-    VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
-    pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
-    SciPy **<a href="https://pypi.org/project/scipy/">link</a>**
-    NumPy **<a href="https://pypi.org/project/numpy/">link</a>**
-    Matplotlib **<a href="https://pypi.org/project/matplotlib/">link</a>**
-    Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
+  - VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
+  - pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
+  - SciPy **<a href="https://pypi.org/project/scipy/">link</a>**
+  - NumPy **<a href="https://pypi.org/project/numpy/">link</a>**
+  - Matplotlib **<a href="https://pypi.org/project/matplotlib/">link</a>**
+  - Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
 
 ------------------------------------
 </details>
