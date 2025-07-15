@@ -196,7 +196,9 @@ Direct
 
 <details>
   <summary><strong>Criteria for the POSCAR file</strong></summary>
+  
   &nbsp;
+  
   - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
   - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
   - Devem ser escritos em coordenadas diretas;
@@ -291,7 +293,9 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 <details>
   <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
+  
   &nbsp;
+  
   Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
   - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
