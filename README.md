@@ -161,55 +161,55 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 ------------------------------------
 
-<details>
-<summary><strong>**1st step)**: Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
+   <details>
+   <summary><strong>**1st step)**: Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
-**Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
+   **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
   
-**Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
+   **Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
 
-<details>
-  <summary><strong>Criteria for the POSCAR file</strong></summary>
+   <details>
+     <summary><strong>Criteria for the POSCAR file</strong></summary>
 
-  <details>
-  <summary><strong>POSCAR file - example</strong></summary>
+     <details>
+     <summary><strong>POSCAR file - example</strong></summary>
 
-  <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
-1.0 
- 7.419406617232910 0.00000000000000 0.0 
--3.709703308616455 6.42539461153006 0.0 
- 0.0000000 0.0000000 18.526402379698077 
-Pt Se Hg  
-4 6 2  
-Direct 
-0.0 0.5 0.5 
-0.0 0.0 0.5 
-0.5 0.5 0.5 
-0.5 0.0 0.5 
-0.3363234295508661 0.1681617147754295 0.5707808825560079 
-0.8318382852245705 0.6636765704491339 0.5707808825560079 
-0.8318382852245705 0.1681617147754295 0.5707808825560079 
-0.1681617147754295 0.8318382852245705 0.4292191174439921 
-0.1681617147754295 0.3363234295508661 0.4292191174439921 
-0.6636765704491339 0.8318382852245705 0.4292191174439921 
-0.3333333333333357 0.6666666666666643 0.5951699375852613 
-0.6666666666666643 0.3333333333333357 0.4048300624147387</code></pre>  
+     <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
+   1.0 
+    7.419406617232910 0.00000000000000 0.0 
+   -3.709703308616455 6.42539461153006 0.0 
+    0.0000000 0.0000000 18.526402379698077 
+   Pt Se Hg  
+   4 6 2  
+   Direct 
+   0.0 0.5 0.5 
+   0.0 0.0 0.5 
+   0.5 0.5 0.5 
+   0.5 0.0 0.5 
+   0.3363234295508661 0.1681617147754295 0.5707808825560079 
+   0.8318382852245705 0.6636765704491339 0.5707808825560079 
+   0.8318382852245705 0.1681617147754295 0.5707808825560079 
+   0.1681617147754295 0.8318382852245705 0.4292191174439921 
+   0.1681617147754295 0.3363234295508661 0.4292191174439921 
+   0.6636765704491339 0.8318382852245705 0.4292191174439921 
+   0.3333333333333357 0.6666666666666643 0.5951699375852613 
+   0.6666666666666643 0.3333333333333357 0.4048300624147387</code></pre>  
 
-  </details>  
+     </details>  
 
-  - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
-  - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
-  - Devem ser escritos em coordenadas diretas;
+     - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
+     - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
+     - Devem ser escritos em coordenadas diretas;
 
-  - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
+     - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
 
-  - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
+     - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
 
-  - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
+     - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
 
+     </details>
+     
 </details>
-
-
 
 
 
@@ -338,7 +338,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 ------------------------------------
 </details>
 
-</details>
+
 
 
 <details>
