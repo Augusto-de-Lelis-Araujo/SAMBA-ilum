@@ -192,20 +192,22 @@ Direct
 0.6666666666666643  0.3333333333333357  0.4048300624147387</code></pre>
 </details>
 
-  <details>
-    <summary><strong>Criteria for the POSCAR file</strong></summary>
+<details>
+  <summary><strong>Criteria for the POSCAR file</strong></summary>
 
-    - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
-    - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
-    - Devem ser escritos em coordenadas diretas;
+  - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
+  - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
+  - Devem ser escritos em coordenadas diretas;
 
-    - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
+  - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
 
-    - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
+  - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
 
-    - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
+  - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
 
-  </details>
+</details>
+
+</details>
 
   - **2nd step:** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
