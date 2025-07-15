@@ -322,9 +322,9 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
       </details>
 
-------------------------------------
+   ------------------------------------
 
-</details>
+   </details>
 
 
 
