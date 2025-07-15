@@ -162,7 +162,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 ------------------------------------
 
 <details>
-  <summary><strong>1st step): Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
+  <summary><strong>1st step) Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
   ------------------------------------
 
@@ -213,11 +213,14 @@ Direct
 
 </details>
 
-  - **2nd step:** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
-  - **2nd step**: Edit the input file **SAMBA_HeteroStructure.input**, specifying the details of the bilayers to be generated using the tags described below.
+**2nd step)** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
-  <details>
+
+<details>
+    <summary><strong>3rd step) Edit the input file **SAMBA_HeteroStructure.input**, specifying the details of the bilayers to be generated using the tags described below</strong></summary>
+
+<details>
     <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
     <pre><code>=============================================================
@@ -283,9 +286,9 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
 #----------------------------------</code></pre>
 
-  </details>
+</details>
 
-  <details>
+<details>
     <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
 
     Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
@@ -324,7 +327,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
       **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
 
-  </details>
+</details>
 
 ------------------------------------
 
