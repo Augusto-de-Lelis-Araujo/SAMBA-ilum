@@ -611,7 +611,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 </details>
 
 
-◉ **Note)** O código deve ser executado em **ambiente Linux**, com o pacote **VASPKIT** devidamente instalado, para a configuração do VASPKIT consulte o <a href="https://vaspkit.com/installation.html" target="_blank">link</a>.
+◉ **Note)** The code must be run in a **Linux environment** with the **VASPKIT** package properly installed. For VASPKIT configuration, please consult the **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
 <details>
   <summary><strong>Optional:</strong></summary>
