@@ -665,15 +665,11 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
    exemplo: **dir_virtual_python = '/home/dlelis/codes/python_virtual'**
 
 ◉ **3rd)** Ative o ambiente Python, por meio do comando: **source** caminho_do_ambiente_python + **/bin/activate**
-   
-   exemplo: **source /home/dlelis/codes/python_virtual/bin/activate**
+   exemplo: <pre><code>source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
 
 ◉ **4th)** Ative o ambiente Python, e instale os pacotes **SAMBA**, **VASProcar** e **pymatgen**:
-
   <pre><code>pip install --upgrade samba_ilum</code></pre>
-  <p>or</p>
   <pre><code>pip install --upgrade vasprocar</code></pre>
-  <p>or</p>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
 ◉ **5th)** Instale o pacote **VASPKIT**. Para instalação do pacote VASPKIT consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
