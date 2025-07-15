@@ -611,7 +611,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 </details>
 
 
-◉ **Note)** The code must be run in a **Linux environment** with the **VASPKIT** package properly installed. For VASPKIT configuration, please consult the **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
+◉ **Note)** For the generation of inputs for high-throughput DFT, the code must be run in a **Linux environment** with the **VASPKIT** package properly installed. For VASPKIT configuration, please consult the **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
 <details>
   <summary><strong>Optional:</strong></summary>
