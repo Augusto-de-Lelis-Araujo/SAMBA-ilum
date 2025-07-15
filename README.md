@@ -508,7 +508,7 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **NCORE** define o número of "cores" por "node", utilizado pelo VASP para processar as bandas em paralelo.
 - **k_dens_a_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1, A2 e A3), para amostrar a zona de Brillouin no cálculo a-scan (a-scan é uma varredura pelo parâmetro de rede "a" ideal, indicado para sistemas bulk 3D);
 - **factor_var** define a variação percentual (%) máxima em relação ao parâmetro de rede inicial, co cálculo a-scan;
-- **k_dens_z_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo z-scan;
+- **k_dens_z_scan** define o número de pontos-k por $A^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo z-scan;
 - **k_dens_xy_scan** define o número de pontos-k por Å^-1 (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo xy-scan;
 - **r_displacement_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
 - **r_displacement_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
