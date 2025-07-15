@@ -653,19 +653,16 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 -----------------------------------
 
 ◉ **1st)** No ambiente Linux, de load em uma versão do pacote python superior a 3.8 (ou uma versão recente do pacote CONDA), por meio do comando: **module load** nome_pacote
-
-  exemplos **module load python/3.8.11-intel-2021.3.0**
+  <pre><code>example:  module load python/3.8.11-intel-2021.3.0</code></pre>
 
 ◉ **2nd)** Selecione um diretório de interese,e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
-
-   exemplo: **python -m venv python_virtual**
+   <pre><code>example:  python -m venv python_virtual</code></pre>  
      
    Salve o caminho do ambiente Python criado, pois é este caminho que você deve utilizar na tag **dir_virtual_python** do **SAMBA_WorkFlow.input**
-     
-   exemplo: **dir_virtual_python = '/home/dlelis/codes/python_virtual'**
+   <pre><code>example:  dir_virtual_python = '/home/dlelis/codes/python_virtual'</code></pre>  
 
 ◉ **3rd)** Ative o ambiente Python, por meio do comando: **source** caminho_do_ambiente_python + **/bin/activate**
-   exemplo: <pre><code>source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
+  <pre><code>example:  source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
 
 ◉ **4th)** Ative o ambiente Python, e instale os pacotes **SAMBA**, **VASProcar** e **pymatgen**:
   <pre><code>pip install --upgrade samba_ilum</code></pre>
