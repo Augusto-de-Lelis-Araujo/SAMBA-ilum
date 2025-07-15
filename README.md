@@ -652,7 +652,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 -----------------------------------
 
-◉ **1st)** No ambiente Linux, de load em uma versão do pacote python superior a 3.8 (ou uma versão recente do pacote CONDA), por meio do comando: **module load** nome_pacote
+◉ **1st)** No ambiente Linux onde os cálculos de DFT serão executados, de load em uma versão do pacote python superior a 3.8 (ou uma versão recente do pacote CONDA), por meio do comando: **module load** nome_pacote
   <pre><code>example:  module load python/3.8.11-intel-2021.3.0</code></pre>
 
 ◉ **2nd)** Selecione um diretório de interese,e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
@@ -669,9 +669,9 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
-◉ **5th)** Instale o pacote **VASPKIT**, no ambiente onde os cálculos de DFT do VASP serão executados.
+◉ **5th)** Instalação do pacote **VASPKIT**.
 
-Para download do pacote VASPKIT use o **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e para obter maiores informações a respeito do VASPKIT (**<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**).
+  Faça o download do pacote VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o (**<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**).
 
   exemplo de instalação do arquivo baixado (vaspkit.1.5.1.tar.gz) no diretório (/home/dlelis/codes). Após realizar o download do VASPKIT, mova o arquivo para algum diretório de interesse, dentro deste diretório execute os seguintes comandos:
   <pre><code>tar -zxvf vaspkit.1.5.1.tar.gz</code></pre>
