@@ -214,7 +214,7 @@ Direct
 </details>
 
 
-**2nd step)** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
+⬤ **2nd step)** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
 
 <details>
