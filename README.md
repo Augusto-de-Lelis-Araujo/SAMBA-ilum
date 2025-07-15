@@ -161,12 +161,12 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 ------------------------------------
 
-   <details>
+<details>
    <summary><strong>1st step): Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
-   **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
+   <strong>Note:</strong> Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
   
-   **Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
+   <strong>Note:</strong> The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
 
       <details>
       <summary><strong>POSCAR file - example</strong></summary>
@@ -197,21 +197,21 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
       <details>
       <summary><strong>Criteria for the POSCAR file</strong></summary>
 
-      - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
+      - Devem estar inseridos dentro da pasta definida por <strong>dir_poscar</strong>;
       - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
       - Devem ser escritos em coordenadas diretas;
 
-      - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
+      - <strong>Opcional:</strong> O usuário pode inserir um identificador (<strong>ID</strong>) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
 
-      - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
+      - <strong>Opcional:</strong> É recomendável utilizar <strong>células unitárias</strong>, uma vez que o uso de <strong>supercélulas</strong> pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
 
-      - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
+      - <strong>Observação:</strong> Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o <strong>eixo de menor rotação em torno do eixo z</strong> esteja posicionado na <strong>origem da célula</strong>. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "<strong>POSCAR_original</strong>".
 
       </details>
      
-   - **2nd step:** In the working directory, run the SAMBA code and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
+   - <strong>2nd step:</strong> In the working directory, run the SAMBA code and choose <strong>option [0]</strong> to create the input file <strong>SAMBA_HeteroStructure.input</strong>.
 
-   - **2nd step**: Edit the input file **SAMBA_HeteroStructure.input**, specifying the details of the bilayers to be generated using the tags described below.
+   - <strong>3rd step:</strong> Edit the input file <strong>SAMBA_HeteroStructure.input</strong>, specifying the details of the bilayers to be generated using the tags described below.
   
       <details>
       <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
@@ -286,41 +286,42 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
         Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
-      - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
-      - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
-      - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
+      - <strong>dir_poscar</strong> define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
+      - <strong>dir_o</strong> define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
+      - <strong>loop_ht</strong> define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
   
-        Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
+        Para <strong>loop_ht=0</strong>, o usuário deve informar em <strong>Lattice1</strong> e <strong>Lattice2</strong>, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
 
-        Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
+        Para <strong>loop_ht=1</strong>, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por <strong>dir_poscar</strong>;
   
-      - **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
-      - **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
-      - **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
-      - **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
-      - **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
-      - **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
-      - **crit_angle_diff** define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
-      - **crit_area** define a tolerância percentual (%) na diferença de área, entre as duas redes;
-      - **ions_crit_i e ions_crit_f** definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
-      - **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
-      - **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
+      - <strong>separation_1</strong> define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
+      - <strong>vacuum</strong> define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
+      - <strong>cell_fator</strong> define o fator de multiplicação dos vetores A1 e A2 das células presentes em <strong>dir_poscar</strong>, para criação das respectivas supercélulas;
+      - <strong>crit_mod_vector</strong> define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
+      - <strong>crit_distorc_lattice</strong> define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
+      - <strong>crit_angle_perc</strong> define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
+      - <strong>crit_angle_diff</strong> define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao <strong>crit_angle_perc</strong>;
+      - <strong>crit_area</strong> define a tolerância percentual (%) na diferença de área, entre as duas redes;
+      - <strong>ions_crit_i e ions_crit_f</strong> definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
+      - <strong>angle_min e angle_max</strong> definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
+      - <strong>mismatch_type</strong>  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
 
-        **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
+        <strong>mismatch_type=0</strong> distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
   
-        **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
+        <strong>mismatch_type=1</strong> aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
   
-        **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
+        <strong>mismatch_type=2</strong> aplica a distorção estrutural sobre a monocamada superior do empilhamento;
   
-      - **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
+      - <strong>rot_angle_calc</strong> define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
   
-        **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
+        <strong>rot_angle_calc='center_cell'</strong> define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
   
-        **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
+        <strong>rot_angle_calc='A1'</strong> define o ângulo necessário para alinhar o vetor A1 de ambas as células;
   
-        **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
+        <strong>rot_angle_calc='A2'</strong> define o ângulo necessário para alinhar o vetor A2 de ambas as células.
 
       </details>
+ </details>
 
    ------------------------------------
 
