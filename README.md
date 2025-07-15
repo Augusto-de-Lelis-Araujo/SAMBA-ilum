@@ -162,16 +162,13 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 ------------------------------------
 
    <details>
-   <summary><strong>**1st step)**: Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
+   <summary><strong>1st step): Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
    **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
   
    **Note:** The POSCAR files for bilayer generation must follow the following criteria (compare the criteria with the model in POSCAR file - example):
 
    <details>
-     <summary><strong>Criteria for the POSCAR file</strong></summary>
-
-     <details>
      <summary><strong>POSCAR file - example</strong></summary>
 
      <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a 
@@ -195,7 +192,10 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
    0.3333333333333357 0.6666666666666643 0.5951699375852613 
    0.6666666666666643 0.3333333333333357 0.4048300624147387</code></pre>  
 
-     </details>  
+     </details>
+
+   <details>
+     <summary><strong>Criteria for the POSCAR file</strong></summary>
 
      - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
      - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
@@ -207,10 +207,8 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
      - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
 
-     </details>
+   </details>
      
-</details>
-
 
 
 
