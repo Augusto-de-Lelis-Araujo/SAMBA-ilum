@@ -727,12 +727,13 @@ dir0=`pwd`
 source $dir0/./job0.sh
 #---------------------</code></pre>
 
+</details>
+
 As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o OpenPBS, Torque, LoadLeveler e etc.
 
 dir0 refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **`pwd`** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "#" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local.
 
 Por fim, o comando "source $dir0/./job0.sh" executa o arquivo de job secundário "job0.sh", o qual possui as especificidades dos cálculos a serem executados, como pacotes a serem utilizados e os diferente cálculos de DFT a serem executados. Por estar separado do arquivo de job princial job.sh, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser iniciada no agendador de tarefas.
-
 
 ------------------------------------
 
