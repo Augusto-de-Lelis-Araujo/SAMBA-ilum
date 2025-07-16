@@ -63,7 +63,6 @@
 
 
 <h2>Tutorial</h2>
-<p>Click on the topics below to expand and see the details for each section.</p>
 
 
 
