@@ -701,9 +701,9 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 -----------------------------------
 
-◉  Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como OpenPBS e Slurm, comumente utilizados em ambientes de computação de alto desempenho (HPC), sendo estes os arquivos job.sh e job0.sh, onde:
+◉  Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como **Slurm**, **OpenPBS**, **Torque** e etc, comumente utilizados em ambientes de computação de alto desempenho (**HPC**), sendo estes os arquivos **job.sh** e **job0.sh**, onde:
 
-◉  O arquivo job.sh é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
+◉  O arquivo **job.sh** é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
 
 <details>
   <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
@@ -731,16 +731,17 @@ source $dir0/./job0.sh
 
 </details>
 
-◉  As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc.
+◉ As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc;
 
-◉  A tag **dir0** refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **pwd** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "**#**" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local.
+◉ A tag **dir0** refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **pwd** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "**#**" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local;
 
-◉  Por fim, o comando "**source $dir0/./job0.sh**" executa o arquivo de job secundário **job0.sh**, o qual possui as especificidades dos cálculos a serem executados, como pacotes a serem utilizados e os diferente cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser iniciada no agendador de tarefas.
+◉ Por fim, o comando "**source $dir0/./job0.sh**" executa o arquivo de job auxiliar **job0.sh**.
 
 ------------------------------------
 
 </details>
 
+◉  Enquanto o arquivo **job.sh** é o arquivo auxiliar que possui as especificidades dos cálculos a serem executados, como informações a respeito dos pacotes a serem utilizados e os cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser de fato iniciado no agendador de tarefas.
 
 <details>
   <summary><strong>job0.sh (Auxiliary task scheduler file)</strong></summary>
@@ -748,7 +749,7 @@ source $dir0/./job0.sh
 ------------------------------------
 
 <details>
-  <summary><strong>job.sh - example</strong></summary>
+  <summary><strong>job0.sh - example</strong></summary>
   <pre><code>#!/bin/bash
 
 cd $dir0
@@ -789,6 +790,14 @@ while true; do
 done</code></pre>
 
 </details>
+
+◉ **dir_virtual** especifica o caminho do ambiente virtual Python a ser carregado para a execução de scripts ao longo da execução do job, este caminho é definido na tag **dir_virtual_python** do arquivo de input **SAMBA_WorkFlow.input**;
+
+◉ **module load** carrega no ambiente Linux, a versão do pacote de DFT **VASP** a ser utilizada nos cálculos;
+
+◉ **vasp_std** e **vasp_ncl** definem os comandos para execução do pacote de DFT **VASP**, para os cálculos **colinear** (sem SOC) e **não-colinear** (com SOC);
+
+◉ **Observação)** A tag **ttasks** em hipótese alguma deve ser editada.
 
 </details>
 
