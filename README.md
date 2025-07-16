@@ -785,6 +785,8 @@ fi
 while true; do
 
 ...
+...
+...
 
 done</code></pre>
 
@@ -806,11 +808,11 @@ done</code></pre>
 
 For more informations/questions or to report potential bugs, send an e-mail to: augusto-lelis@outlook.com
 
-------------------------------------
 
 </details>
 
 
+------------------------------------
 
 
 <img src="etc/figures/institucional.png" alt="Institutional Network">
