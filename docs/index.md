@@ -54,7 +54,7 @@
   - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
   - midb.cloud database **<a href="https://midb.cloud/">link</a>**
 
-  <img src="etc/figures/institucional.png" alt="Institutional Network"> 
+  <img src="../etc/figures/institucional.png" alt="Institutional Network"> 
 
   ------------------------------------
 </details>
@@ -712,4 +712,4 @@ For questions about the installation or proper use of the package, or to report 
 
 
 
-<img src="etc/figures/institucional.png" alt="Institutional Network">
+<img src="../etc/figures/institucional.png" alt="Institutional Network">
