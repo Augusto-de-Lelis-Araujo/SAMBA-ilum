@@ -708,7 +708,7 @@ Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necess�
 - O arquivo job.sh é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
 
 <details>
-  <summary><strong>job.sh (Sample file)</strong></summary>
+  <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
 
   <pre><code>#!/bin/bash
 #SBATCH --partition=medium
@@ -727,13 +727,42 @@ dir0=`pwd`
 source $dir0/./job0.sh
 #---------------------</code></pre>
 
+As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc.
+
+A tag **dir0** refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **pwd** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "**#**" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local.
+
+Por fim, o comando "**source $dir0/./job0.sh**" executa o arquivo de job secundário **job0.sh**, o qual possui as especificidades dos cálculos a serem executados, como pacotes a serem utilizados e os diferente cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser iniciada no agendador de tarefas.
+
+------------------------------------
+
 </details>
 
-As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o OpenPBS, Torque, LoadLeveler e etc.
 
-dir0 refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **`pwd`** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "#" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local.
+<details>
+  <summary><strong>job0.sh (Auxiliary task scheduler file)</strong></summary>
 
-Por fim, o comando "source $dir0/./job0.sh" executa o arquivo de job secundário "job0.sh", o qual possui as especificidades dos cálculos a serem executados, como pacotes a serem utilizados e os diferente cálculos de DFT a serem executados. Por estar separado do arquivo de job princial job.sh, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser iniciada no agendador de tarefas.
+  <pre><code>#!/bin/bash
+#SBATCH --partition=medium
+#SBATCH --job-name=WFlow
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=32
+#SBATCH --ntasks=32
+#SBATCH --exclusive
+#SBATCH -o %x.o%j
+#SBATCH -e %x.e%j
+
+#--------
+dir0=`pwd`
+# dir0="/mnt/bgfs/home/dlelis/WorkFlow//WorkFlow_TESTE"
+#---------------------
+source $dir0/./job0.sh
+#---------------------</code></pre>
+
+
+
+
+</details>
+
 
 ------------------------------------
 
