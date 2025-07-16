@@ -1,0 +1,8 @@
+# Arquivo: mkdocs.yml
+site_name: SAMBA - Tutorial
+nav:
+  - 'Início': 'index.md'
+
+# Opcional: Adiciona um tema visualmente mais agradável
+theme:
+  name: material
