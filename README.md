@@ -710,6 +710,10 @@ Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necess�
 <details>
   <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
 
+</code></pre>
+
+<details>
+  <summary><strong>job.sh - example</strong></summary>
   <pre><code>#!/bin/bash
 #SBATCH --partition=medium
 #SBATCH --job-name=WFlow
@@ -726,6 +730,9 @@ dir0=`pwd`
 #---------------------
 source $dir0/./job0.sh
 #---------------------</code></pre>
+
+</details>
+
 
 As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc.
 
