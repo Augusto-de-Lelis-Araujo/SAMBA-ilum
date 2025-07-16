@@ -747,6 +747,8 @@ source $dir0/./job0.sh
 <details>
   <summary><strong>job0.sh (Auxiliary task scheduler file)</strong></summary>
 
+------------------------------------
+
 <details>
   <summary><strong>job.sh - example</strong></summary>
   <pre><code>#!/bin/bash
@@ -757,8 +759,8 @@ rm -r python_virtual_delete
 
 #-------------------------------
 dir_virtual="/home/dlelis/codes/python_virtual"
-# cp -r $dir_virtual $dir0/python_virtual
-# dir_virtual="$dir0/python_virtual"
+#cp -r $dir_virtual $dir0/python_virtual
+#dir_virtual="$dir0/python_virtual"
 source $dir_virtual/bin/activate
 #-------------------------------
 
@@ -769,9 +771,9 @@ module load vasp/6.2.0-intel-2021.2.0
 vasp_std="mpirun -n ${SLURM_NTASKS} vasp_std"
 vasp_ncl="mpirun -n ${SLURM_NTASKS} vasp_ncl"
 #------------------------
-# module load vasp-6.2.0-gcc-9.3.0-epqgvat
-# vasp_std="srun -n ${SLURM_NTASKS} vasp_std"
-# vasp_ncl="srun -n ${SLURM_NTASKS} vasp_ncl"
+#module load vasp-6.2.0-gcc-9.3.0-epqgvat
+#vasp_std="srun -n ${SLURM_NTASKS} vasp_std"
+#vasp_ncl="srun -n ${SLURM_NTASKS} vasp_ncl"
 
 ttasks=( "xyz-scan" "z-scan" "xy-scan" "a-scan" "relax" "scf" "bands" "dos" "bader" "scf.SO" "bands.SO" "dos.SO" "bader.SO" )
 
