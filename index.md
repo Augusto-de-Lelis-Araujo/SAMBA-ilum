@@ -11,9 +11,9 @@
 
 <details>
   <summary><strong>Description</strong></summary>
-  
-  ------------------------------------
-  
+
+---
+
   <p>SAMBA is an open-source Python 3 code capable of:</p>
   <ul>
     <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
@@ -22,8 +22,8 @@
   </ul>
   <img src="etc/figures/logo.png" alt="SAMBA logo">
 
-------------------------------------
-  
+---
+
 </details>
 
 
@@ -32,14 +32,15 @@
 <details>
   <summary><strong>Authors</strong></summary>
 
-  ------------------------------------
-  
+---
+
   - Augusto de Lelis Araújo (**<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>**)
   - Adalberto Fazzio (**<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>**)
   - Felipe Castro de Lima (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)
   - Pedro Henrique Sophia (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
 
-  ------------------------------------
+---
+
 </details>
 
 
@@ -48,8 +49,8 @@
 <details>
   <summary><strong>Meet Institutional and Research Network:</strong></summary>
 
-  ------------------------------------
-  
+---
+
   - Ilum - School of Science **<a href="https://ilum.cnpem.br/en/">link</a>**
   - CNPEM - The Brazilian Center for Research in Energy and Materials **<a href="https://cnpem.br/en/">link</a>**
   - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
@@ -57,7 +58,8 @@
 
   <img src="etc/figures/institucional.png" alt="Institutional Network"> 
 
-  ------------------------------------
+---
+
 </details>
 
 
@@ -71,12 +73,14 @@
 <details>
   <summary><strong>Installation</strong></summary>
 
-  ------------------------------------
-  
-  The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the **<a href="https://pypi.org/project/SAMBA-ilum/">link</a>**.
-  <pre><code>pip install samba_ilum</code></pre>
+---
 
-  ------------------------------------
+  The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the **<a href="https://pypi.org/project/SAMBA-ilum/">link</a>**.
+  ```
+pip install samba_ilum
+```
+
+---
 
   **Requirements**: Make sure you have the following requirements:
   
@@ -86,7 +90,7 @@
   - Python virtual environment is recommended (venv or conda)
   - Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
 
-  ------------------------------------
+---
 
   During the installation, SAMBA checks the existence of the following Python modules:
   
@@ -97,7 +101,8 @@
   - Matplotlib **<a href="https://pypi.org/project/matplotlib/">link</a>**
   - Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
 
-------------------------------------
+---
+
 </details>
 
 
@@ -105,17 +110,22 @@
 <details>
   <summary><strong>Run the code</strong></summary>
 
-  ------------------------------------
-  
-  <p>To run the code, the user must use the command below in the working directory:</p>
-  <pre><code>python -m samba_ilum</code></pre>
-  <p>or</p>
-  <pre><code>python3 -m samba_ilum</code></pre>
+---
 
-  ------------------------------------
+  <p>To run the code, the user must use the command below in the working directory:</p>
+  ```
+python -m samba_ilum
+```
+  <p>or</p>
+  ```
+python3 -m samba_ilum
+```
+
+---
 
   <p>When running the code, the following screen is shown to the user:</p>
-  <pre><code>=============================================================
+  ```
+=============================================================
 SAMBA_ilum v1.0.0.510 Copyright (C) 2025 --------------------
 Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
@@ -135,7 +145,8 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 # [2] WorkFlow: High Throughput DFT (inputs + job)
 # --------------------------------------------------------------------
 # [3] Customize internal WorkFlow inputs (INPUTS folder)
-######################################################################</code></pre>
+######################################################################
+```
 
   <ul>
     <li><strong>Option [0]</strong>: provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.</li>
@@ -144,7 +155,8 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
     <li><strong>Option [3]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
   </ul>
 
-------------------------------------
+---
+
 </details>
 
 
@@ -153,12 +165,12 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 <details>
 <summary><strong>Generating Twisted Bilayers</strong></summary>
 
-------------------------------------
+---
 
 <details>
   <summary><strong>1st Step) Create a working directory and, inside it, create a folder where you will place the POSCAR files of the monolayers to be used for bilayer generation</strong></summary>
 
-  ------------------------------------
+---
 
   **Note:** Both the name of the folder containing the POSCAR files and the labels of these files are freely chosen by the user.
 
@@ -166,7 +178,8 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 
 <details>
   <summary><strong>POSCAR file - example</strong></summary>
-  <pre><code>SAMBA Pt4Se6Hg2_75eb2b2b9759445a
+  ```
+SAMBA Pt4Se6Hg2_75eb2b2b9759445a
 1.0
  7.419406617232910   0.00000000000000   0.0
 -3.709703308616455   6.42539461153006   0.0
@@ -185,14 +198,15 @@ Direct
 0.1681617147754295  0.3363234295508661  0.4292191174439921
 0.6636765704491339  0.8318382852245705  0.4292191174439921
 0.3333333333333357  0.6666666666666643  0.5951699375852613
-0.6666666666666643  0.3333333333333357  0.4048300624147387</code></pre>
+0.6666666666666643  0.3333333333333357  0.4048300624147387
+```
 </details>
 
 <details>
   <summary><strong>Criteria for the POSCAR file</strong></summary>
 
-  ------------------------------------
-  
+---
+
   - Devem estar inseridos dentro da pasta definida por **dir_poscar**;
   - Devem corresponder a redes 2D cujos vetores (A1,A2) estejam no plano KxKy, enquanto o vetor A3 deve estar no eixo-z;
   - Devem ser escritos em coordenadas diretas;
@@ -205,7 +219,7 @@ Direct
 
 </details>
 
-------------------------------------
+---
 
 </details>
 
@@ -216,12 +230,12 @@ Direct
 <details>
   <summary><strong>3rd Step) Edit the input file SAMBA_HeteroStructure.input, specifying the details of the bilayers to be generated using the tags described below:</strong></summary>
 
-------------------------------------
+---
 
 <details>
   <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
 
-  ------------------------------------
+---
 
   Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
@@ -259,7 +273,7 @@ Direct
 
     **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
 
-    ------------------------------------
+---
 
 </details>
 
@@ -267,7 +281,8 @@ Direct
 <details>
   <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
-  <pre><code># SAMBA Copyright (C) 2025
+  ```
+# SAMBA Copyright (C) 2025
 
 #=========================================================================================================================
 # Important notes !!! ====================================================================================================
@@ -327,19 +342,19 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
                                        #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
 #----------------------------------    
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
-#----------------------------------</code></pre>
+#----------------------------------
+```
 
 </details>
 
-
-------------------------------------
+---
 
 </details>
 
 <details>
   <summary><strong>4th Step) Run the SAMBA code </strong></summary>
 
-  ------------------------------------
+---
 
   - Execute the SAMBA code within the working directory (**python -m samba_ilum**), and subsequently select **option [1]** to initiate the generation of bilayers;
   - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 1"** in its **first** line, and simply execute the SAMBA code (**python -m samba_ilum**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
@@ -347,7 +362,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 </details>
 
-------------------------------------
+---
 
 </details>
 
@@ -371,7 +386,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 <details>
 <summary><strong>Generating the inputs for high-throughput DFT calculations</strong></summary>
 
-------------------------------------
+---
 
 ◉ **1st Step)** Create a working directory, and inside it, create a folder named 'Structures'. In this folder, you will place the POSCAR files for the structures on which you intend to run DFT calculations.
 **Note:** In the POSCAR files, the ions must be specified in direct coordinates.
@@ -379,7 +394,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 <details>
   <summary><strong>2nd Step) Pseudopotential files</strong></summary>
 
-  ------------------------------------
+---
 
   - Within the working directory, the user must place the pseudopotential files (for every ion present in the POSCAR files) into a folder called **POTCAR**";
   - The pseudopotential files must be named according to the pattern found in **pseudo files - example**";
@@ -387,7 +402,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 <details>
   <summary><strong>pseudo files (example)</strong></summary>
 
-  <pre><code>POTCAR_H
+  ```
+POTCAR_H
 POTCAR_C
 POTCAR_O
 POTCAR_Al
@@ -405,11 +421,12 @@ POTCAR_Pb
 POTCAR_Hg
 POTCAR_Sn
 POTCAR_Cr
-...</code></pre>  
+...
+```  
 
 </details>
 
-------------------------------------
+---
 
 </details>
 
@@ -420,12 +437,12 @@ POTCAR_Cr
 <details>
   <summary><strong>4th Step) Edit the SAMBA_WorkFlow.input input file, specifying the details of the DFT calculations to be performed, using the tags described below:</strong></summary>
 
-------------------------------------
+---
 
 <details>
 <summary><strong>SAMBA_WorkFlow.input (description and adjustments)</strong></summary>
 
-------------------------------------
+---
 
 Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
 
@@ -517,15 +534,16 @@ Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DF
 - **displacement_xyz_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
 - **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan.
 
-------------------------------------
-  
+---
+
 </details>
 
 
 <details>
   <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
 
-  <pre><code># SAMBA Copyright (C) 2025
+  ```
+# SAMBA Copyright (C) 2025
 
 #=======================================================
 # Python virtual environment directory -----------------
@@ -600,13 +618,14 @@ r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)
 k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
 displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
 displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
-displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
+displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)
+```
 
-------------------------------------
+---
+
 </details>
 
-
-------------------------------------
+---
 
 </details>
 
@@ -614,20 +633,20 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 <details>
   <summary><strong>5th Step) Run the SAMBA code </strong></summary>
 
-  ------------------------------------
+---
 
   - Execute the SAMBA code within the working directory (**python -m samba_ilum**), and subsequently select **option [2]** to initiate the generation of inputs for the selected DFT calculations for all structures within the Structures folder;
   - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 2"** in its **first** line, and simply execute the SAMBA code (**python -m samba_ilum**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
   - Finally, the input files for the selected DFT calculations for all structures within the Structures folder are saved to the directory defined by the **dir_o** tag in **SAMBA_WorkFlow.input**. The input files for each structure will be stored in separate folders, named after the corresponding structural file.
 
-------------------------------------
+---
 
 </details>
 
 <details>
   <summary><strong>Optional: Customizing DFT Calculations</strong></summary>
 
-  ------------------------------------
+---
 
   To customize the DFT calculations, run the SAMBA code (**python -m samba_ilum**) in your working directory and select **option [3]**.
 
@@ -639,7 +658,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 ◉ **Note)** For the generation of inputs for high-throughput DFT, the code must be run in a **Linux environment** with the **VASPKIT** package properly installed.
 
-------------------------------------
+---
 
 </details>
 
@@ -649,47 +668,73 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 <details>
 <summary><strong>Setting up the Linux environment for High-Throughput DFT calculations</strong></summary>
 
------------------------------------
+---
 
 ◉ **1st)** No ambiente Linux onde os cálculos de DFT serão executados, de load em uma versão do pacote python superior a 3.8 (ou uma versão recente do pacote CONDA), por meio do comando: **module load** nome_pacote
-  <pre><code>example:  module load python_3.8.11-intel-2021.3.0</code></pre>
+  ```
+example:  module load python_3.8.11-intel-2021.3.0
+```
   ou
-  <pre><code>example:  module load CONDA_2025.5.1</code></pre>
+  ```
+example:  module load CONDA_2025.5.1
+```
 
 ◉ **2nd)** Selecione um diretório de interese, e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
-   <pre><code>example:  python -m venv python_virtual</code></pre>  
+   ```
+example:  python -m venv python_virtual
+```  
      
    Salve o caminho do ambiente Python criado, pois é este caminho que você deve utilizar na tag **dir_virtual_python** do **SAMBA_WorkFlow.input**
-   <pre><code>example:  dir_virtual_python = '/home/dlelis/codes/python_virtual'</code></pre>  
+   ```
+example:  dir_virtual_python = '/home/dlelis/codes/python_virtual'
+```  
 
 ◉ **3rd)** Ative o ambiente Python, por meio do comando: **source** caminho_do_ambiente_python + **/bin/activate**
-  <pre><code>example:  source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
+  ```
+example:  source /home/dlelis/codes/python_virtual/bin/activate
+```
 
 ◉ **4th)** Após ativar o ambiente Python, instale os seguintes pacotes **SAMBA**, **VASProcar** e **pymatgen**, por meio dos comandos:
-  <pre><code>pip install --upgrade samba_ilum</code></pre>
-  <pre><code>pip install --upgrade vasprocar</code></pre>
-  <pre><code>pip install --upgrade pymatgen</code></pre>
+  ```
+pip install --upgrade samba_ilum
+```
+  ```
+pip install --upgrade vasprocar
+```
+  ```
+pip install --upgrade pymatgen
+```
 
 <details>
   <summary><strong>5th) Instalação do VASPKIT</strong></summary>
 
-  ------------------------------------
+---
 
   Faça o download do VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
   Para realizar a instalação basei-se nos comandos abaixo, onde tomei como exemplo o arquivo baixado (vaspkit.1.5.1.tar.gz) a ser instalado no diretório (/home/dlelis/codes).
   Após realizar o download do VASPKIT, mova o arquivo para o diretório de interesse, e dentro deste diretório execute os seguintes comandos:
-  <pre><code>tar -zxvf vaspkit.1.5.1.tar.gz</code></pre>
-  <pre><code>cd vaspkit.1.5.1</code></pre>
-  <pre><code>cp -f how_to_set_environment_variables ~/.vaspkit</code></pre>
-  <pre><code>echo 'export PATH=/home/dlelis/codes/vaspkit.1.5.1/bin/:$PATH' >> ~/.bashrc</code></pre>
-  <pre><code>source ~/.bashrc</code></pre>
+  ```
+tar -zxvf vaspkit.1.5.1.tar.gz
+```
+  ```
+cd vaspkit.1.5.1
+```
+  ```
+cp -f how_to_set_environment_variables ~/.vaspkit
+```
+  ```
+echo 'export PATH=/home/dlelis/codes/vaspkit.1.5.1/bin/:$PATH' >> ~/.bashrc
+```
+  ```
+source ~/.bashrc
+```
 
   Para confirmar que a instalação foi configurada corretamente, apenas digite no terminal **vaspkit** que o código deve ser executado.
 
 </details>  
 
-------------------------------------
+---
 
 </details>
 
@@ -699,7 +744,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 <details>
 <summary><strong>Submitting High-Throughput DFT jobs</strong></summary>
 
------------------------------------
+---
 
 ◉  Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como **Slurm**, **OpenPBS**, **Torque** e etc, comumente utilizados em ambientes de computação de alto desempenho (**HPC**), sendo estes os arquivos **job.sh** e **job0.sh**, onde:
 
@@ -708,11 +753,12 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 <details>
   <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
 
------------------------------------
+---
 
 <details>
   <summary><strong>job.sh - example</strong></summary>
-  <pre><code>#!/bin/bash
+  ```
+#!/bin/bash
 #SBATCH --partition=medium
 #SBATCH --job-name=WFlow
 #SBATCH --nodes=1
@@ -727,7 +773,8 @@ dir0=`pwd`
 #dir0="/mnt/bgfs/home/dlelis/WorkFlow//WorkFlow_TESTE"
 #---------------------
 source $dir0/./job0.sh
-#---------------------</code></pre>
+#---------------------
+```
 
 </details>
 
@@ -737,7 +784,7 @@ source $dir0/./job0.sh
 
 ◉ Por fim, o comando "**source $dir0/./job0.sh**" executa o arquivo de job auxiliar **job0.sh**.
 
-------------------------------------
+---
 
 </details>
 
@@ -746,11 +793,12 @@ source $dir0/./job0.sh
 <details>
   <summary><strong>job0.sh (Auxiliary task scheduler file)</strong></summary>
 
-------------------------------------
+---
 
 <details>
   <summary><strong>job0.sh - example</strong></summary>
-  <pre><code>#!/bin/bash
+  ```
+#!/bin/bash
 
 cd $dir0
 mv python_virtual python_virtual_delete
@@ -787,7 +835,8 @@ while true; do
 ...
 ...
 
-done</code></pre>
+done
+```
 
 </details>
 
@@ -801,7 +850,7 @@ done</code></pre>
 
 </details>
 
-------------------------------------
+---
 
 </details>
 
@@ -811,11 +860,11 @@ done</code></pre>
 <details>
 <summary><strong>Support</strong></summary>
 
------------------------------------
+---
 
 For more informations/questions or to report potential bugs, send an e-mail to: augusto-lelis@outlook.com
 
-------------------------------------
+---
 
 </details>
 
