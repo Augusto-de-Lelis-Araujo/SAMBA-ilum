@@ -741,7 +741,7 @@ source $dir0/./job0.sh
 
 </details>
 
-◉  Enquanto o arquivo **job.sh** é o arquivo auxiliar que possui as especificidades dos cálculos a serem executados, como informações a respeito dos pacotes a serem utilizados e os cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser de fato iniciado no agendador de tarefas.
+◉  Enquanto o arquivo **job0.sh** é o arquivo auxiliar que possui as especificidades dos cálculos a serem executados, como informações a respeito dos pacotes a serem utilizados e os cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser de fato iniciado no agendador de tarefas.
 
 <details>
   <summary><strong>job0.sh (Auxiliary task scheduler file)</strong></summary>
