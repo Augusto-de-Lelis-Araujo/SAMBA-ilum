@@ -22,7 +22,10 @@
   </ul>
   <img src="etc/figures/logo.png" alt="SAMBA logo">
   
-  ------------------------------------
+</details>
+
+------------------------------------
+
 </details>
 
 
