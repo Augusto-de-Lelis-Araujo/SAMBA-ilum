@@ -703,9 +703,9 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 -----------------------------------
 
-Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como OpenPBS e Slurm, comumente utilizados em ambientes de computação de alto desempenho (HPC), sendo estes os arquivos job.sh e job0.sh, onde:
+◉ Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como OpenPBS e Slurm, comumente utilizados em ambientes de computação de alto desempenho (HPC), sendo estes os arquivos job.sh e job0.sh, onde:
 
-- O arquivo job.sh é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
+◉ O arquivo job.sh é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
 
 <details>
   <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
@@ -726,19 +726,18 @@ Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necess�
 
 #--------
 dir0=`pwd`
-# dir0="/mnt/bgfs/home/dlelis/WorkFlow//WorkFlow_TESTE"
+#dir0="/mnt/bgfs/home/dlelis/WorkFlow//WorkFlow_TESTE"
 #---------------------
 source $dir0/./job0.sh
 #---------------------</code></pre>
 
 </details>
 
+◉ As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc.
 
-As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc.
+◉ A tag **dir0** refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **pwd** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "**#**" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local.
 
-A tag **dir0** refere-se ao caminho completo onde os arquivos para a execução dos cálculos de DFT se encontram, dependendo do ambiente Linux o comando **pwd** é suficiente para informar o caminho completo, porém, se este comando falhar, informe o caminho completo explicitamente apenas removendo o "**#**" no campo inferior, e editando o caminho caso a pasta gerada pelo código SAMBA tenha sido movida para outro local.
-
-Por fim, o comando "**source $dir0/./job0.sh**" executa o arquivo de job secundário **job0.sh**, o qual possui as especificidades dos cálculos a serem executados, como pacotes a serem utilizados e os diferente cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser iniciada no agendador de tarefas.
+◉ Por fim, o comando "**source $dir0/./job0.sh**" executa o arquivo de job secundário **job0.sh**, o qual possui as especificidades dos cálculos a serem executados, como pacotes a serem utilizados e os diferente cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser iniciada no agendador de tarefas.
 
 ------------------------------------
 
