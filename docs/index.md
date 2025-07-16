@@ -21,7 +21,7 @@
     <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
   </ul>
 
-  ![SAMBA logo](../etc/figures/logo.png)
+  ![SAMBA logo](/etc/figures/logo.png)
   
   ------------------------------------
 </details>
@@ -55,7 +55,7 @@
   - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
   - midb.cloud database **<a href="https://midb.cloud/">link</a>**
 
-  ![Institutional Network](../etc/figures/institucional.png)
+  ![Institutional Network](/etc/figures/institucional.png)
 
   ------------------------------------
 </details>
@@ -713,4 +713,4 @@ For questions about the installation or proper use of the package, or to report 
 
 
 
-![Institutional Network](../etc/figures/institucional.png)
+![Institutional Network](/etc/figures/institucional.png)
