@@ -696,6 +696,18 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 
 
+<details>
+<summary><strong>Submitting high-performance DFT jobs</strong></summary>
+
+-----------------------------------
+
+
+------------------------------------
+
+</details>
+
+
+
 
 <details>
 <summary><strong>Support</strong></summary>
