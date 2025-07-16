@@ -20,7 +20,8 @@
     <li>Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.</li>
     <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
   </ul>
-  <img src="../etc/figures/logo.png" alt="SAMBA logo">
+
+  ![SAMBA logo](../etc/figures/logo.png)
   
   ------------------------------------
 </details>
@@ -54,7 +55,7 @@
   - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
   - midb.cloud database **<a href="https://midb.cloud/">link</a>**
 
-  <img src="../etc/figures/institucional.png" alt="Institutional Network"> 
+  ![Institutional Network](../etc/figures/institucional.png)
 
   ------------------------------------
 </details>
@@ -712,4 +713,4 @@ For questions about the installation or proper use of the package, or to report 
 
 
 
-<img src="../etc/figures/institucional.png" alt="Institutional Network">
+![Institutional Network](../etc/figures/institucional.png)
