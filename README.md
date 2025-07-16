@@ -717,6 +717,8 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 For questions about the installation or proper use of the package, or to report potential bugs, please contact us at the following email address:
 <pre><code>augusto-lelis@outlook.com</code></pre>
 
+For more informations/questions send an e-mail to: augusto-lelis@outlook.com
+
 ------------------------------------
 
 </details>
