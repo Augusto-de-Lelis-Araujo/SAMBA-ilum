@@ -6,7 +6,7 @@ version: 2
 
 # Define que estamos usando o MkDocs para construir a documentação
 mkdocs:
-  configuration: docs/mkdocs.yml
+  configuration: mkdocs.yml
 
 # Configura o ambiente de construção (build)
 build:
@@ -18,4 +18,4 @@ build:
 # (Neste caso, para instalar o tema 'mkdocs-material')
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: requirements.txt
