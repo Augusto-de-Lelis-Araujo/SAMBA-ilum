@@ -21,11 +21,9 @@
     <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
   </ul>
   <img src="etc/figures/logo.png" alt="SAMBA logo">
-  
-</details>
 
 ------------------------------------
-
+  
 </details>
 
 
