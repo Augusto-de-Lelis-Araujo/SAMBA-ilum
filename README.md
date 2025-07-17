@@ -92,7 +92,7 @@
   
   - VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
     
-    **VASProcar** <img src="etc/figures/VASProcar_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> is one of **SAMBA**'s <img src="etc/figures/SAMBA_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> main packages, which handles the post-processing and plotting of results from **VASP** <img src="etc/figures/VASP_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> output files.
+    **VASProcar** <img src="etc/figures/VASProcar_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> is one of **SAMBA**'s <img src="etc/figures/SAMBA_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> main packages, which handles the post-processing and plotting of results from **VASP** output files.
   - pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
   - SciPy **<a href="https://pypi.org/project/scipy/">link</a>**
   - NumPy **<a href="https://pypi.org/project/numpy/">link</a>**
