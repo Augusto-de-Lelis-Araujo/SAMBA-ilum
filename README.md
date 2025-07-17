@@ -39,6 +39,8 @@
   - Felipe Castro de Lima (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)
   - Pedro Henrique Sophia (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
 
+    Augusto de Lelis Araújo (**<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>**)      Adalberto Fazzio (**<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>**)        Felipe Castro de Lima (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)         Pedro Henrique Sophia (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
+
   <img src="etc/figures/Authors.png" alt="SAMBA logo">
 
   ------------------------------------
