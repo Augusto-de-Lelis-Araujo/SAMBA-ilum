@@ -98,7 +98,7 @@
   - Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
 
 
-  <img src="etc/figures/python_packages_logos" alt="Institutional Network"> 
+  <img src="etc/figures/python_packages_logos.png" alt="python_packages"> 
 
 ------------------------------------
 </details>
