@@ -97,6 +97,9 @@
   - Matplotlib **<a href="https://pypi.org/project/matplotlib/">link</a>**
   - Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
 
+
+  <img src="etc/figures/python_packages.png" alt="Institutional Network"> 
+
 ------------------------------------
 </details>
 
