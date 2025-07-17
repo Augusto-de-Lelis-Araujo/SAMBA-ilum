@@ -48,7 +48,7 @@
 
 
 <details>
-  <summary><strong>Meet Institutional and Research Network:</strong></summary>
+  <summary><strong>Meet Institutional and Research Network</strong></summary>
 
   ------------------------------------
   
