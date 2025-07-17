@@ -1,3 +1,4 @@
+<img src="etc/figures/logo.png" alt="SAMBA logo">
 <h1>SAMBA (Simulation and Automated Methods for Bilayer Analysis)
   <a href="https://www.gnu.org/licenses/gpl-3.0">
     <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
@@ -20,7 +21,6 @@
     <li>Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.</li>
     <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
   </ul>
-  <img src="etc/figures/logo.png" alt="SAMBA logo">
 
 ------------------------------------
   
