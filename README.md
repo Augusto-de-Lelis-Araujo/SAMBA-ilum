@@ -90,7 +90,7 @@
 
   During the installation, SAMBA checks the existence of the following Python modules:
   
-  - VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
+  - VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>** (**VASProcar** is one of **SAMBA**'s main packages, which handles the post-processing and plotting of results from **VASP** output files.)
   - pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
   - SciPy **<a href="https://pypi.org/project/scipy/">link</a>**
   - NumPy **<a href="https://pypi.org/project/numpy/">link</a>**
