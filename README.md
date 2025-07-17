@@ -71,7 +71,7 @@
 
 
 <details>
-  <summary><strong>Installation</strong></summary>
+  <summary><strong>Installation / Source code</strong></summary>
 
   ------------------------------------
   
