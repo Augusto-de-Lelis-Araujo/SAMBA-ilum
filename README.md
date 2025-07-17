@@ -725,7 +725,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
 <details>
-  <summary><strong>5th) Instalação do VASPKIT <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:middle; width: 40px;"> </strong></summary>
+  <summary><strong>5th) Instalação do VASPKIT <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:bottom; width: 40px;"> </strong></summary>
 
   ------------------------------------
 
