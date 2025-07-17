@@ -761,16 +761,14 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 ◉  Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como **Slurm**, **OpenPBS**, **Torque** e etc, comumente utilizados em ambientes de computação de alto desempenho (**HPC**), sendo estes os arquivos **job.sh** e **job0.sh**, onde:
 
-◉  O arquivo **job.sh** é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
-
 <details>
   <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
 
------------------------------------
+------------------------------------
 
-<details>
-  <summary><strong>job.sh - example</strong></summary>
-  <pre><code>#!/bin/bash
+◉  O arquivo **job.sh** é o arquivo principal que deve ser executado para a submissão dos cálculos no agendador de tarefas, possuindo a seguinte estrutura:
+
+<pre><code>#!/bin/bash
 #SBATCH --partition=medium
 #SBATCH --job-name=WFlow
 #SBATCH --nodes=1
@@ -786,8 +784,6 @@ dir0=`pwd`
 #---------------------
 source $dir0/./job0.sh
 #---------------------</code></pre>
-
-</details>
 
 ◉ As tags iniciais do arquivo **job.sh** são referentes a execução no agendador de tarefas **Slurm**, sendo necessário editar seus campos em função do ambiente específico onde os cálculos serão executados, bem como os adaptar para outros agendadores de tarefas como o **OpenPBS**, **Torque**, **LoadLeveler** e etc;
 
