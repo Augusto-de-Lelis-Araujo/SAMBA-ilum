@@ -233,7 +233,7 @@ Direct
 
   ------------------------------------
 
-  ◉ Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
+  Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
   - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
   - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
