@@ -795,16 +795,14 @@ source $dir0/./job0.sh
 
 </details>
 
-◉  Enquanto o arquivo **job0.sh** é o arquivo auxiliar que possui as especificidades dos cálculos a serem executados, como informações a respeito dos pacotes a serem utilizados e os cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser de fato iniciado no agendador de tarefas.
-
 <details>
   <summary><strong>job0.sh (Auxiliary task scheduler file)</strong></summary>
 
 ------------------------------------
 
-<details>
-  <summary><strong>job0.sh - example</strong></summary>
-  <pre><code>#!/bin/bash
+◉  Enquanto o arquivo **job0.sh** é o arquivo auxiliar que possui informações a respeito dos pacotes a serem utilizados e os cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser de fato iniciado no agendador de tarefas. Os arquivo **job0.sh**, possui a seguinte estrutura:
+
+<pre><code>#!/bin/bash
 
 cd $dir0
 mv python_virtual python_virtual_delete
@@ -842,8 +840,6 @@ while true; do
 ...
 
 done</code></pre>
-
-</details>
 
 ◉ **dir_virtual** especifica o caminho do ambiente virtual Python a ser carregado para a execução de scripts ao longo da execução do job, este caminho é definido na tag **dir_virtual_python** do arquivo de input **SAMBA_WorkFlow.input**;
 
