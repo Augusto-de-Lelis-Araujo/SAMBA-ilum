@@ -337,7 +337,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 </details>
 
 <details>
-  <summary><strong>4th Step) Run the SAMBA code </strong></summary>
+  <summary><strong>4th Step) Run the SAMBA code</strong></summary>
 
   ------------------------------------
 
@@ -345,25 +345,42 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 1"** in its **first** line, and simply execute the SAMBA code (**python -m samba_blocked**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
   - Finally, the structural files for the generated bilayers are saved in the **Structures** directory. If the code runs in a **loop**, the structural files for each material combination will be stored in separate folders within the **Structures** directory.
 
+  ------------------------------------
+
+</details>
+
+
+<details>
+  <summary><strong>Structure of the bilayer POSCAR file</strong></summary>
+
+  ------------------------------------
+
+<details>
+  <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
+
+  <pre><code>SAMBA Bi_Se+Ga_Te 5 4 | mismatch_areas_12_21 = -2.6948_2.7695 | var_areas = -1.352_1.38 | var_vectors = -0.6783_-0.6783_0.6876_0.6876 | mismatch_angles_12_21 = 0.0_0.0 | var_angles = 0.0_0.0 | rotation_angle = 180.0 | MSCell_1 = 1_1_1_1 | MSCell_2 = -1_-1_-1_-1 | MDeform_1 = 0.993216916_0.0_0.0_0.993216916 | MDeform_2 = 1.00687637_0.0_0.0_1.00687637 | MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079 | MSTrain_2 = 0.006900013_0.0_0.0_0.006900012 | Shift_plane = 0.0_0.0 | Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002  
+1.00000000000000     
+ 2.0564035366489999  3.5617954072029998  0.00000000000000000
+-2.0564035373560001  3.5617954067939999  0.00000000000000000
+ 0.0000000000000000  0.0000000000000000  30.0941066965837827
+Bi Se Ga Te
+ 2  3  2  2
+Direct
+0.6666666666666572  0.6666666666666572  0.3018215616798230
+0.3333333333333286  0.3333333333333286  0.4314878698622948
+0.0000000000000000  0.0000000000000000  0.3666547157710625
+0.6666666666666572  0.6666666666666572  0.4840912016867946
+0.3333333333333286  0.3333333333333286  0.2492182298553303
+0.0000000000000000  0.0000000000000000  0.6267689929781781
+0.0000000000000000  0.0000000000000000  0.7080498733779521
+0.3333333333333286  0.3333333333333286  0.5840380959516907
+0.3333333333333286  0.3333333333333286  0.7507817701446697</code></pre>
+
 </details>
 
 ------------------------------------
 
 </details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
