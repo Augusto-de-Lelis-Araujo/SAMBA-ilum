@@ -81,7 +81,7 @@
   **Requirements**: Make sure you have the following requirements:
   
   - Linux or Windows environment for bilayer generation
-  - Linux environment for high-throughput DFT: requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>** <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:middle; width: 40px;">
+  - Linux environment for high-throughput DFT (requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**)
   - Python 3.8+
   - Python virtual environment is recommended (venv or conda)
   - Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
@@ -725,7 +725,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
 <details>
-  <summary><strong>5th) Instalação do VASPKIT</strong></summary>
+  <summary><strong>5th) Instalação do VASPKIT <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:middle; width: 40px;"> </strong></summary>
 
   ------------------------------------
 
