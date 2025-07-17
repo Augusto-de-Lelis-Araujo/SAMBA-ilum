@@ -142,6 +142,9 @@ Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
 # [2] WorkFlow: High Throughput DFT (inputs + job)
 # --------------------------------------------------------------------
 # [3] Customize internal WorkFlow inputs (INPUTS folder)
+######################################################################
+A tutorial on how to use the SAMBA is available on GitHub at the link:
+https://github.com/Augusto-de-Lelis-Araujo/SAMBA/blob/main/README.md
 ######################################################################</code></pre>
 
   <ul>
