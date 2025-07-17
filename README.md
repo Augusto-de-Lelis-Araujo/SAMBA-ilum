@@ -808,7 +808,7 @@ source $dir0/./job0.sh
 
 - Enquanto o arquivo **job0.sh** é o arquivo auxiliar que possui informações a respeito dos pacotes a serem utilizados e os cálculos de DFT a serem executados. Por estar separado do arquivo de job princial **job.sh**, ele mode ser editado como o usuário bem entender, antes da execução do cálculo ser de fato iniciado no agendador de tarefas. Os arquivo **job0.sh**, possui a seguinte estrutura:
 
-<pre><code>#!/bin/bash
+  <pre><code>#!/bin/bash
 
 cd $dir0
 mv python_virtual python_virtual_delete
