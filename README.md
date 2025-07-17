@@ -360,6 +360,21 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 </details>
 
 
+</details>
+
+
+<details>
+  <summary><strong>5th Step) Terminal Messages</strong></summary>
+
+  ------------------------------------
+
+  Below we show an example of the messages printed to the terminal during the execution of the script. These messages indicate the progress of the different steps, such as input loading, calculations, and results generation. This can help the user follow the workflow and identify any issues if they occur.
+
+  ------------------------------------
+
+</details>
+
+
 <details>
   <summary><strong>Structure of the POSCAR file for the generated bilayers</strong></summary>
 
