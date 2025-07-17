@@ -365,7 +365,12 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   ------------------------------------
 
-  name: 009atoms_-1.352_1.38_180.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002
+  As bicamadas geradas são rotuladas como a seguinte estrutura "**009atoms_-1.352_1.38_180.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", com diferentes informações separadas por "**_**", onde:
+  - O **1º elemento** informa o número total de átomos da estrutura gerada;
+  - O **2º e 3º elementos** corresponde a variação percentual **aplicada** a **Área** da célula do **Material_A** seguido da variação percentual **aplicada** a **Área** da célula do **Material_B**, para a formação da célula da bicamada;
+  - O **último elemento** é a **ID** que identifica a estrutura gerada.
+
+  Abaixo, apresentamos a estrutura do arquivo POSCAR da bicamada correspondente ao rótulo acima. 
 
 <details>
   <summary><strong>POSCAR file - example</strong></summary>
@@ -390,13 +395,13 @@ Direct
 
 </details>
 
-◉ Diversas informação estruturais a respeito da bicamada gerada, são gravadas na 1º linha do arquivo POSCAR, onde: 
+Diversas informação estruturais a respeito da bicamada gerada, são gravadas na **1º linha** do arquivo POSCAR, onde: 
 
 - **SAMBA** é apenas uma TAG que permite o código SAMBA interagir com o arquivo POSCAR, extrair informações e auxiliar na criação dos arquivos de input para o cálculos de DFT de alto desempenho;
 
-- O 2º elemento da 1º linha do arquivo POSCAR, correponde aos ions presentes na camada do material A (separados por "**_**") seguindo após o "**+**" dos ions presentes na monocamada do material B (separados por "**_**");
+- O **2º elemento** da **1º linha** do arquivo POSCAR, correponde aos ions presentes na camada do material A (separados por "**_**") seguindo após o "**+**" dos ions presentes na monocamada do material B (separados por "**_**");
 
-- Os 2 elementos seguintes antes de **mismatch_areas_12_21**, correspondem respectivamente, ao número total de átomos presente na camada do material A e na camada do material B;
+- Os **2 elementos** seguintes antes de **mismatch_areas_12_21**, correspondem respectivamente, ao número total de átomos presente na camada do material A e na camada do material B;
 
 - **mismatch_areas_12_21** corresponde a variação percentual da **Área** da célula do **Material_A** em relação ao do Material_B seguido da variação percentual da **Área** da célula do **Material_B** em relação ao do Material_A (referente as monocamdas pristinas);
 
@@ -418,7 +423,7 @@ Direct
 
 - **Shift_plane** = corresponde as coordenadas diretas (em função dos vetores de rede A1 e A2) do deslocamento aplicado a célula do material B, durante o processo xy-scan;
 
-- Os 3 últimos elementos da 1º linha do arquivo POSCAR, correspondem respectivamente a ID de identificação da monocamada do Material A, monocamada do Material B, e bicamada gerada;
+- Os **3 últimos elementos** da **1º linha** do arquivo POSCAR, correspondem respectivamente a ID de identificação da monocamada do Material A, monocamada do Material B, e bicamada gerada;
 
 </details>
 
