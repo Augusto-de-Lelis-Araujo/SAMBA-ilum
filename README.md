@@ -93,8 +93,6 @@
   During the installation, SAMBA checks the existence of the following Python modules:
   
   - VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
-
-    <><img src="etc/figures/VASProcar_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"></a>
     
     **VASProcar** <img src="etc/figures/VASProcar_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> is one of **SAMBA**'s <img src="etc/figures/SAMBA_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> main packages, which handles the post-processing and plotting of results from **VASP** output files.
   - pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
