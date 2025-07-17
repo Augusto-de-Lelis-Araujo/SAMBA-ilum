@@ -365,17 +365,15 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   ------------------------------------
 
-  As bicamadas geradas são rotuladas como a seguinte estrutura "**009atoms_-1.352_1.38_180.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", com diferentes informações separadas por "**_**", onde:
+  As bicamadas geradas são rotuladas como a seguinte estrutura "**009atoms_-1.352_1.38_60.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", com diferentes informações separadas por "**_**", onde:
   - O **1º elemento** informa o número total de átomos da estrutura gerada;
-  - O **2º e 3º elementos** corresponde a variação percentual **aplicada** a **Área** da célula do **Material_A** seguido da variação percentual **aplicada** a **Área** da célula do **Material_B**, para a formação da célula da bicamada;
+  - O **2º e 3º elementos** correspondem respectivamente, a variação percentual **aplicada** a **Área** da célula do **Material_A** e a variação percentual **aplicada** a **Área** da célula do **Material_B**, para a formação da célula da bicamada;
+  - O **4º elemento** corresponde ao ângulo de rotação relativo entre as camadas (ângulo necessário para alinhar a célula do material B com a célula do material A);
   - O **último elemento** é a **ID** que identifica a estrutura gerada.
 
   Abaixo, apresentamos a estrutura do arquivo POSCAR da bicamada correspondente ao rótulo acima. 
 
-<details>
-  <summary><strong>POSCAR file - example</strong></summary>
-
-  <pre><code>SAMBA Bi_Se+Ga_Te 5 4 | mismatch_areas_12_21 = -2.6948_2.7695 | var_areas = -1.352_1.38 | var_vectors = -0.6783_-0.6783_0.6876_0.6876 | mismatch_angles_12_21 = 0.0_0.0 | var_angles = 0.0_0.0 | rotation_angle = 180.0 | MSCell_1 = 1_1_1_1 | MSCell_2 = -1_-1_-1_-1 | MDeform_1 = 0.993216916_0.0_0.0_0.993216916 | MDeform_2 = 1.00687637_0.0_0.0_1.00687637 | MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079 | MSTrain_2 = 0.006900013_0.0_0.0_0.006900012 | Shift_plane = 0.0_0.0 | Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002  
+  <pre><code>SAMBA Bi_Se+Ga_Te 5 4 | mismatch_areas_12_21 = -2.6948_2.7695 | var_areas = -1.352_1.38 | var_vectors = -0.6783_-0.6783_0.6876_0.6876 | mismatch_angles_12_21 = 0.0_0.0 | var_angles = 0.0_0.0 | rotation_angle = 60.0 | MSCell_1 = 1_1_1_1 | MSCell_2 = -1_-1_-1_-1 | MDeform_1 = 0.993216916_0.0_0.0_0.993216916 | MDeform_2 = 1.00687637_0.0_0.0_1.00687637 | MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079 | MSTrain_2 = 0.006900013_0.0_0.0_0.006900012 | Shift_plane = 0.0_0.0 | Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002  
 1.00000000000000     
  2.0564035366489999  3.5617954072029998  0.00000000000000000
 -2.0564035373560001  3.5617954067939999  0.00000000000000000
@@ -392,8 +390,6 @@ Direct
 0.0000000000000000  0.0000000000000000  0.7080498733779521
 0.3333333333333286  0.3333333333333286  0.5840380959516907
 0.3333333333333286  0.3333333333333286  0.7507817701446697</code></pre>
-
-</details>
 
 Diversas informação estruturais a respeito da bicamada gerada, são gravadas na **1º linha** do arquivo POSCAR, onde: 
 
