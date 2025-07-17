@@ -725,11 +725,11 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
 <details>
-  <summary><strong>5th) Instalação do VASPKIT <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:bottom; width: 40px;"> </strong></summary>
+  <summary><strong>5th) Instalação do VASPKIT</strong></summary>
 
   ------------------------------------
 
-  Faça o download do VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
+  Faça o download do VASPKIT <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:bottom; width: 40px;"> por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
   Para realizar a instalação basei-se nos comandos abaixo, onde tomei como exemplo o arquivo baixado (vaspkit.1.5.1.tar.gz) a ser instalado no diretório (/home/dlelis/codes).
   Após realizar o download do VASPKIT, mova o arquivo para o diretório de interesse, e dentro deste diretório execute os seguintes comandos:
