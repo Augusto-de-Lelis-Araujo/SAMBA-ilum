@@ -765,7 +765,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 -----------------------------------
 
--  Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como **Slurm**, **OpenPBS**, **Torque** e etc, comumente utilizados em ambientes de computação de alto desempenho (**HPC**), sendo estes os arquivos **job.sh** e **job0.sh**, onde:
+◉ Ao utilizar a opção [2] do código SAMBA, além dos arquivos de inputs necessários para os cálculos de DFT de alto-desempenho, o código fornece dois arquivos de job para a execução dos cálculos em um ambiente Linux por meio de agendadores de tarefas, como **Slurm**, **OpenPBS**, **Torque** e etc, comumente utilizados em ambientes de computação de alto desempenho (**HPC**), sendo estes os arquivos **job.sh** e **job0.sh**, onde:
 
 <details>
   <summary><strong>job.sh (Primary task scheduler file)</strong></summary>
