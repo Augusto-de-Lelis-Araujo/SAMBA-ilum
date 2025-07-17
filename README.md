@@ -233,7 +233,7 @@ Direct
 
   ------------------------------------
 
-  Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
+  ◉ Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
 
   - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
   - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
@@ -365,6 +365,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   ------------------------------------
 
+  name: 009atoms_-1.352_1.38_180.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002
+
 <details>
   <summary><strong>POSCAR file - example</strong></summary>
 
@@ -388,35 +390,35 @@ Direct
 
 </details>
 
-name: 009atoms_-1.352_1.38_180.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002
+◉ Diversas informação estruturais a respeito da bicamada gerada, são gravadas na 1º linha do arquivo POSCAR, onde: 
 
-SAMBA
+- **SAMBA** é apenas uma TAG que permite o código SAMBA interagir com o arquivo POSCAR, extrair informações e auxiliar na criação dos arquivos de input para o cálculos de DFT de alto desempenho;
 
-Bi_Se+Ga_Te
+- O 2º elemento da 1º linha do arquivo POSCAR, correponde aos ions presentes na camada do material A (separados por "**_**") seguindo após o "**+**" dos ions presentes na monocamada do material B (separados por "**_**");
 
-5 4
+- Os 2 elementos seguintes antes de **mismatch_areas_12_21**, correspondem respectivamente, ao número total de átomos presente na camada do material A e na camada do material B;
 
-mismatch_areas_12_21 = -2.6948_2.7695
+- **mismatch_areas_12_21** corresponde a variação percentual da **Área** da célula do **Material_A** em relação ao do Material_B seguido da variação percentual da **Área** da célula do **Material_B** em relação ao do Material_A (referente as monocamdas pristinas);
 
-var_areas = -1.352_1.38
+- **var_areas** corresponde a variação percentual **aplicada** a **Área** da célula do **Material_A** seguido da variação percentual **aplicada** a **Área** da célula do **Material_B**, para a formação da célula da bicamada;
 
-var_vectors = -0.6783_-0.6783_0.6876_0.6876
+- **var_vectors** corresponde a variação percentual **aplicada** aos **vetores de rede (A1, A2)** da célula do **Material_A** seguido da variação percentual **aplicada** aos **vetores de rede (A1, A2)** da célula do **Material_B**, para a formação da célula da bicamada;
 
-mismatch_angles_12_21 = 0.0_0.0
+- **mismatch_angles_12_21** corresponde a variação percentual do **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_A** em relação ao do Material_B seguido da variação percentual do **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_B** em relação ao do Material_A (referente as monocamdas pristinas);
 
-var_angles = 0.0_0.0
+- **var_angles** corresponde a variação percentual **aplicada** ao **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_A** seguido da variação percentual **aplicada** ao **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_B**, para a formação da célula da bicamada;
 
-rotation_angle = 180.0
+- **rotation_angle** corresponde ao ângulo de rotação relativo entre as camadas (ângulo necessário para alinhar a célula do material B com a célula do material A);
 
-MSCell_1 = 1_1_1_1  /  MSCell_2 = -1_-1_-1_-1
+- **MSCell_1** / **MSCell_2** Matrizes de Supercélula que levam os vetores de rede da célula original fornecida pelo usuário, a célula utilizada pelo código na formação da bicamada (antes de qualquer deformação ser aplicada);
 
-MDeform_1 = 0.993216916_0.0_0.0_0.993216916  /  MDeform_2 = 1.00687637_0.0_0.0_1.00687637
+- **MDeform_1** / **MDeform_2** Matrizes de Deformação aplicadas aos vetores de rede das células obtidas por meio das Matrizes de Supercélula, para a formação da célula da bicamada;
 
-MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079  /  MSTrain_2 = 0.006900013_0.0_0.0_0.006900012
+- **MSTrain_1** /  **MSTrain_2** Matrizes de Strain aplicadas aos vetores de rede das células obtidas por meio das Matrizes de Supercélula, para a formação da célula da bicamada;
 
-Shift_plane = 0.0_0.0
+- **Shift_plane** = corresponde as coordenadas diretas (em função dos vetores de rede A1 e A2) do deslocamento aplicado a célula do material B, durante o processo xy-scan;
 
-Bi2Se3_7f7e8b3365f74a5d  /  Ga2Te2_019a4ea220da4bb7  / Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002
+- Os 3 últimos elementos da 1º linha do arquivo POSCAR, correspondem respectivamente a ID de identificação da monocamada do Material A, monocamada do Material B, e bicamada gerada;
 
 </details>
 
