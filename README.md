@@ -379,19 +379,33 @@ Direct
 </details>
 
 name: 009atoms_-1.352_1.38_180.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002
+
 SAMBA
+
 Bi_Se+Ga_Te
+
 5 4
+
 mismatch_areas_12_21 = -2.6948_2.7695
+
 var_areas = -1.352_1.38
+
 var_vectors = -0.6783_-0.6783_0.6876_0.6876
+
 mismatch_angles_12_21 = 0.0_0.0
+
 var_angles = 0.0_0.0
+
 rotation_angle = 180.0
+
 MSCell_1 = 1_1_1_1  /  MSCell_2 = -1_-1_-1_-1
+
 MDeform_1 = 0.993216916_0.0_0.0_0.993216916  /  MDeform_2 = 1.00687637_0.0_0.0_1.00687637
+
 MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079  /  MSTrain_2 = 0.006900013_0.0_0.0_0.006900012
+
 Shift_plane = 0.0_0.0
+
 Bi2Se3_7f7e8b3365f74a5d  /  Ga2Te2_019a4ea220da4bb7  / Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002
 
 </details>
