@@ -699,7 +699,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
  
 </details>
 
-◉ **Note)** For the generation of inputs for high-throughput DFT, the code must be run in a **Linux environment** with the **VASPKIT** package properly installed.
+  **Note:** For the generation of inputs for high-throughput DFT, the code must be run in a **Linux environment** with the **VASPKIT** package properly installed.
 
 ------------------------------------
 
