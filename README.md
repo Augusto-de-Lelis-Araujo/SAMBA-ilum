@@ -411,11 +411,11 @@ Diversas informação estruturais a respeito da bicamada gerada, são gravadas n
 
 - **rotation_angle** corresponde ao ângulo de rotação relativo entre as camadas (ângulo necessário para alinhar a célula do material B com a célula do material A);
 
-- **MSCell_1** / **MSCell_2** Matrizes de Supercélula que levam os vetores de rede da célula original fornecida pelo usuário, a célula utilizada pelo código na formação da bicamada (antes de qualquer deformação ser aplicada);
+- **MSCell_1** / **MSCell_2** correspondem as **matrizes de supercélula** que levam os vetores de rede da célula original fornecida pelo usuário, a célula utilizada pelo código na formação da bicamada (antes de qualquer deformação ser aplicada);
 
-- **MDeform_1** / **MDeform_2** Matrizes de Deformação aplicadas aos vetores de rede das células obtidas por meio das Matrizes de Supercélula, para a formação da célula da bicamada;
+- **MDeform_1** / **MDeform_2** correspondem as **matrizes de deformação** aplicadas aos vetores de rede das células obtidas por meio das **matrizes de supercélula**, para a formação da célula da bicamada;
 
-- **MSTrain_1** /  **MSTrain_2** Matrizes de Strain aplicadas aos vetores de rede das células obtidas por meio das Matrizes de Supercélula, para a formação da célula da bicamada;
+- **MSTrain_1** /  **MSTrain_2** correspondem as **matrizes de strain** aplicadas aos vetores de rede das células obtidas por meio das **matrizes de supercélula**, para a formação da célula da bicamada;
 
 - **Shift_plane** = corresponde as coordenadas diretas (em função dos vetores de rede A1 e A2) do deslocamento aplicado a célula do material B, durante o processo xy-scan;
 
