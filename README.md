@@ -729,9 +729,9 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
   ------------------------------------
   
-  <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:bottom; width: 80px;">
-
   Faça o download do VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
+
+  <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:bottom; width: 120px;">
 
   Para realizar a instalação basei-se nos comandos abaixo, onde tomei como exemplo o arquivo baixado (vaspkit.1.5.1.tar.gz) a ser instalado no diretório (/home/dlelis/codes).
   Após realizar o download do VASPKIT, mova o arquivo para o diretório de interesse, e dentro deste diretório execute os seguintes comandos:
