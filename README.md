@@ -698,6 +698,19 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 </details>
 
+
+<details>
+  <summary><strong>6th Step) Terminal Messages</strong></summary>
+
+  ------------------------------------
+
+  Below we show an example of the messages printed to the terminal during the execution of the script. These messages indicate the progress of the different steps, such as input loading, calculations, and results generation. This can help the user follow the workflow and identify any issues if they occur.
+
+  ------------------------------------
+
+</details>
+
+
 <details>
   <summary><strong>Optional: Customizing DFT Calculations</strong></summary>
 
