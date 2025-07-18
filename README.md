@@ -775,7 +775,7 @@ r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)
 #============================
 # xyz-scan parameters =======
 #============================
-k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å-1
+k_dens_xyz_scan = 6                                       # xyz-scan calculation: number of k-points Å^-1
 displacement_Z = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]      # Vertical separation (z-axis) between layers
 displacement_xyz_A1 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A1 (2nd material)
 displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the direction of vector A2 (2nd material)</code></pre>
