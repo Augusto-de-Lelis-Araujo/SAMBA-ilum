@@ -8,15 +8,26 @@
 <h2>Article available in soon</h2>
 
 
+
+
+<details>
+  <summary><strong>Description</strong></summary>
+  
+  ------------------------------------
+  
+  <p>SAMBA is an open-source Python 3 code capable of:</p>
+  <ul>
+    <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
+    <li>Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.</li>
+    <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
+  </ul>
+
 ------------------------------------
   
-- SAMBA is an open-source Python 3 code capable of:
+</details>
 
-- Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
-- Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
-- Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
 
-------------------------------------
+
 
 <details>
   <summary><strong>Authors</strong></summary>
@@ -1023,6 +1034,26 @@ done</code></pre>
 - **Note)** The **ttasks** tag should under no circumstances be edited.
 
 </details>
+
+------------------------------------
+
+</details>
+
+
+
+
+<details>
+<summary><strong>database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
+
+-----------------------------------
+
+◉ The **SAMBA** code was developed with the goal of accelerating the generation of a database based on first-principles calculations grounded in Density Functional Theory (DFT), using the VASP package. It focuses on homo- and hetero-structured van der Waals bilayers with varying twist angles.
+
+◉ Initially, its development enabled the generation of over **18,000** distinct twisted bilayers, derived from **63** monolayers of naturally exfoliable materials or materials with previously reported synthesis, all exhibiting van der Waals interlayer interactions.
+
+◉ Subsequently, SAMBA also allowed for high-throughput structural relaxation and electronic property calculations for more than **800** of these bilayers, a number that continues to grow.
+
+◉ All data are available in the database of the **INCT – Materials Informatics project** (**midb.cloud** **<a href="https://midb.cloud/">link</a>**), under the title: "**Twisted 2D van der Waals Homo and Hetero Bilayers**" **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset=='Twisted 2D van der Waals Homo and Hetero Bilayers')">link</a>**.
 
 ------------------------------------
 
