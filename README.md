@@ -204,7 +204,7 @@ Direct
   ------------------------------------
   
   - They must be inserted within the folder defined by **dir_poscar**;
-  - They must correspond to 2D networks whose vectors (A$_1$,A$_2$) are in the k$_x$k$_y$ plane, while vector A$_3$ must be on the z-axis;
+  - They must correspond to 2D networks whose vectors ($A_1$,A$_2$) are in the k$_x$k$_y$ plane, while vector A$_3$ must be on the z-axis;
   - They must be written in direct coordinates;
 
   - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
