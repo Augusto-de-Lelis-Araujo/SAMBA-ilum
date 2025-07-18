@@ -82,11 +82,11 @@
 
   **Requirements**: Make sure you have the following requirements:
   
-  - Linux or Windows environment for bilayer generation
-  - Linux environment for high-throughput DFT (requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**)
-  - Python 3.8+
-  - Python virtual environment is recommended (venv or conda)
-  - Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files)
+  - Linux or Windows environment for bilayer generation;
+  - Linux environment for high-throughput DFT (requires VASPKIT installed **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**);
+  - Python 3.8+;
+  - Python virtual environment (venv) is recommended;
+  - Pseudopotential files for high-throughput DFT (The VASP terms of use do not allow redistributing, publishing, or sharing the POTCAR files).
 
   ------------------------------------
 
