@@ -204,14 +204,14 @@ Direct
   ------------------------------------
   
   - They must be inserted within the folder defined by **dir_poscar**;
-  - They must correspond to 2D networks whose vectors ($A_1$,A$_2$) are in the k$_x$k$_y$ plane, while vector A$_3$ must be on the z-axis;
+  - They must correspond to 2D lattices whose vectors (A1,A2) are in the KxKy plane, while vector A3 must be on the z-axis;
   - They must be written in direct coordinates;
 
-  - **Opcional:** O usuário pode inserir um identificador (**ID**) para associar cada bicamada gerada à sua respectiva monocamada de origem. Para isso, basta incluir o ID na primeira linha do arquivo POSCAR, logo após a palavra SAMBA. O código interpreta como ID a última string presente nessa linha inicial;
+  - **Optional:** The user can enter an identifier (**ID**) to associate each generated bilayer with its respective source monolayer. To do this, simply include the ID in the first line of the POSCAR file, immediately after the word SAMBA. The code interprets the last string present in this initial line as the ID;
 
-  - **Opcional:** É recomendável utilizar **células unitárias**, uma vez que o uso de **supercélulas** pode ocultar possíveis configurações e tornar a execução do código mais lenta. Durante a execução, o SAMBA verifica se as células na pasta definida por dir_poscar são unitárias ou não, e perguntará ao usuário se deseja continuar o cálculo mesmo assim;
+  - **Optional:** It is recommended to use **unit cells**, as using **supercells** can hide possible configurations and slow down code execution. During execution, SAMBA checks whether the cells in the folder defined by **dir_poscar** are unit cells or not, and will ask the user if they want to continue the calculation anyway;
 
-  - **Observação:** Para garantir a correta obtenção dos diferentes ângulos de twisted, a célula deve ser construída de modo que o **eixo de menor rotação em torno do eixo z** esteja posicionado na **origem da célula**. Caso o código identifique que esse eixo está fora da origem, ele irá automaticamente transladar os íons para corrigir essa posição. A célula original será preservada no diretório "**POSCAR_original**".
+  - **Note:** To ensure that the different twisted angles are correctly obtained, the cell must be constructed so that the **axis of smallest rotation around the z-axis** is positioned at the **cell origin**. If the code identifies that this axis is outside the origin, it will automatically translate the ions to correct this position. The original cell will be preserved in the "**POSCAR_original** directory.
 
 </details>
 
