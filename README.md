@@ -505,18 +505,18 @@ POTCAR_Cr
 
 ------------------------------------
 
-Por meio deste arquivo de input, o usuário controla os detalhes cálculos de DFT a serem realizados em abordagem high-throughput, onde:
+Through this input file, the user controls the details of the DFT calculations to be performed in a high-throughput approach, where:
 
-- **dir_virtual_python** define o caminho onde o ambiente virtual python esta localizado;
-- **dir_o** define o nome do diretório de saída (a ser criado pelo código), onde os arquivos de input do cálculo high-throughput DFT serão gerados;
-- **replace_type_pseudo** e **replace_type_XC** são informações do cálculo de DFT a serem inseridos nos arquivos .json;
-- **type_lattice** define o tipo de rede a ser analisada, onde:
+- **dir_virtual_python** defines the **path** where the **python virtual environment** is located;
+- **dir_o** defines the name of the output directory (to be created by the code), where the input files for the high-throughput DFT calculation will be generated;
+- **replace_type_pseudo** and **replace_type_XC** are information from the DFT calculation to be inserted into the .json files;
+- **type_lattice** defines the type of lattice to be analyzed, where:
   
-  **type_lattice=1** define que as estruturas analisadas são redes 1D (periódicas em X);
+  **type_lattice=1** defines that the analyzed structures are 1D lattices (periodic in X);
   
-  **type_lattice=2** define que as estruturas analisadas são redes 2D (periódicas em XY);
+  **type_lattice=2** defines that the analyzed structures are 2D lattices (periodic in XY);
   
-  **type_lattice=3** define que as estruturas analisadas são redes 3D (materiais bulk);s
+  **type_lattice=3** defines that the analyzed structures are 3D lattices (bulk materials);
 - **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
 - **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
 
