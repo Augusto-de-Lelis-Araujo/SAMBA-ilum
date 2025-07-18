@@ -16,63 +16,51 @@
 
 <details>
   <summary><strong>Description</strong></summary>
-  
-  ------------------------------------
-  
-  <p>SAMBA is an open-source Python 3 code capable of:</p>
-  <ul>
-    <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
-    <li>Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.</li>
-    <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
-  </ul>
 
-------------------------------------
-
-<details>
-  <summary><strong>Authors</strong></summary>
-
-  ------------------------------------
-  
-  - Augusto de Lelis Araújo (**<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>**)
-  - Adalberto Fazzio (**<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>**)
-  - Felipe Castro de Lima (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)
-  - Pedro Henrique Sophia (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
-
-  <img src="etc/figures/Authors.png" alt="SAMBA logo">
-
-  ------------------------------------
-</details>
-
-<details>
-  <summary><strong>Meet Institutional and Research Network</strong></summary>
-
-  ------------------------------------
-  
-  - Ilum - School of Science **<a href="https://ilum.cnpem.br/en/">link</a>**
-  - CNPEM - The Brazilian Center for Research in Energy and Materials **<a href="https://cnpem.br/en/">link</a>**
-  - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
-  - midb.cloud database **<a href="https://midb.cloud/">link</a>**
-
-  <img src="etc/figures/institucional.png" alt="Institutional Network">
-
-  ------------------------------------
-
-</details>
-
-<details>
+  <details>
 <summary><strong>database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
 
 -----------------------------------
 
-◉ The **SAMBA** code was developed with the goal of accelerating the generation of a database based on first-principles calculations grounded in Density Functional Theory (DFT), using the VASP package. It focuses on homo- and hetero-structured van der Waals bilayers with varying twist angles.
+The **SAMBA** code was developed with the goal of accelerating the generation of a database based on first-principles calculations grounded in Density Functional Theory (DFT), using the VASP package. It focuses on homo- and hetero-structured van der Waals bilayers with varying twist angles.
 
-◉ Initially, its development enabled the generation of over **18,000** distinct twisted bilayers, derived from **63** monolayers of naturally exfoliable materials or materials with previously reported synthesis, all exhibiting van der Waals interlayer interactions.
+Initially, its development enabled the generation of over **18,000** distinct twisted bilayers, derived from **63** monolayers of naturally exfoliable materials or materials with previously reported synthesis, all exhibiting van der Waals interlayer interactions.
 
-◉ Subsequently, SAMBA also allowed for high-throughput structural relaxation and electronic property calculations for more than **800** of these bilayers, a number that continues to grow.
+Subsequently, SAMBA also allowed for high-throughput structural relaxation and electronic property calculations for more than **800** of these bilayers, a number that continues to grow.
 
-◉ All data are available in the database of the **INCT – Materials Informatics project** (**midb.cloud** **<a href="https://midb.cloud/">link</a>**), under the title: "**Twisted 2D van der Waals Homo and Hetero Bilayers**" **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset=='Twisted 2D van der Waals Homo and Hetero Bilayers')">link</a>**.
+All data are available in the database of the **INCT – Materials Informatics project** (**midb.cloud** **<a href="https://midb.cloud/">link</a>**), under the title: "**Twisted 2D van der Waals Homo and Hetero Bilayers**" **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset=='Twisted 2D van der Waals Homo and Hetero Bilayers')">link</a>**.
 
 </details>
+
+-----------------------------------
+   
+◉ SAMBA is an open-source Python 3 code capable of:
+
+- Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
+- Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
+- Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
+
+------------------------------------
+
+◉ **Authors**
+  
+- Augusto de Lelis Araújo (**<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>**)
+- Adalberto Fazzio (**<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>**)
+- Felipe Castro de Lima (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)
+- Pedro Henrique Sophia (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
+
+<img src="etc/figures/Authors.png" alt="SAMBA logo">
+
+------------------------------------
+
+◉ **Meet Institutional and Research Network**
+  
+- Ilum - School of Science **<a href="https://ilum.cnpem.br/en/">link</a>**
+- CNPEM - The Brazilian Center for Research in Energy and Materials **<a href="https://cnpem.br/en/">link</a>**
+- INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
+- midb.cloud database **<a href="https://midb.cloud/">link</a>**
+
+<img src="etc/figures/institucional.png" alt="Institutional Network">
 
 ------------------------------------
   
