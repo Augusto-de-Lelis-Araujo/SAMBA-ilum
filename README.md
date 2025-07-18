@@ -18,7 +18,7 @@
   <summary><strong>Description</strong></summary>
 
   <details>
-<summary><strong>database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
+<summary><strong>Database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
 
 -----------------------------------
 
