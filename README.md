@@ -74,7 +74,7 @@ All data are available in the database of the **INCT – Materials Informatics p
 
   ------------------------------------
   
-  The latest version of SAMBA code can be installed using the Python Package Index via the <strong>command below</strong>, while the source code is available for download via the **<a href="https://pypi.org/project/SAMBA-blocked/">link</a>**.
+  The latest version of SAMBA code can be **installed** using the Python Package Index via the <strong>command below</strong>, while the **source code** is available for **download** via the **<a href="https://pypi.org/project/SAMBA-blocked/">link</a>**.
   <pre><code>pip install samba_blocked</code></pre>
 
   ------------------------------------
