@@ -127,7 +127,6 @@ SAMBA_blocked v1.0.0.513 Copyright (C) 2025 --------------------
 Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
-&#8203;
    _____ ___    __  _______  ___       _ __
   / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
@@ -376,7 +375,6 @@ SAMBA_ilum v1.0.0.513 Copyright (C) 2025 --------------------
 Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
-&#8203;
     _____ ___    __  _______  ___       _ __              
   / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___ 
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\ 
@@ -741,7 +739,7 @@ vdWDF = 'none'        # Non-local functional vdW_DF used: 'none' disables the no
                       # Note:  vdW != 0 will override any choice of vdWDF
 #=======================================================
 ENCUT_min = 500       # Minimum value for cut-off energy in eV
-                      # Note:  If (ENCUT_min < ENCUT*encut_factor), then ENCUT_min = ENCUT*encut_factor
+                      # Note:  If (ENCUT_min < ENCUT&#42;encut_factor), then ENCUT_min = ENCUT&#42;encut_factor
                       #            ENCUT refers to the highest cutting energy value present in the POTCAR file
 fator_encut = 1.3     # Multiplication factor for the criterion of the cutting energy used
 #=======================================================
@@ -759,18 +757,18 @@ NCORE        = 8      # Number of "cores" per "node"
 # a-scan parameters =========
 # Functional for 3D bulk ====
 #============================
-k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å-1
+k_dens_a_scan = 6       # a-scan calculation: number of k-points per Å^-1
 factor_var    = 5       # % variation of the lattice parameter (modulo the smallest lattice vector)
 
 #============================
 # z-scan parameters =========
 #============================
-k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å-1
+k_dens_z_scan = 6        # z-scan calculation: number of k-points per Å^-1
 
 #============================
 # xy-scan parameters ========
 #============================
-k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å-1
+k_dens_xy_scan = 6                                                                    # xy-scan calculation: number of k-points per Å^-1
 r_displacement_A1 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A1 (2nd material)
 r_displacement_A2 = [0.0, (1/8), (1/6), (1/4), (1/3), (1/2), (2/3), (3/4), (5/6)]     # Displacements in the direction of vector A2 (2nd material)
 
@@ -819,7 +817,6 @@ SAMBA_ilum v1.0.0.513 Copyright (C) 2025 --------------------
 Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
-&#8203;
    _____ ___    __  _______  ___       _ __
   / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
