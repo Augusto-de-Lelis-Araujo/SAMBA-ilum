@@ -233,41 +233,41 @@ Direct
 
   ------------------------------------
 
-  Por meio deste arquivo de input, o usuário controla os detalhes referentes a geração de bicamadas para diferentes ângulos de Twisted, onde:
+  Through this input file, the user controls the details regarding the generation of bilayers for different Twisted angles, where:
 
-  - **dir_poscar** define o nome do diretório contendo os arquivos POSCAR das monolayers a serem utilizadas na geração das bicamadas;
-  - **dir_o** define o nome do diretório a ser criado pelo código, e onde serão armazenado os arquivos estruturais das bicamadas geradas;
-  - **loop_ht** define como os arquivos POSCAR serão utilizados para a geração das bicamadas, onde:
+  - **dir_poscar** defines the name of the directory containing the POSCAR files of the monolayers to be used in the generation of the bilayers;
+  - **dir_o** defines the name of the directory to be created by the code, and where the structural files of the generated bilayers will be stored;
+  - **loop_ht** defines how POSCAR files will be used to generate bilayers, where:
 
-    Para **loop_ht=0**, o usuário deve informar em **Lattice1** e **Lattice2**, o nome dos arquivos POSCAR das camadas inferior e superior do empilhamento, respectivamente. Neste caso, somente a bicamada entre estes dois materiais selecionados é criada;
+    For **loop_ht=0**, the user must enter in **Lattice1** and **Lattice2** the name of the POSCAR files of the bottom and top layers of the stack, respectively. In this case, only the bilayer between these two selected materials is created;
 
-    Para **loop_ht=1**, o código irá operar em loop, criando bicamadas, referente a combinação par a par, de todos os arquivos estruturais contidos no diretório definido por **dir_poscar**;
+    For **loop_ht=1**, the code will operate in a loop, creating bilayers, referring to the pairwise combination of all structural files contained in the directory defined by **dir_poscar**;
 
-  - **separation_1** define a distância de separação vertical (em Å) entre as monolayers no empilhamento;
-  - **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10Å;
-  - **cell_fator** define o fator de multiplicação dos vetores A1 e A2 das células presentes em **dir_poscar**, para criação das respectivas supercélulas;
-  - **crit_mod_vector** define a tolerância percentual (%) na comparação dos módulos dos vetores de rede A e B entre duas redes diferentes (A1 com A2 e B1 com B2). Serve para verificar se as duas redes têm tamanhos de vetores semelhantes;
-  - **crit_distorc_lattice** define a tolerância percentual (%) para a diferença entre os vetores A e B de uma mesma rede (A1 com B1 e A2 com B2). Esse valor mede quanto a rede está distorcida (quanto foge de uma rede quadrada ou hexagonal ideal, por exemplo);
-  - **crit_angle_perc** define a tolerância percentual (%) na variação do ângulo formado entre os vetores de rede, entre as duas redes;
-  - **crit_angle_diff** define a tolerância absoluta (em graus º) da diferença angular, entre as duas redes. É uma critério complementar ao **crit_angle_perc**;
-  - **crit_area** define a tolerância percentual (%) na diferença de área, entre as duas redes;
-  - **ions_crit_i e ions_crit_f** definem os limites inferior e superior para o número de átomos das estruturas geradas. Esses critérios permitem a obtenção de heteroestruturas com dimensões desejadas, além de evitar problemas computacionais;
-  - **angle_min e angle_max** definem os limites inferior e superior para o ângulo de abertura das estruturas geradas. Esses critérios evitam casos em que as redes se alinham de forma quase paralela (0° ou 180°), levando a células muito alongadas, gerando sistemas não fisicamente interessante ou podendo levar a erros numéricos;
-  - **mismatch_type**  define como o lattice mismatch será resolvido: qual material será deformado, e qual permanecerá sem deformação, onde:
+  - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
+  - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
+  - **cell_fator** defines the multiplication factor of vectors A1 and A2 of the cells present in **dir_poscar**, to create the respective supercells;
+  - **crit_mod_vector** defines the percentage tolerance (%) in the comparison of the modulus of the lattice vectors A and B between two different lattices (**A1 with A2** and **B1 with B2**). It is used to check if the two lattices have similar vector sizes;
+  - **crit_distorc_lattice** defines the percentage tolerance (%) for the difference between vectors A and B of the same lattice (**A1 with B1** and **A2 with B2**). This value measures how much the lattice is distorted (how much it deviates from an ideal square or hexagonal lattice, for example);
+  - **crit_angle_perc** defines the percentage tolerance (%) in the variation of the angle formed between the lattice vectors, between the two lattices;
+  - **crit_angle_diff** defines the absolute tolerance (in degrees º) of the angular difference between the two lattices. It is a complementary criterion to **crit_angle_perc**;
+  - **crit_area** defines the percentage tolerance (%) in the area difference between the two lattices;
+  - **ions_crit_i and ions_crit_f** define the lower and upper limits for the number of atoms in the generated structures. These criteria allow the construction of heterostructures with desired dimensions, in addition to avoiding computational problems;
+  - **angle_min and angle_max** define the lower and upper limits for the opening angle of the generated structures. These criteria avoid cases where the lattices align nearly parallel (0° or 180°), leading to overly elongated cells, generating physically uninteresting systems, or potentially leading to numerical errors;
+  - **mismatch_type** defines how the lattice mismatch will be resolved: which material will be deformed, and which will remain undeformed, where:
 
-    **mismatch_type=0** distribui uniformemente a distorção estrutural entre os materiais do empilhamento;
+    **mismatch_type=0** evenly distributes structural distortion among stack materials;
 
-    **mismatch_type=1** aplica a distorção estrutural sobre a monocamada inferior do empilhamento;
+    **mismatch_type=1** applies structural distortion to the bottom monolayer of the stack;
 
-    **mismatch_type=2** aplica a distorção estrutural sobre a monocamada superior do empilhamento;
+    **mismatch_type=2** applies structural distortion to the top monolayer of the stack;
 
-  - **rot_angle_calc** define a referência geométrica usada para medir o ângulo de rotação entre as camadas, onde:
+  - **rot_angle_calc** defines the geometric reference used to measure the rotation angle between layers, where:
 
-    **rot_angle_calc='center_cell'** define o ângulo necessário para alinhar o vetor central (conectando a origem ao centro da células) de ambas as células;
+    **rot_angle_calc='center_cell'** defines the angle needed to align the central vector (connecting the origin to the cell center) of both cells;
 
-    **rot_angle_calc='A1'** define o ângulo necessário para alinhar o vetor A1 de ambas as células;
+    **rot_angle_calc='A1'** defines the angle needed to align the A1 vector of both cells;
 
-    **rot_angle_calc='A2'** define o ângulo necessário para alinhar o vetor A2 de ambas as células.
+    **rot_angle_calc='A2'** defines the angle needed to align the A2 vector of both cells;
 
     ------------------------------------
 
