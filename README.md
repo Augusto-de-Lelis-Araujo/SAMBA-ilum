@@ -53,7 +53,24 @@
   - INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
   - midb.cloud database **<a href="https://midb.cloud/">link</a>**
 
-  <img src="etc/figures/institucional.png" alt="Institutional Network"> 
+  <img src="etc/figures/institucional.png" alt="Institutional Network">
+
+  ------------------------------------
+
+</details>
+
+<details>
+<summary><strong>database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
+
+-----------------------------------
+
+◉ The **SAMBA** code was developed with the goal of accelerating the generation of a database based on first-principles calculations grounded in Density Functional Theory (DFT), using the VASP package. It focuses on homo- and hetero-structured van der Waals bilayers with varying twist angles.
+
+◉ Initially, its development enabled the generation of over **18,000** distinct twisted bilayers, derived from **63** monolayers of naturally exfoliable materials or materials with previously reported synthesis, all exhibiting van der Waals interlayer interactions.
+
+◉ Subsequently, SAMBA also allowed for high-throughput structural relaxation and electronic property calculations for more than **800** of these bilayers, a number that continues to grow.
+
+◉ All data are available in the database of the **INCT – Materials Informatics project** (**midb.cloud** **<a href="https://midb.cloud/">link</a>**), under the title: "**Twisted 2D van der Waals Homo and Hetero Bilayers**" **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset=='Twisted 2D van der Waals Homo and Hetero Bilayers')">link</a>**.
 
 </details>
 
@@ -1028,26 +1045,6 @@ done</code></pre>
 - **Note)** The **ttasks** tag should under no circumstances be edited.
 
 </details>
-
-------------------------------------
-
-</details>
-
-
-
-
-<details>
-<summary><strong>database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
-
------------------------------------
-
-◉ The **SAMBA** code was developed with the goal of accelerating the generation of a database based on first-principles calculations grounded in Density Functional Theory (DFT), using the VASP package. It focuses on homo- and hetero-structured van der Waals bilayers with varying twist angles.
-
-◉ Initially, its development enabled the generation of over **18,000** distinct twisted bilayers, derived from **63** monolayers of naturally exfoliable materials or materials with previously reported synthesis, all exhibiting van der Waals interlayer interactions.
-
-◉ Subsequently, SAMBA also allowed for high-throughput structural relaxation and electronic property calculations for more than **800** of these bilayers, a number that continues to grow.
-
-◉ All data are available in the database of the **INCT – Materials Informatics project** (**midb.cloud** **<a href="https://midb.cloud/">link</a>**), under the title: "**Twisted 2D van der Waals Homo and Hetero Bilayers**" **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset=='Twisted 2D van der Waals Homo and Hetero Bilayers')">link</a>**.
 
 ------------------------------------
 
