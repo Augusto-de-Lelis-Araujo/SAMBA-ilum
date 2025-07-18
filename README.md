@@ -8,26 +8,15 @@
 <h2>Article available in soon</h2>
 
 
-
-
-<details>
-  <summary><strong>Description</strong></summary>
-  
-  ------------------------------------
-  
-  <p>SAMBA is an open-source Python 3 code capable of:</p>
-  <ul>
-    <li>Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.</li>
-    <li>Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.</li>
-    <li>Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.</li>
-  </ul>
-
 ------------------------------------
   
-</details>
+- SAMBA is an open-source Python 3 code capable of:
 
+- Automating the generation of twisted homo- and heterobilayers using the coincidence lattice method, ensuring low lattice mismatch and a wide variety of twist angles.
+- Automating DFT calculations via the VASP code in a high-throughput approach, including the creation of input files for different types of DFT calculations, along with a customized execution job.
+- Analyzing and extracting results, producing high-quality plots (via the VASProcar code) of various structural and electronic properties, as well as storing the data in JSON files.
 
-
+------------------------------------
 
 <details>
   <summary><strong>Authors</strong></summary>
