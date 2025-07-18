@@ -517,83 +517,83 @@ Through this input file, the user controls the details of the DFT calculations t
   **type_lattice=2** defines that the analyzed structures are 2D lattices (periodic in XY);
   
   **type_lattice=3** defines that the analyzed structures are 3D lattices (bulk materials);
-- **tasks** define todos os diferentes cálculos de DFT a serem realizados na abordagem high-throughput, para todas as estruturas presentes no diretório "Structures";
-- **type** define se os cálculos em **tasks** incluirão o acoplamento spin-órbita (SOC), onde:
+- **tasks** defines all the different DFT calculations to be performed in the high-throughput approach, for all structures present in the "Structures" directory;
+- **type** defines whether calculations in **tasks** will include spin-orbit coupling (SOC), where:
 
-  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados desconsiderando o SOC;
+  **type=['sem_SO']** defines that all calculations are performed disregarding the SOC;
   
-  **type=['com_SO']** define que o SOC é incluído nos cálculos;
+  **type=['com_SO']** defines that the SOC is included in the calculations;
   
-  **type=['sem_SO','com_SO']** define que todos os cálculos são realizados, tanto "com" quanto "sem" SOC;
-- **ispin** define a polarização de spin do cálculo, onde:
+  **type=['sem_SO','com_SO']** defines that all calculations are performed, both "with" and "without" SOC;
+- **ispin** defines the spin polarization for calculations **without SOC**, where:
 
-  **ispin=1**: non-spin-polarized calculations are performed (for calculations without SOC);
+  **ispin=1**: non-spin-polarized calculations are performed;
   
-  **ispin=2**: spin-polarized calculations (collinear) are performed (for calculations without SOC);
-- **dipol** define se a correção de dipolo é incluida ou não nos cálculos, onde:
+  **ispin=2**: spin-polarized calculations (collinear) are performed;
+- **dipole** defines whether or not dipole correction is included in the calculations, where:
   
-  **dipol='none'** desativa a correção de dipolo;
+  **dipol='none'** disables dipole correction;
   
-  **dipol='center_cell'** ativa a correção de dipolo; definindo o centro da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
+  **dipol='center_cell'** enables dipole correction; defining the center of the cell as the region relative to which the total dipole moment in the cell is calculated;
   
-  **dipol='center_mass'** ativa a correção de dipolo; definindo o centro de massa da célula como a região em relação ao qual o momento de dipolo total na célula é calculado;
-- **magnet_mode** define como a magnetização é cálculada para cálculos não-colineares ou com polarização de spin ativada, onde:
+  **dipol='center_mass'** enables dipole correction; defining the center of mass of the cell as the region relative to which the total dipole moment in the cell is calculated;
+- **magnet_mode** defines how magnetization is calculated for non-collinear calculations or with spin polarization enabled, where:
   
-  **magnet_mode='default'** define o padrão do VASP onde a tag MAGMOM é definida como número_de_ions&#42;1.0 para ISPIN=2 "cálculo com polarização de spin", ou 3&#42;número_de_ions&#42;1.0 "cálculo com SOC";
+  **magnet_mode='default'** sets the VASP default where the MAGMOM tag is set to number_of_ions&#42;1.0 for ISPIN=2 "calculation with spin polarization", or 3&#42;number_of_ions&#42;1.0 for calculation with SOC;
   
-  **magnet_mode='MAGMOM=0'** define os momentos magnéticos iniciais dos ions da rede como zero, onde a tag MAGMOM é definida como número_de_ions**x**0 para ISPIN=2 "cálculo com polarização de spin", ou 3**x**número_de_ions**x**0 "cálculo com SOC";
+  **magnet_mode='MAGMOM=0'** sets the initial magnetic moments of the lattice ions to zero, where the MAGMOM tag is set to number_of_ions**x**0 for ISPIN=2 "calculation with spin polarization", or 3**x**number_of_ions**x**0 for calculation with SOC;
   
-  **magnet_mode='NUPDOWN=0'** define a diferença entre o número de elétrons nos componentes de spin para cima e para baixo, como sendo zero no cálculo;
-- **U_correction**: Ativa ou desativa a correção de Hubbard, para metais de transição com elétrons 3d/4d/5d ou Lantanídeos/actinídeos com elétrons com elétrons 4f/5f, onde:
+  **magnet_mode='NUPDOWN=0'** sets the difference between the number of electrons between the up and down spin components to be zero;
+- **U_correction**: Enables or disables Hubbard correction, for transition metals with 3d/4d/5d electrons or Lanthanides/actinides with 4f/5f electrons, where:
 
   **U_correction=0** (no correction);
   
-  **U_correction=1** ativa a correção, aplicado aos seguintes ions (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **Vide ??? caso deseje ajustar os valores da correção U aplicados para cada ion**.
+  **U_correction=1** activates the correction, applied to the following ions (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **See ??? if you want to adjust the U correction values applied to each ion**.
   
 - **vdW** specifies a vdW dispersion term of the atom-pairwise or many-body type, where:
 
   **vdW=0** (no correction);
   
-  **vdW=integer>0** define o método utilizado para a correção de dispersão adicionada à energia total, às forças atômicas e ao tensor de tensão. Para consultar os diferentes métodos implementados no VASP, consulte o **<a href="https://www.vasp.at/wiki/index.php/IVDW" target="_blank">link</a>**;
+  **vdW=integer>0** defines the method used for the dispersion correction added to the total energy, atomic forces, and stress tensor. To see the different methods implemented in VASP, see the **<a href="https://www.vasp.at/wiki/index.php/IVDW" target="_blank">link</a>**;
 - **vdWDF** defines the semilocal exchange-correlation functional for vdW correction, where:
 
   **vdWDF='none'** (no correction);
   
-  Para ativar a correção, escolha um dos seguintes funcionais semilocal de troca-correlação ('DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'), para mais detalhes a respeito de cada funcional consulte o **<a href="https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals" target="_blank">link</a>**;
-- **ENCUT_min** Valor minimo para a energia de corte (em eV) utilizado para a expansão em ondas planas da função de onda;
-- **fator_encut** Fator de multiplicação aplicado a energia de corte;
+  To activate the correction, choose one of the following semilocal exchange-correlation functionals ('DF', 'DF2', 'optPBE', 'optB88', 'optB86b', 'rev-DF2', 'DF-cx', 'DF3-opt1', 'DF3-opt2'), for more details about each functional see the **<a href="https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals" target="_blank">link</a>**;
+- **ENCUT_min** Minimum value for the cutoff energy (in eV) used for the plane wave expansion of the wave function;
+- **encut_factor** Multiplication factor applied to cutting energy;
   
-  **Note:**  If (ENCUT_min < ENCUT&#42;fator_encut), then ENCUT_min = ENCUT&#42;encut_factor, where ENCUT refers to the highest cutting energy value present in the POTCAR file;
-- **type_k_dens** define o método utilizado para os vetores de Bloch (pontos-k) usados para amostrar a zona de Brillouin em cálculos auto-consistentes (scf), escolha entre (para mais detalhes consulte o **<a href="https://www.vasp.at/wiki/index.php/KPOINTS" target="_blank">link</a>**):
+  **Note:** If (ENCUT_min < ENCUT&#42;encut_factor), then ENCUT_min = ENCUT&#42;encut_factor, where ENCUT refers to the highest cutting energy value present in the POTCAR file;
+- **type_k_dens** defines the method used for the Bloch vectors (k-points) used to sample the Brillouin zone in self-consistent calculations (scf), choose between (for more details see the **<a href="https://www.vasp.at/wiki/index.php/KPOINTS" target="_blank">link</a>**):
 
-  **type_k_dens=1** para utilizar Monkhorst-Pack;
+  **type_k_dens=1** to use Monkhorst-Pack;
   
-  **type_k_dens=1** para utilizar Gamma;
+  **type_k_dens=1** to use Gamma;
   
-  **type_k_dens=1** para utilizar KSPACING Monkhorst-Pack;
+  **type_k_dens=1** to use KSPACING Monkhorst-Pack;
   
-  **type_k_dens=1** para utilizar KSPACING Gamma;
+  **type_k_dens=1** to use KSPACING Gamma;
   
-- **k_dens_relax** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo de relaxação estrutural;
-- **k_dens_scf** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de carga;
-- **k_dens_dos** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo da densidade de estados;
-- **k_dens_bader** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin nos cálculos de densidade de carga para obtenção da carga de Bader;
-- **n_kpoints** define o número de ponto-k para cada linha de alta-simetria (intervalo de pontos-k) no cálculo da estrutura de bandas;
-- **nions_split** define o núemro de átomos minimo na estrutura, para que o cálculo da estrutura de bandas seja segmentado/splitado em diferentes cálculos, cada um referente a uma determinada linha de alta-simetria (intervalo de pontos-k) definido no arquivo KPOINTS;
+- **k_dens_relax** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1 and A2), to sample the Brillouin zone in the structural relaxation calculation;
+- **k_dens_scf** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1 and A2), to sample the Brillouin zone in the calculation of the charge density;
+- **k_dens_dos** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1 and A2), to sample the Brillouin zone in the calculation of the density of states (DOS);
+- **k_dens_bader** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1 and A2), to sample the Brillouin zone in charge density calculations to obtain the Bader's charge;
+- **n_kpoints** defines the number of k-points for each high-symmetry line (k-point interval) in the band structure calculation;
+- **nions_split** defines the minimum number of atoms in the structure, so that the band structure calculation is segmented/split into different calculations, each referring to a specific high-symmetry line (k-points interval) defined in the KPOINTS file;
 
-  **Observação:** Este método é utili para o cálculo da estrutura de bandas em sistemas muito grandes (grande número de ions) onde o poder computacional disponível é limitado.
-- **vacuum** define a separação vertical (em Å) entre imagens periódicas da célula ao longo do eixo-z (devido a condição de contorno periódica do cálculo de DFT), usualmente são utilizados valores acima de 10 Å;
-- **NCORE** define o número of "cores" por "node", utilizado pelo VASP para processar as bandas em paralelo.
-- **k_dens_a_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1, A2 e A3), para amostrar a zona de Brillouin no cálculo a-scan (a-scan é uma varredura pelo parâmetro de rede "a" ideal, indicado para sistemas bulk 3D);
-- **factor_var** define a variação percentual (%) máxima em relação ao parâmetro de rede inicial, co cálculo a-scan;
-- **k_dens_z_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo z-scan;
-- **k_dens_xy_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1, A2), para amostrar a zona de Brillouin no cálculo xy-scan;
-- **r_displacement_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
-- **r_displacement_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xy-scan;
-- **k_dens_xyz_scan** define o número de pontos-k por $Å^{-1}$ (em relação a direção definida pelo vetores A1 e A2), para amostrar a zona de Brillouin no cálculo xyz-scan (xyz-scan é uma combinação dos cálculos z_scan e xy_scan em um único processo);
-- **displacement_Z** define os valores de separação vertical iniciais entre as camadas do empilhamento, no cálculo xyz-scan;
-- **displacement_xyz_A1** define a componente do deslocamento lateral (em relação ao vetor de rede A1) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan;
-- **displacement_xyz_A2** define a componente do deslocamento lateral (em relação ao vetor de rede A2) efetuado sobre a camada superior do empilhamento, no cálculo xyz-scan.
+  **Note:** This method is useful for calculating the band structure in very large systems (large number of ions) where the available computational power is limited.
+- **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10 Å are usually used;
+- **NCORE** defines the number of "cores" per "node", used by VASP to process the bands in parallel.
+- **k_dens_a_scan** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1, A2 and A3), to sample the Brillouin zone in the a-scan calculation (a-scan is a scan by the ideal lattice parameter "a", suitable for bulk 3D systems);
+- **factor_var** defines the maximum percentage (%) variation in relation to the initial lattice parameter **a**, as calculated by a-scan;
+- **k_dens_z_scan** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1, A2), to sample the Brillouin zone in the z-scan calculation;
+- **k_dens_xy_scan** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1, A2), to sample the Brillouin zone in the xy-scan calculation;
+- **r_displacement_A1** defines the component of the lateral displacement (relative to the lattice vector A1) performed on the top layer of the stack, in the xy-scan calculation;
+- **r_displacement_A2** defines the component of the lateral displacement (relative to the lattice vector A2) performed on the top layer of the stack, in the xy-scan calculation;
+- **k_dens_xyz_scan** defines the number of k-points per $Å^{-1}$ (relative to the direction defined by vectors A1 and A2), to sample the Brillouin zone in the xyz-scan calculation (xyz-scan is a combination of the z_scan and xy_scan calculations in a single process);
+- **displacement_Z** defines the initial vertical separation values between the layers of the stack, in the xyz-scan calculation;
+- **displacement_xyz_A1** defines the component of the lateral displacement (relative to the lattice vector A1) performed on the top layer of the stack, in the xyz-scan calculation;
+- **displacement_xyz_A2** defines the component of the lateral displacement (relative to the lattice vector A2) performed on the top layer of the stack, in the xyz-scan calculation.
 
 ------------------------------------
   
