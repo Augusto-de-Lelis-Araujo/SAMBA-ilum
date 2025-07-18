@@ -55,8 +55,9 @@
 
   <img src="etc/figures/institucional.png" alt="Institutional Network"> 
 
-  ------------------------------------
 </details>
+
+------------------------------------
   
 </details>
 
