@@ -742,41 +742,41 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
 
 -----------------------------------
 
-◉ **1st)** No ambiente Linux onde os cálculos de DFT serão executados, de load em uma versão do pacote python superior a 3.8 (ou uma versão recente do pacote CONDA), por meio do comando: **module load** nome_pacote
+◉ **1st)** In the Linux environment where the DFT calculations will be executed, load in a python package version higher than 3.8 (or a recent version of the CONDA package), using the command: **module load** package_name.
   <pre><code>example:  module load python_3.8.11-intel-2021.3.0</code></pre>
-  ou
+  or
   <pre><code>example:  module load CONDA_2025.5.1</code></pre>
 
 ◉ **2nd)** Selecione um diretório de interese, e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
    <pre><code>example:  python -m venv python_virtual</code></pre>  
      
-   Salve o caminho do ambiente Python criado, pois é este caminho que você deve utilizar na tag **dir_virtual_python** do **SAMBA_WorkFlow.input**
+   Save the path of the Python environment you created, as this is the **path** you should use in the **dir_virtual_python** tag of **SAMBA_WorkFlow.input**
    <pre><code>example:  dir_virtual_python = '/home/dlelis/codes/python_virtual'</code></pre>  
 
-◉ **3rd)** Ative o ambiente Python, por meio do comando: **source** caminho_do_ambiente_python + **/bin/activate**
+◉ **3rd)** Activate the Python environment using the command: **source** path_to_python_environment + **/bin/activate**
   <pre><code>example:  source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
 
-◉ **4th)** Após ativar o ambiente Python, instale os seguintes pacotes **SAMBA**, **VASProcar** e **pymatgen**, por meio dos comandos:
+◉ **4th)** After activating the Python environment, install the following packages **SAMBA**, **VASProcar** and **pymatgen**, using the commands:
   <pre><code>pip install --upgrade samba_blocked</code></pre>
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
 <details>
-  <summary><strong>5th) Instalação do VASPKIT</strong></summary>
+  <summary><strong>5th) VASPKIT Installation</strong></summary>
 
   ------------------------------------
   
-  Faça o download do VASPKIT por meio do **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, e caso queira obter maiores informações a respeito deste pacote, consulte o **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
+  Download VASPKIT from **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, and if you want more information about this package, see **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
-  Para realizar a instalação basei-se nos comandos abaixo, onde tomei como exemplo o arquivo baixado (vaspkit.1.5.1.tar.gz) a ser instalado no diretório (/home/dlelis/codes).
-  Após realizar o download do VASPKIT, mova o arquivo para o diretório de interesse, e dentro deste diretório execute os seguintes comandos:
+  To perform the installation, see the commands below, where I took as an example the downloaded file (vaspkit.1.5.1.tar.gz) to be installed in the directory (/home/dlelis/codes).
+  After downloading VASPKIT, move the file to the directory of interest, and within this directory run the following commands:
   <pre><code>tar -zxvf vaspkit.1.5.1.tar.gz</code></pre>
   <pre><code>cd vaspkit.1.5.1</code></pre>
   <pre><code>cp -f how_to_set_environment_variables ~/.vaspkit</code></pre>
   <pre><code>echo 'export PATH=/home/dlelis/codes/vaspkit.1.5.1/bin/:$PATH' >> ~/.bashrc</code></pre>
   <pre><code>source ~/.bashrc</code></pre>
 
-  Para confirmar que a instalação foi configurada corretamente, apenas digite no terminal **vaspkit** que o código deve ser executado.
+  To confirm that the installation was configured correctly, just type **vaspkit** in the terminal and the code should be executed.
 
   <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:center; width: 240px;">
 
