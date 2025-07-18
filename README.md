@@ -123,16 +123,18 @@
 
   <p>When running the code, the following screen is shown to the user:</p>
   <pre><code>=============================================================
-SAMBA_blocked v1.0.0.510 Copyright (C) 2025 --------------------
+SAMBA_blocked v1.0.0.513 Copyright (C) 2025 --------------------
 Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
+&#8203;
    _____ ___    __  _______  ___       _ __
   / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
  ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
 /____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
-Simulation and Automated Methods for Bilayer Analysis v1.0.0.510
+Simulation and Automated Methods for Bilayer Analysis v1.0.0.513
+&#8203;
 ######################################################################
 # What do you want to run? ===========================================
 # ====================================================================
@@ -374,6 +376,7 @@ SAMBA_ilum v1.0.0.513 Copyright (C) 2025 --------------------
 Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
+&#8203;
     _____ ___    __  _______  ___       _ __              
   / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___ 
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\ 
