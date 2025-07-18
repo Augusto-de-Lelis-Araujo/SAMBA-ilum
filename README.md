@@ -377,13 +377,13 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   ------------------------------------
 
-  As bicamadas geradas são rotuladas como a seguinte estrutura "**009atoms_-1.352_1.38_60.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", com diferentes informações separadas por "**_**", onde:
-  - O **1º elemento** informa o número total de átomos da estrutura gerada;
-  - O **2º e 3º elementos** correspondem respectivamente, a variação percentual **aplicada** a **Área** da célula do **Material_A** e a variação percentual **aplicada** a **Área** da célula do **Material_B**, para a formação da célula da bicamada;
-  - O **4º elemento** corresponde ao ângulo de rotação relativo entre as camadas (ângulo necessário para alinhar a célula do material B com a célula do material A);
-  - O **último elemento** é a **ID** que identifica a estrutura gerada.
+  The generated bilayers are labeled as the following structure "**009atoms_-1.352_1.38_60.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", with different information separated by "**_**", where:
+  - The **1st element** informs the total number of atoms in the generated structure;
+  - The **2nd and 3rd elements** correspond respectively, to the percentage variation **applied** to the **Area** of the cell of **Material_A** and the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
+  - The **4th element** corresponds to the relative rotation angle between the layers (angle required to align the cell of material B with the cell of material A);
+  - The **last element** is the **ID** that identifies the generated structure.
 
-  Abaixo, apresentamos a estrutura do arquivo POSCAR da bicamada correspondente ao rótulo acima. 
+  Below, we present the structure of the POSCAR file of the bilayer corresponding to the label **above**.
 
   <pre><code>SAMBA Bi_Se+Ga_Te 5 4 | mismatch_areas_12_21 = -2.6948_2.7695 | var_areas = -1.352_1.38 | var_vectors = -0.6783_-0.6783_0.6876_0.6876 | mismatch_angles_12_21 = 0.0_0.0 | var_angles = 0.0_0.0 | rotation_angle = 60.0 | MSCell_1 = 1_1_1_1 | MSCell_2 = -1_-1_-1_-1 | MDeform_1 = 0.993216916_0.0_0.0_0.993216916 | MDeform_2 = 1.00687637_0.0_0.0_1.00687637 | MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079 | MSTrain_2 = 0.006900013_0.0_0.0_0.006900012 | Shift_plane = 0.0_0.0 | Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002  
 1.00000000000000     
@@ -403,35 +403,35 @@ Direct
 0.3333333333333286  0.3333333333333286  0.5840380959516907
 0.3333333333333286  0.3333333333333286  0.7507817701446697</code></pre>
 
-Diversas informação estruturais a respeito da bicamada gerada, são gravadas na **1º linha** do arquivo POSCAR, onde: 
+Various structural information regarding the generated bilayer is recorded in the **1st line** of the POSCAR file, where:
 
-- **SAMBA** é apenas uma TAG que permite o código SAMBA interagir com o arquivo POSCAR, extrair informações e auxiliar na criação dos arquivos de input para o cálculos de DFT de alto desempenho;
+- **SAMBA** is just a TAG that allows the SAMBA code to interact with the POSCAR file, extract information and assist in creating input files for high-performance DFT calculations;
 
-- O **2º elemento** da **1º linha** do arquivo POSCAR, correponde aos ions presentes na camada do material A (separados por "**_**") seguindo após o "**+**" dos ions presentes na monocamada do material B (separados por "**_**");
+- The **2nd element** of the **1st line** of the POSCAR file, corresponds to the ions present in the layer of material A (separated by "**_**") followed by the "**+**" of the ions present in the monolayer of material B (separated by "**_**");
 
-- Os **2 elementos** seguintes antes de **mismatch_areas_12_21**, correspondem respectivamente, ao número total de átomos presente na camada do material A e na camada do material B;
+- The following **2 elements** before **mismatch_areas_12_21** correspond, respectively, to the total number of atoms present in the layer of material A and in the layer of material B;
 
-- **mismatch_areas_12_21** corresponde a variação percentual da **Área** da célula do **Material_A** em relação ao do Material_B seguido da variação percentual da **Área** da célula do **Material_B** em relação ao do Material_A (referente as monocamdas pristinas);
+- **mismatch_areas_12_21** corresponds to the percentage variation of the **Area** of the cell of **Material_A** in relation to that of Material_B followed by the percentage variation of the **Area** of the cell of **Material_B** in relation to that of Material_A (referring to pristine monolayers);
 
-- **var_areas** corresponde a variação percentual **aplicada** a **Área** da célula do **Material_A** seguido da variação percentual **aplicada** a **Área** da célula do **Material_B**, para a formação da célula da bicamada;
+- **var_areas** corresponds to the percentage variation **applied** to the **Area** of the cell of **Material_A** followed by the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
 
-- **var_vectors** corresponde a variação percentual **aplicada** aos **vetores de rede (A1, A2)** da célula do **Material_A** seguido da variação percentual **aplicada** aos **vetores de rede (A1, A2)** da célula do **Material_B**, para a formação da célula da bicamada;
+- **var_vectors** corresponds to the percentage variation of the modulus **applied** to the **lattice vectors (A1, A2)** of the **Material_A** cell followed by the percentage variation of the modulus **applied** to the **lattice vectors (A1, A2)** of the **Material_B** cell, for the formation of the bilayer cell;
 
-- **mismatch_angles_12_21** corresponde a variação percentual do **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_A** em relação ao do Material_B seguido da variação percentual do **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_B** em relação ao do Material_A (referente as monocamdas pristinas);
+- **mismatch_angles_12_21** corresponds to the percentage variation of the **Opening angle** of the **lattice vectors (A1, A2)** of the cell of **Material_A** in relation to that of Material_B followed by the percentage variation of the **Opening angle** of the **lattice vectors (A1, A2)** of the cell of **Material_B** in relation to that of Material_A (referring to pristine monolayers);
 
-- **var_angles** corresponde a variação percentual **aplicada** ao **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_A** seguido da variação percentual **aplicada** ao **Ângulo de abertura** dos **vetores de rede (A1, A2)** da célula do **Material_B**, para a formação da célula da bicamada;
+- **var_angles** corresponds to the percentage variation **applied** to the **Opening angle** of the **lattice vectors (A1, A2)** of the **Material_A** cell followed by the percentage variation **applied** to the **Opening angle** of the **lattice vectors (A1, A2)** of the **Material_B** cell, for the formation of the bilayer cell;
 
-- **rotation_angle** corresponde ao ângulo de rotação relativo entre as camadas (ângulo necessário para alinhar a célula do material B com a célula do material A);
+- **rotation_angle** corresponds to the relative rotation angle between the layers (angle required to align the cell of material B with the cell of material A);
 
-- **MSCell_1** / **MSCell_2** correspondem as **matrizes de supercélula** que levam os vetores de rede da célula original fornecida pelo usuário, a célula utilizada pelo código na formação da bicamada (antes de qualquer deformação ser aplicada);
+- **MSCell_1** / **MSCell_2** correspond to the **supercell matrices** that carry the lattice vectors of the original cell provided by the user, the cell used by the code in forming the bilayer (before any deformation is applied);
 
-- **MDeform_1** / **MDeform_2** correspondem as **matrizes de deformação** aplicadas aos vetores de rede das células obtidas por meio das **matrizes de supercélula**, para a formação da célula da bicamada;
+- **MDeform_1** / **MDeform_2** correspond to the **deformation matrices** applied to the lattice vectors of the cells obtained through the **supercell matrices**, for the formation of the bilayer cell;
 
-- **MSTrain_1** /  **MSTrain_2** correspondem as **matrizes de strain** aplicadas aos vetores de rede das células obtidas por meio das **matrizes de supercélula**, para a formação da célula da bicamada;
+- **MSTrain_1** / **MSTrain_2** correspond to the **strain matrices** applied to the lattice vectors of the cells obtained through the **supercell matrices**, for the formation of the bilayer cell;
 
-- **Shift_plane** = corresponde as coordenadas diretas (em função dos vetores de rede A1 e A2) do deslocamento aplicado a célula do material B, durante o processo xy-scan;
+- **Shift_plane** = corresponds to the direct coordinates (in function of lattice vectors A1 and A2) of the displacement applied to the material B cell, during the xy-scan process;
 
-- Os **3 últimos elementos** da **1º linha** do arquivo POSCAR, correspondem respectivamente a ID de identificação da monocamada do Material A, monocamada do Material B, e bicamada gerada;
+- The **last 3 elements** of the **1st line** of the POSCAR file, correspond respectively to the identification ID of the monolayer of Material A, monolayer of Material B, and generated bilayer.
 
 </details>
 
