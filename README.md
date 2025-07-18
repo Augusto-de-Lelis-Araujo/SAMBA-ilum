@@ -378,13 +378,13 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   ------------------------------------
 
   The generated bilayers are labeled as the following structure "**009atoms_-1.352_1.38_60.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", with different information separated by "**_**", where:
-  
+
   - The **1st element** informs the total number of atoms in the generated structure;
-    
+
   - The **2nd and 3rd elements** correspond respectively, to the percentage variation **applied** to the **Area** of the cell of **Material_A** and the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
-    
+
   - The **4th element** corresponds to the relative rotation angle between the layers (angle required to align the cell of material B with the cell of material A);
-    
+
   - The **last element** is the **ID** that identifies the generated structure.
 
   Below, we present the structure of the POSCAR file of the bilayer corresponding to the label **above**.
