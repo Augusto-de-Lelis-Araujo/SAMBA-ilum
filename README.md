@@ -747,7 +747,7 @@ displacement_xyz_A2 = [0.0, 0.2, 0.4, 0.6, 0.8]           # Displacements in the
   or
   <pre><code>example:  module load CONDA_2025.5.1</code></pre>
 
-◉ **2nd)** Selecione um diretório de interese, e crie um ambiente virtual Python, por meio do comando: **python -m venv** nome_ambiente_python
+◉ **2nd)** Select a directory of interest and create a Python virtual environment using the command: **python -m venv** python_environment_name
    <pre><code>example:  python -m venv python_virtual</code></pre>  
      
    Save the path of the Python environment you created, as this is the **path** you should use in the **dir_virtual_python** tag of **SAMBA_WorkFlow.input**
