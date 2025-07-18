@@ -10,6 +10,10 @@
 
 
 
+<h2>Tutorial</h2>
+
+
+
 <details>
   <summary><strong>Description</strong></summary>
   
@@ -23,11 +27,6 @@
   </ul>
 
 ------------------------------------
-  
-</details>
-
-
-
 
 <details>
   <summary><strong>Authors</strong></summary>
@@ -44,9 +43,6 @@
   ------------------------------------
 </details>
 
-
-
-
 <details>
   <summary><strong>Meet Institutional and Research Network</strong></summary>
 
@@ -61,11 +57,8 @@
 
   ------------------------------------
 </details>
-
-
-
-
-<h2>Tutorial</h2>
+  
+</details>
 
 
 
