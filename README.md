@@ -367,6 +367,113 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   Below we show an example of the messages printed to the terminal during the execution of the script. These messages indicate the progress of the different steps, such as input loading, calculations, and results generation. This can help the user follow the workflow and identify any issues if they occur.
 
+  <details>
+  <summary><strong>Terminal Message - example</strong></summary>
+  <pre><code>=============================================================
+SAMBA_ilum v1.0.0.513 Copyright (C) 2025 --------------------
+Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
+Author: Augusto de Lelis Araujo -----------------------------
+=============================================================
+    _____ ___    __  _______  ___       _ __              
+  / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___ 
+  \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\ 
+ ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
+/____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/ 
+Simulation and Automated Methods for Bilayer Analysis v1.0.0.513
+ 
+--------------------------------------------------------------
+    !!!! Unable to verify the current version of SAMBA !!!!   
+--------------------------------------------------------------
+ 
+==================================
+Wait a moment ====================
+==================================
+
+===========================================================================================================
+Step 1: Analyzing all possible cells of the 1 Material (Linear combinations of vectors A1 and A2) ===
+===========================================================================================================
+Progress    1%
+...
+Progress   100%
+ 
+===========================================================================================================
+Step 2: Analyzing all possible cells of the 2 Material (Linear combinations of vectors A1 and A2) ===
+===========================================================================================================
+Progress    1%
+...
+Progress   100%
+ 
+================================================================
+Step 3: Analyzing lattices matches (1st and 2nd materials) ===
+================================================================
+Progress 1/51
+...
+Progress 51/51
+ 
+============================================================================
+Step 4: Writing the POSCAR files for the 2 material lattices ===
+============================================================================
+Progress 1/51
+...
+Progress 51/51
+ 
+===============================================================
+Step 5: Writing the Heterostructures POSCAR files ===========
+===============================================================
+Progress 1/51
+...
+Progress 51/51
+--------------------------------
+32420 cells were identified
+ 
+============================================
+Step 6: Excluding non-unit cells ===
+============================================
+Progress 1/51
+...
+Progress 51/51
+--------------------------------------
+30452 cells were filtered/excluded
+1968 remaining cells
+ 
+========================================
+Step 7: Deleting Similar Lattices ====
+========================================
+Progress 1/17
+...
+Progress 17/17
+--------------------------------------
+1948 cells were filtered/excluded
+20 remaining cells
+ 
+========================================
+Step 8: Deleting Similar Lattices ====
+========================================
+Progress 1/20
+...
+Progress 20/20
+============================================
+12 cells were filtered/excluded
+8 cells were found
+============================================
+ 
+==========================================
+Step 9: Adjusting direct coordinates ===
+==========================================
+Progress 1/8
+Progress 2/8
+Progress 3/8
+Progress 4/8
+Progress 5/8
+Progress 6/8
+Progress 7/8
+Progress 8/8
+ 
+============================================
+Completed ==================================
+============================================</code></pre>
+</details>
+
   ------------------------------------
 
 </details>
