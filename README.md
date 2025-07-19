@@ -214,52 +214,6 @@ Direct
 ------------------------------------
 
 <details>
-  <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
-
-  ------------------------------------
-
-  Through this input file, the user controls the details regarding the generation of bilayers for different Twisted angles, where:
-
-  - **dir_poscar** defines the name of the directory containing the POSCAR files of the monolayers to be used in the generation of the bilayers;
-  - **dir_o** defines the name of the directory to be created by the code, and where the structural files of the generated bilayers will be stored;
-  - **loop_ht** defines how POSCAR files will be used to generate bilayers, where:
-
-    For **loop_ht=0**, the user must enter in **Lattice1** and **Lattice2** the name of the POSCAR files of the bottom and top layers of the stack, respectively. In this case, only the bilayer between these two selected materials is created;
-
-    For **loop_ht=1**, the code will operate in a loop, creating bilayers, referring to the pairwise combination of all structural files contained in the directory defined by **dir_poscar**;
-
-  - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
-  - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
-  - **cell_fator** defines the multiplication factor of vectors A1 and A2 of the cells present in **dir_poscar**, to create the respective supercells;
-  - **crit_mod_vector** defines the percentage tolerance (%) in the comparison of the modulus of the lattice vectors A and B between two different lattices (**A1 with A2** and **B1 with B2**). It is used to check if the two lattices have similar vector sizes;
-  - **crit_distorc_lattice** defines the percentage tolerance (%) for the difference between vectors A and B of the same lattice (**A1 with B1** and **A2 with B2**). This value measures how much the lattice is distorted (how much it deviates from an ideal square or hexagonal lattice, for example);
-  - **crit_angle_perc** defines the percentage tolerance (%) in the variation of the angle formed between the lattice vectors, between the two lattices;
-  - **crit_angle_diff** defines the absolute tolerance (in degrees º) of the angular difference between the two lattices. It is a complementary criterion to **crit_angle_perc**;
-  - **crit_area** defines the percentage tolerance (%) in the area difference between the two lattices;
-  - **ions_crit_i and ions_crit_f** define the lower and upper limits for the number of atoms in the generated structures. These criteria allow the construction of heterostructures with desired dimensions, in addition to avoiding computational problems;
-  - **angle_min and angle_max** define the lower and upper limits for the opening angle of the generated structures. These criteria avoid cases where the lattices align nearly parallel (0° or 180°), leading to overly elongated cells, generating physically uninteresting systems, or potentially leading to numerical errors;
-  - **mismatch_type** defines how the lattice mismatch will be resolved: which material will be deformed, and which will remain undeformed, where:
-
-    **mismatch_type=0** evenly distributes structural distortion among stack materials;
-
-    **mismatch_type=1** applies structural distortion to the bottom monolayer of the stack;
-
-    **mismatch_type=2** applies structural distortion to the top monolayer of the stack;
-
-  - **rot_angle_calc** defines the geometric reference used to measure the rotation angle between layers, where:
-
-    **rot_angle_calc='center_cell'** defines the angle needed to align the central vector (connecting the origin to the cell center) of both cells;
-
-    **rot_angle_calc='A1'** defines the angle needed to align the A1 vector of both cells;
-
-    **rot_angle_calc='A2'** defines the angle needed to align the A2 vector of both cells;
-
-    ------------------------------------
-
-</details>
-
-
-<details>
   <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
   <pre><code># SAMBA Copyright (C) 2025
@@ -326,6 +280,50 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
 </details>
 
+<details>
+  <summary><strong>SAMBA_HeteroStructure.input (description and adjustments)</strong></summary>
+
+  ------------------------------------
+
+  Through this input file, the user controls the details regarding the generation of bilayers for different Twisted angles, where:
+
+  - **dir_poscar** defines the name of the directory containing the POSCAR files of the monolayers to be used in the generation of the bilayers;
+  - **dir_o** defines the name of the directory to be created by the code, and where the structural files of the generated bilayers will be stored;
+  - **loop_ht** defines how POSCAR files will be used to generate bilayers, where:
+
+    For **loop_ht=0**, the user must enter in **Lattice1** and **Lattice2** the name of the POSCAR files of the bottom and top layers of the stack, respectively. In this case, only the bilayer between these two selected materials is created;
+
+    For **loop_ht=1**, the code will operate in a loop, creating bilayers, referring to the pairwise combination of all structural files contained in the directory defined by **dir_poscar**;
+
+  - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
+  - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
+  - **cell_fator** defines the multiplication factor of vectors A1 and A2 of the cells present in **dir_poscar**, to create the respective supercells;
+  - **crit_mod_vector** defines the percentage tolerance (%) in the comparison of the modulus of the lattice vectors A and B between two different lattices (**A1 with A2** and **B1 with B2**). It is used to check if the two lattices have similar vector sizes;
+  - **crit_distorc_lattice** defines the percentage tolerance (%) for the difference between vectors A and B of the same lattice (**A1 with B1** and **A2 with B2**). This value measures how much the lattice is distorted (how much it deviates from an ideal square or hexagonal lattice, for example);
+  - **crit_angle_perc** defines the percentage tolerance (%) in the variation of the angle formed between the lattice vectors, between the two lattices;
+  - **crit_angle_diff** defines the absolute tolerance (in degrees º) of the angular difference between the two lattices. It is a complementary criterion to **crit_angle_perc**;
+  - **crit_area** defines the percentage tolerance (%) in the area difference between the two lattices;
+  - **ions_crit_i and ions_crit_f** define the lower and upper limits for the number of atoms in the generated structures. These criteria allow the construction of heterostructures with desired dimensions, in addition to avoiding computational problems;
+  - **angle_min and angle_max** define the lower and upper limits for the opening angle of the generated structures. These criteria avoid cases where the lattices align nearly parallel (0° or 180°), leading to overly elongated cells, generating physically uninteresting systems, or potentially leading to numerical errors;
+  - **mismatch_type** defines how the lattice mismatch will be resolved: which material will be deformed, and which will remain undeformed, where:
+
+    **mismatch_type=0** evenly distributes structural distortion among stack materials;
+
+    **mismatch_type=1** applies structural distortion to the bottom monolayer of the stack;
+
+    **mismatch_type=2** applies structural distortion to the top monolayer of the stack;
+
+  - **rot_angle_calc** defines the geometric reference used to measure the rotation angle between layers, where:
+
+    **rot_angle_calc='center_cell'** defines the angle needed to align the central vector (connecting the origin to the cell center) of both cells;
+
+    **rot_angle_calc='A1'** defines the angle needed to align the A1 vector of both cells;
+
+    **rot_angle_calc='A2'** defines the angle needed to align the A2 vector of both cells;
+
+    ------------------------------------
+
+</details>
 
 ------------------------------------
 
