@@ -29,10 +29,10 @@
 
 ◉ **Authors**
   
-- Augusto de Lelis Araújo (**<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>**)
-- Adalberto Fazzio (**<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>**)
-- Felipe Castro de Lima (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)
-- Pedro Henrique Sophia (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
+- **Augusto de Lelis Araújo** (**<a href="https://orcid.org/0000-0002-6835-6113">ORCID</a>**)
+- **Adalberto Fazzio** (**<a href="https://orcid.org/0000-0001-5384-7676">ORCID</a>**)
+- **Felipe Castro de Lima** (**<a href="https://orcid.org/0000-0002-2937-2620">ORCID</a>**)
+- **Pedro Henrique Sophia** (**<a href="https://orcid.org/0009-0007-5428-0596">ORCID</a>**)
 
 <img src="etc/figures/Authors.png" alt="SAMBA logo">
 
@@ -40,10 +40,10 @@
 
 ◉ **Meet Institutional and Research Network**
   
-- Ilum - School of Science **<a href="https://ilum.cnpem.br/en/">link</a>**
-- CNPEM - The Brazilian Center for Research in Energy and Materials **<a href="https://cnpem.br/en/">link</a>**
-- INCT - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
-- midb.cloud database **<a href="https://midb.cloud/">link</a>**
+- **Ilum** - School of Science **<a href="https://ilum.cnpem.br/en/">link</a>**
+- **CNPEM** - The Brazilian Center for Research in Energy and Materials **<a href="https://cnpem.br/en/">link</a>**
+- **NCT** - Materials Informatics **<a href="https://inct-mi.pesquisa.ufabc.edu.br/">link</a>**
+- **midb.cloud** database **<a href="https://midb.cloud/">link</a>**
 
 <img src="etc/figures/institucional.png" alt="Institutional Network">
 
@@ -76,14 +76,14 @@
 
   During the installation, SAMBA checks the existence of the following Python modules:
   
-  - VASProcar **<a href="https://pypi.org/project/vasprocar/">link</a>**
+  - **VASProcar** **<a href="https://pypi.org/project/vasprocar/">link</a>**
     
-    **VASProcar** <img src="etc/figures/VASProcar_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> is one of **SAMBA**'s <img src="etc/figures/SAMBA_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> main packages, which handles the post-processing and plotting of results from **VASP** output files.
-  - pymatgen **<a href="https://pypi.org/project/pymatgen/">link</a>**
-  - SciPy **<a href="https://pypi.org/project/scipy/">link</a>**
-  - NumPy **<a href="https://pypi.org/project/numpy/">link</a>**
-  - Matplotlib **<a href="https://pypi.org/project/matplotlib/">link</a>**
-  - Plotly **<a href="https://pypi.org/project/plotly/">link</a>**
+    VASProcar <img src="etc/figures/VASProcar_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> is one of SAMBA's <img src="etc/figures/SAMBA_logo.png" alt="Descrição" style="vertical-align:middle; width: 20px;"> main packages, which handles the post-processing and plotting of results from **VASP** output files.
+  - **pymatgen** **<a href="https://pypi.org/project/pymatgen/">link</a>**
+  - **SciPy** **<a href="https://pypi.org/project/scipy/">link</a>**
+  - **NumPy** **<a href="https://pypi.org/project/numpy/">link</a>**
+  - **Matplotlib** **<a href="https://pypi.org/project/matplotlib/">link</a>**
+  - **Plotly** **<a href="https://pypi.org/project/plotly/">link</a>**
 
 
   <img src="etc/figures/python_packages_logos.png" alt="python_packages"> 
