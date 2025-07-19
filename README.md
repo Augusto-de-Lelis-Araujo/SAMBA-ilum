@@ -542,7 +542,7 @@ Various structural information regarding the generated bilayer is recorded in th
   ------------------------------------
 
   - Within the working directory, the user must place the pseudopotential files (for every ion present in the POSCAR files) into a folder called **POTCAR**";
-  - The pseudopotential files must be named according to the pattern found in **pseudo files - example**";
+  - The pseudopotential files must be named according to the pattern below:
 
   <pre><code>POTCAR_H
 POTCAR_C
