@@ -1,9 +1,6 @@
 <img src="etc/figures/code_logo.png" alt="SAMBA logo">
-<h1>SAMBA (Simulation and Automated Methods for Bilayer Analysis)
-  <a href="https://www.gnu.org/licenses/gpl-3.0">
-    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
-  </a>
-</h1>
+
+# SAMBA &copy; 2025 **<a href="[https://midb.cloud/](https://www.gnu.org/licenses/gpl-3.0)"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>**
 
 <h2>Article available in soon</h2>
 
