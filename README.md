@@ -573,9 +573,6 @@ POTCAR_Cr
 
 ------------------------------------
 
-</details>
-
-
 <details>
   <summary><strong>SAMBA_WorkFlow.input (Sample file)</strong></summary>
 
@@ -752,9 +749,11 @@ Through this input file, the user controls the details of the DFT calculations t
 - **displacement_Z** defines the initial vertical separation values between the layers of the stack, in the xyz-scan calculation;
 - **displacement_xyz_A1** defines the component of the lateral displacement (relative to the lattice vector A1) performed on the top layer of the stack, in the xyz-scan calculation;
 - **displacement_xyz_A2** defines the component of the lateral displacement (relative to the lattice vector A2) performed on the top layer of the stack, in the xyz-scan calculation.
+ 
+</details>
 
 ------------------------------------
-  
+
 </details>
 
 
