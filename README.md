@@ -885,8 +885,7 @@ Completed ===
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
-<details>
-  <summary><strong>5th) VASPKIT Installation</strong></summary>
+◉ **5th)** VASPKIT Installation:
 
   ------------------------------------
   
@@ -903,8 +902,6 @@ Completed ===
   To confirm that the installation was configured correctly, just type **vaspkit** in the terminal and the code should be executed.
 
   <img src="etc/figures/VASPKIT_logo.png" alt="Descrição" style="vertical-align:center; width: 240px;">
-
-</details>  
 
 ------------------------------------
 
