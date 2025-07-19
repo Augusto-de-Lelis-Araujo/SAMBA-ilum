@@ -1039,6 +1039,8 @@ Subsequently, SAMBA also allowed for high-throughput structural relaxation and e
 
 All data are available in the database of the **INCT – Materials Informatics project** (**midb.cloud** **<a href="https://midb.cloud/">link</a>**), under the title: "**Twisted 2D van der Waals Homo and Hetero Bilayers**" **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset=='Twisted 2D van der Waals Homo and Hetero Bilayers')">link</a>**.
 
+-----------------------------------
+
 </details>
 
 
