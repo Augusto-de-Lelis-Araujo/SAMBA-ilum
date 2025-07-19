@@ -871,23 +871,29 @@ Completed ===
   or
   <pre><code>example:  module load CONDA_2025.5.1</code></pre>
 
+-----------------------------------
+
 ◉ **2nd)** Select a directory of interest and create a Python virtual environment using the command: **python -m venv** python_environment_name
    <pre><code>example:  python -m venv python_virtual</code></pre>  
      
    Save the path of the Python environment you created, as this is the **path** you should use in the **dir_virtual_python** tag of **SAMBA_WorkFlow.input**
-   <pre><code>example:  dir_virtual_python = '/home/dlelis/codes/python_virtual'</code></pre>  
+   <pre><code>example:  dir_virtual_python = '/home/dlelis/codes/python_virtual'</code></pre>
+
+-----------------------------------
 
 ◉ **3rd)** Activate the Python environment using the command: **source** path_to_python_environment + **/bin/activate**
   <pre><code>example:  source /home/dlelis/codes/python_virtual/bin/activate</code></pre>
+
+-----------------------------------
 
 ◉ **4th)** After activating the Python environment, install the following packages **SAMBA**, **VASProcar** and **pymatgen**, using the commands:
   <pre><code>pip install --upgrade samba_ilum</code></pre>
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
-◉ **5th)** VASPKIT Installation:
+-----------------------------------
 
-  ------------------------------------
+◉ **5th)** VASPKIT Installation:
   
   Download VASPKIT from **<a href="https://sourceforge.net/projects/vaspkit/files/Binaries/" target="_blank">link</a>**, and if you want more information about this package, see **<a href="https://vaspkit.com/installation.html" target="_blank">link</a>**.
 
