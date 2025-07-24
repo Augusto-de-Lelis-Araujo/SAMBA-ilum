@@ -932,7 +932,7 @@ Completed ===
 
 #--------
 dir0=`pwd`
-#dir0="/mnt/bgfs/home/dlelis/WorkFlow//WorkFlow_TESTE"
+#dir0="/home/dlelis/WorkFlow/"
 #---------------------
 source $dir0/./job0.sh
 #---------------------</code></pre>
