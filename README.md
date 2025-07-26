@@ -189,8 +189,6 @@ Direct
   - They must correspond to 2D lattices whose vectors (A1,A2) are in the KxKy plane, while vector A3 must be on the z-axis;
   - They must be written in direct coordinates;
 
-  - **Optional:** The user can enter an identifier (**ID**) to associate each generated bilayer with its respective source monolayer. To do this, simply include the ID in the first line of the POSCAR file, immediately after the word SAMBA. The code interprets the last string present in this initial line as the ID;
-
   - **Optional:** It is recommended to use **unit cells**, as using **supercells** can hide possible configurations and slow down code execution. During execution, SAMBA checks whether the cells in the folder defined by **dir_poscar** are unit cells or not, and will ask the user if they want to continue the calculation anyway;
 
   - **Note:** To ensure that the different twisted angles are correctly obtained, the cell must be constructed so that the **axis of smallest rotation around the z-axis** is positioned at the **cell origin**. If the code identifies that this axis is outside the origin, it will automatically translate the ions to correct this position. The original cell will be preserved in the "**POSCAR_original** directory.
