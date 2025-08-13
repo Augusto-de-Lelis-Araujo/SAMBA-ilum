@@ -57,7 +57,7 @@
   ------------------------------------
   
   The latest version of SAMBA code can be **installed** using the Python Package Index via the <strong>command below</strong>, while the **source code** is available for **download** via the **<a href="????????">link</a>**.
-  <pre><code>pip install --upgrade ????????</code></pre>
+  <pre><code>pip install --upgrade ????????   "private code at the moment"</code></pre>
 
   ------------------------------------
 
@@ -698,7 +698,7 @@ Through this input file, the user controls the details of the DFT calculations t
 
   **U_correction=0** (no correction);
   
-  **U_correction=1** activates the correction, applied to the following ions (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U). **See ??? if you want to adjust the U correction values applied to each ion**.
+  **U_correction=1** activates the correction, applied to the following ions (Cr, Mn, Fe, Co, Ni, Cu, La, Ce, Nd, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, U).
   
 - **vdW** specifies a vdW dispersion term of the atom-pairwise or many-body type, where:
 
@@ -875,7 +875,7 @@ Completed ===
 -----------------------------------
 
 ◉ **4th)** After activating the Python environment, install the following packages **SAMBA**, **VASProcar** and **pymatgen**, using the commands:
-  <pre><code>pip install --upgrade ????????</code></pre>
+  <pre><code>pip install --upgrade ????????   "private code at the moment"</code></pre>
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
