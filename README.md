@@ -2,9 +2,7 @@
 
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis)<br> &copy; 2025 <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
 
-<h2>Article available in soon</h2>
-
-
+<h2>Code, Article and database will be available soon</h2>
 
 
 <h2>Tutorial</h2>
