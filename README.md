@@ -96,9 +96,9 @@
   ------------------------------------
   
   <p>To run the code, the user must use the command below in the working directory:</p>
-  <pre><code>python -m ????????</code></pre>  "private code at the moment"
+  <pre><code>python -m ????????   "private code at the moment"</code></pre>  
   <p>or</p>
-  <pre><code>python3 -m ????????</code></pre>  "private code at the moment"
+  <pre><code>python3 -m ????????   "private code at the moment"</code></pre>
 
   ------------------------------------
 
