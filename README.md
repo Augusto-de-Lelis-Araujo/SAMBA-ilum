@@ -247,7 +247,7 @@ separation_1 = 3.00                    # Separation distance (in Angs.) between 
 separation_2 = 3.00                    # Separation distance (in Angs.) between the 2nd and 3rd material.
 vacuum       = 15.0                    # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
 #----------------------------------
-cell_fator = [10, 10]                  # Multiplication factor of the unit cell as a function of vectors A1, A2.
+cell_fator = [10, 10]                  # Ranges of the loop on the linear combination of vectors A1 and A2.
                                        # Note: Very high values can lead to excessive code slowness.
 #----------------------------------
 crit_mod_vector  = 3                   # Percentage variation % of the module between the vectors (A and B) of the lattices: A1_with_A2 and B1_with_B2
@@ -289,7 +289,7 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
   - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
-  - **cell_fator** defines the multiplication factor of vectors A1 and A2 of the cells present in **dir_poscar**, to create the respective supercells;
+  - **cell_fator** defines the ranges of the loop on the linear combination of vectors **A1** and **A2** of the cells present in **dir_poscar**, in order to scan all possible cell combinations. For example, **cell_fator = [3, 5]** defines a loop of **[-3, +3]** over vector **A1** and a loop of **[-5, +5]** over vector **A2**;
   - **crit_mod_vector** defines the percentage tolerance (%) in the comparison of the modulus of the lattice vectors A and B between two different lattices (**A1 with A2** and **B1 with B2**). It is used to check if the two lattices have similar vector sizes;
   - **crit_distorc_lattice** defines the percentage tolerance (%) for the difference between vectors A and B of the same lattice (**A1 with B1** and **A2 with B2**). This value measures how much the lattice is distorted (how much it deviates from an ideal square or hexagonal lattice, for example);
   - **crit_angle_perc** defines the percentage tolerance (%) in the variation of the angle formed between the lattice vectors, between the two lattices;
