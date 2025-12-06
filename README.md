@@ -14,6 +14,7 @@
   publisher = {Nature Publishing Group}
 }
 
+
 @software{araujo2025vasprocar,
   title     = {VASProcar: Python tools for DFT calculations},
   author    = {A. L. Araújo and R. P. Maciel},
