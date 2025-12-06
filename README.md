@@ -4,7 +4,6 @@
 
 ## **Article:** A high-throughput framework and database for twisted 2D van der Waals bilayers
 ## **doi:** **<a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>**
-## **Database repository (midb)**: **<a href="https://www.midb.cloud/search?show_pt=no&query=(dataset==%27Twisted%202D%20van%20der%20Waals%20Homo%20and%20Hetero%20Bilayers%27)">Link</a>**
 
 
 
