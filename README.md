@@ -5,7 +5,7 @@
 <details>
   <summary><strong>Article: A high-throughput framework and database for twisted 2D van der Waals bilayers</strong></summary>
 
-<h2> doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a> <h2>
+◉ doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>
 
 <pre><code>@article{araujo2025twisted,
   title     = {A high-throughput framework and database for twisted 2D van der Waals bilayers},
@@ -16,7 +16,6 @@
   url       = {https://doi.org/10.1038/s41524-025-01892-z},
   publisher = {Nature Publishing Group}
 }
-
 
 @software{araujo2025vasprocar,
   title     = {VASProcar: Python tools for DFT calculations},
