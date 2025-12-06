@@ -4,6 +4,7 @@
 
 <details>
   <summary><strong>Article: A high-throughput framework and database for twisted 2D van der Waals bilayers (doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>)</strong></summary>
+  
   <pre><code>@article{araujo2025twisted,
   title     = {A high-throughput framework and database for twisted 2D van der Waals bilayers},
   author    = {Araújo, Augusto L. and Sophia, Pedro H. and Crasto de Lima, F. and Fazzio, Adalberto},
@@ -12,10 +13,10 @@
   doi       = {10.1038/s41524-025-01892-z},
   url       = {https://doi.org/10.1038/s41524-025-01892-z},
   publisher = {Nature Publishing Group}
-}
+}</code></pre>
+</details>
 
-
-@software{araujo2025vasprocar,
+  <pre><code>@software{araujo2025vasprocar,
   title     = {VASProcar: Python tools for DFT calculations},
   author    = {A. L. Araújo and R. P. Maciel},
   version   = {1.1.19.172},
