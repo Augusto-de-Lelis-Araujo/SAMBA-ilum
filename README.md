@@ -5,7 +5,7 @@
 <details>
   <summary><strong>## Article: A high-throughput framework and database for twisted 2D van der Waals bilayers</strong></summary>
 
-◉ **doi:** **<a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>**
+<h2>**doi:** **<a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>**<h2>
 
 </details>
 
