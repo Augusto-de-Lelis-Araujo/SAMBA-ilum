@@ -14,7 +14,6 @@
   url       = {https://doi.org/10.1038/s41524-025-01892-z},
   publisher = {Nature Publishing Group}
 }</code></pre>
-</details>
 
   <pre><code>@software{araujo2025vasprocar,
   title     = {VASProcar: Python tools for DFT calculations},
