@@ -3,7 +3,7 @@
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis)<br> &copy; 2025 <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
 
 <details>
-  <summary><strong>## Article: A high-throughput framework and database for twisted 2D van der Waals bilayers</strong></summary>
+  <summary><strong>Article: A high-throughput framework and database for twisted 2D van der Waals bilayers</strong></summary>
 
 <h2> doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a> <h2>
 
@@ -23,7 +23,7 @@
   title     = {VASProcar: Python tools for DFT calculations},
   author    = {A. L. Araújo and R. P. Maciel},
   version   = {1.1.19.172},
-  year      = 2025,
+  year      = {2025},
   doi       = {10.5281/zenodo.6343960},
   url       = {https://doi.org/10.5281/zenodo.6343960},
   publisher = {Zenodo}
