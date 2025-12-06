@@ -3,9 +3,9 @@
 # SAMBA (Simulation and Automated Methods for Bilayer Analysis)<br> &copy; 2025 <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
 
 <details>
-  <summary><strong>Article: A high-throughput framework and database for twisted 2D van der Waals bilayers (doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>
+  <summary><strong>Article: A high-throughput framework and database for twisted 2D van der Waals bilayers (doi: <a href="https://doi.org/10.1038/s41524-025-01892-z)">10.1038/s41524-025-01892-z</a>
 
-<pre><code>@article{araujo2025twisted,
+  <pre><code>@article{araujo2025twisted,
   title     = {A high-throughput framework and database for twisted 2D van der Waals bilayers},
   author    = {Araújo, Augusto L. and Sophia, Pedro H. and Crasto de Lima, F. and Fazzio, Adalberto},
   journal   = {npj Computational Materials},
