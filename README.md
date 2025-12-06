@@ -1008,7 +1008,7 @@ while true; do
 
 done</code></pre>
 
-- **dir_virtual** especifica o caminho do ambiente virtual Python a ser carregado para a execução de scripts ao longo da execução do job, este caminho é definido na tag **dir_virtual_python** do arquivo de input **SAMBA_WorkFlow.input**;
+- **dir_virtual** specifies the path to the Python virtual environment to be loaded for script execution throughout the job run. This path is defined in the **dir_virtual_python** tag of the **SAMBA_WorkFlow.input** input file;
 
 - **module load** loads into the Linux environment the version of the DFT package **VASP** to be used in the calculations;
 
