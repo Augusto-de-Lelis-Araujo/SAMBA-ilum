@@ -7,7 +7,7 @@
 
 <h2> doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a> <h2>
 
-  <details>
+<details>
   <summary><strong>Reference:</strong></summary>
   <pre><code>@article{araujo2025twisted,
   title     = {A high-throughput framework and database for twisted 2D van der Waals bilayers},
@@ -18,6 +18,7 @@
   url       = {https://doi.org/10.1038/s41524-025-01892-z},
   publisher = {Nature Publishing Group}
 }
+
 
 @software{araujo2025vasprocar,
   title     = {VASProcar: Python tools for DFT calculations},
