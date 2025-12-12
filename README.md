@@ -475,7 +475,7 @@ Completed ==================================
 
   - The **1st element** (009atoms) informs the total number of atoms in the generated structure;
 
-  - The **2nd and 3rd elements** (-1.352, 1.38) correspond respectively, to the percentage variation **applied** to the **Area** of the cell of **Material_A** and the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
+  - The **2nd** and **3rd elements** (-1.352, 1.38) correspond respectively, to the percentage variation **applied** to the **Area** of the cell of **Material_A** and the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
 
   - The **4th element** (60.0) corresponds to the relative rotation angle between the layers (angle required to align the cell of material B with the cell of material A);
 
