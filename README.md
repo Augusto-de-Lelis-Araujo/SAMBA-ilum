@@ -1045,11 +1045,16 @@ All data are available in the database of the **INCT – Materials Informatics p
 
 
 
+<details>
 <summary><strong>Support</strong></summary>
+
+-----------------------------------
 
 For more informations/questions or to report potential bugs, send an e-mail to: augusto-lelis@outlook.com
 
 ------------------------------------
+
+</details>
 
 
 
