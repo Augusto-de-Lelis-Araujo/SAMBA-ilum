@@ -471,19 +471,19 @@ Completed ==================================
 
   ------------------------------------
 
-  The generated bilayers are labeled as the following structure "**009atoms_-1.352_1.38_60.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002**", with different information separated by "**_**", where:
+  The generated bilayers are labeled as the following structure "**009atoms_-1.352_1.38_60.0_Bi2Se3+Ga2Te2_801626ab7da7c0a5+b8c03634**", with different information separated by "**_**", where:
 
-  - The **1st element** informs the total number of atoms in the generated structure;
+  - The **1st element** (009atoms) informs the total number of atoms in the generated structure;
 
-  - The **2nd and 3rd elements** correspond respectively, to the percentage variation **applied** to the **Area** of the cell of **Material_A** and the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
+  - The **2nd and 3rd elements** (-1.352, 1.38) correspond respectively, to the percentage variation **applied** to the **Area** of the cell of **Material_A** and the percentage variation **applied** to the **Area** of the cell of **Material_B**, for the formation of the bilayer cell;
 
-  - The **4th element** corresponds to the relative rotation angle between the layers (angle required to align the cell of material B with the cell of material A);
+  - The **4th element** (60.0) corresponds to the relative rotation angle between the layers (angle required to align the cell of material B with the cell of material A);
 
-  - The **last element** is the **ID** that identifies the generated structure.
+  - The **last element** (Bi2Se3+Ga2Te2_801626ab7da7c0a5+b8c03634) is the **ID** that identifies the generated structure.
 
   Below, we present the structure of the POSCAR file of the bilayer corresponding to the label **above**.
 
-  <pre><code>SAMBA Bi_Se+Ga_Te 5 4 | mismatch_areas_12_21 = -2.6948_2.7695 | var_areas = -1.352_1.38 | var_vectors = -0.6783_-0.6783_0.6876_0.6876 | mismatch_angles_12_21 = 0.0_0.0 | var_angles = 0.0_0.0 | rotation_angle = 60.0 | MSCell_1 = 1_1_1_1 | MSCell_2 = -1_-1_-1_-1 | MDeform_1 = 0.993216916_0.0_0.0_0.993216916 | MDeform_2 = 1.00687637_0.0_0.0_1.00687637 | MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079 | MSTrain_2 = 0.006900013_0.0_0.0_0.006900012 | Shift_plane = 0.0_0.0 | Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+0002  
+  <pre><code>SAMBA Bi_Se+Ga_Te 5 4 | mismatch_areas_12_21 = -2.6948_2.7695 | var_areas = -1.352_1.38 | var_vectors = -0.6783_-0.6783_0.6876_0.6876 | mismatch_angles_12_21 = 0.0_0.0 | var_angles = 0.0_0.0 | rotation_angle = 60.0 | MSCell_1 = 1_1_1_1 | MSCell_2 = -1_-1_-1_-1 | MDeform_1 = 0.993216916_0.0_0.0_0.993216916 | MDeform_2 = 1.00687637_0.0_0.0_1.00687637 | MSTrain_1 = -0.006760079_0.0_0.0_-0.006760079 | MSTrain_2 = 0.006900013_0.0_0.0_0.006900012 | Shift_plane = 0.0_0.0 | Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+b8c03634  
 1.00000000000000     
  2.0564035366489999  3.5617954072029998  0.00000000000000000
 -2.0564035373560001  3.5617954067939999  0.00000000000000000
@@ -505,9 +505,9 @@ Various structural information regarding the generated bilayer is recorded in th
 
 - **SAMBA** is just a TAG that allows the SAMBA code to interact with the POSCAR file, extract information and assist in creating input files for high-performance DFT calculations;
 
-- The **2nd element** of the **1st line** of the POSCAR file, corresponds to the ions present in the layer of material A (separated by "**_**") followed by the "**+**" of the ions present in the monolayer of material B (separated by "**_**");
+- The **2nd element** (Bi_Se+Ga_Te) corresponds to the ions present in the layer of material A (separated by "**_**") followed by the "**+**" of the ions present in the monolayer of material B (separated by "**_**");
 
-- The following **2 elements** before **mismatch_areas_12_21** correspond, respectively, to the total number of atoms present in the layer of material A and in the layer of material B;
+- The following **elements** before **mismatch_areas_12_21** (5 4) correspond, respectively, to the total number of atoms present in the layer of material A and in the layer of material B;
 
 - **mismatch_areas_12_21** corresponds to the percentage variation of the **Area** of the cell of **Material_A** in relation to that of Material_B followed by the percentage variation of the **Area** of the cell of **Material_B** in relation to that of Material_A (referring to pristine monolayers);
 
@@ -529,7 +529,7 @@ Various structural information regarding the generated bilayer is recorded in th
 
 - **Shift_plane** = corresponds to the direct coordinates (in function of lattice vectors A1 and A2) of the displacement applied to the material B cell, during the xy-scan process;
 
-- The **last 3 elements** of the **1st line** of the POSCAR file, correspond respectively to the identification ID of the monolayer of Material A, monolayer of Material B, and generated bilayer.
+- The **last 3 elements** (Bi2Se3_7f7e8b3365f74a5d Ga2Te2_019a4ea220da4bb7 Bi2Se3+Ga2Te2_801626ab7da7c0a5+b8c03634) correspond respectively to the identification ID of the monolayer of Material A, monolayer of Material B, and generated bilayer.
 
 </details>
 
