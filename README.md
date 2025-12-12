@@ -124,16 +124,16 @@
 
   <p>When running the code, the following screen is shown to the user:</p>
   <pre><code>=============================================================
-v1.0.0.513 Copyright (C) 2025 --------------------
-Adalberto Fazzio's research group (Ilum|CNPEM)
+v1.1.0.129 Copyright (C) 2025 -------------------------------
+Adalberto Fazzio's research group (Ilum|CNPEM) --------------
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
-   _____ ___    __  _______  ___ 
-  / ___//   |  /  |/  / __ )/   |
-  \__ \/ /| | / /|_/ / __  / /| |
- ___/ / ___ |/ /  / / /_/ / ___ |
-/____/_/  |_/_/  /_/_____/_/  |_|
-Simulation and Automated Methods for Bilayer Analysis v1.0.0.513
+   _____ ___    __  _______  ___       _ __
+  / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
+  \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
+ ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
+/____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
+Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 &#8203;
 ######################################################################
 # What do you want to run? ===========================================
@@ -367,16 +367,16 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
   <details>
   <summary><strong>Terminal Message - example</strong></summary>
   <pre><code>=============================================================
-v1.0.0.513 Copyright (C) 2025 --------------------
-Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
+v1.1.0.129 Copyright (C) 2025 -------------------------------
+Adalberto Fazzio's research group (Ilum|CNPEM) --------------
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
-    _____ ___    __  _______  ___       _ __              
-  / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___ 
-  \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\ 
+   _____ ___    __  _______  ___       _ __
+  / ___//   |  /  |/  / __ )/   |     (_) /_  ______ ___
+  \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
  ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
-/____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/ 
-Simulation and Automated Methods for Bilayer Analysis v1.0.0.513
+/____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
+Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 &#8203;
 ==================================
 Wait a moment ====================
@@ -795,8 +795,8 @@ Through this input file, the user controls the details of the DFT calculations t
   <details>
   <summary><strong>Terminal Message - example</strong></summary>
   <pre><code>=============================================================
-v1.0.0.513 Copyright (C) 2025 --------------------
-Closed source: Adalberto Fazzio's research group (Ilum|CNPEM)
+v1.1.0.129 Copyright (C) 2025 -------------------------------
+Adalberto Fazzio's research group (Ilum|CNPEM) --------------
 Author: Augusto de Lelis Araujo -----------------------------
 =============================================================
    _____ ___    __  _______  ___       _ __
@@ -804,7 +804,7 @@ Author: Augusto de Lelis Araujo -----------------------------
   \__ \/ /| | / /|_/ / __  / /| |    / / / / / / __ `___\
  ___/ / ___ |/ /  / / /_/ / ___ |   / / / /_/ / / / / / /
 /____/_/  |_/_/  /_/_____/_/  |_|  /_/_/\__,_/_/ /_/ /_/
-Simulation and Automated Methods for Bilayer Analysis v1.0.0.513
+Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 &#8203;
 ==================================
 Wait a moment ====================
