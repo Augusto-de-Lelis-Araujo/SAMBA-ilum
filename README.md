@@ -206,7 +206,7 @@ Direct
   ------------------------------------
   
   - They must be inserted within the folder defined by **dir_poscar**;
-  - They must correspond to 2D lattices whose vectors ($A_{1}$,$A_{2}$) are in the $K_{x}$$K_{y}$ plane, while vector A3 must be on the z-axis (positive value);
+  - They must correspond to 2D lattices whose vectors (A1,A2) are in the KxKy plane, while vector A3 must be on the z-axis (positive value);
 
   - **Optional:** It is recommended to use **unit cells**, as using **supercells** can hide possible configurations and slow down code execution. During execution, SAMBA checks whether the cells in the folder defined by **dir_poscar** are unit cells or not, and will ask the user if they want to continue the calculation anyway;
 
