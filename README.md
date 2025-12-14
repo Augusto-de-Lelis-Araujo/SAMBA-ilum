@@ -1028,6 +1028,9 @@ done</code></pre>
 <details>
 <summary><strong>Database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
 
+***+18.000 Bilayers generated ***
+***Of these, +1,000 structures underwent structural optimization calculations and electronic structure. ***
+
 -----------------------------------
 
 The **SAMBA** code was developed with the goal of accelerating the generation of a database based on first-principles calculations grounded in Density Functional Theory (DFT), using the VASP package. It focuses on homo- and hetero-structured van der Waals bilayers with varying twist angles.
