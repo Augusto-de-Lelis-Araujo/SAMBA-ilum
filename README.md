@@ -77,7 +77,7 @@
   ------------------------------------
   
   The latest version of SAMBA code can be **installed** using the Python Package Index via the <strong>command below</strong>, while the **source code** is available for **download** via the **<a href="https://pypi.org/project/SAMBA-ilum">link</a>**.
-  <pre><code>pip install samba_ilum   "private code at the moment"</code></pre>
+  <pre><code>pip install samba_ilum</code></pre>
 
   ------------------------------------
 
@@ -116,9 +116,9 @@
   ------------------------------------
   
   <p>To run the code, the user must use the command below in the working directory:</p>
-  <pre><code>python -m samba_ilum   "private code at the moment"</code></pre>  
+  <pre><code>python -m samba_ilum</code></pre>  
   <p>or</p>
-  <pre><code>python3 -m samba_ilum   "private code at the moment"</code></pre>
+  <pre><code>python3 -m samba_ilum</code></pre>
 
   ------------------------------------
 
