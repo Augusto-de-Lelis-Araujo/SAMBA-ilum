@@ -76,8 +76,8 @@
 
   ------------------------------------
   
-  The latest version of SAMBA code can be **installed** using the Python Package Index via the <strong>command below</strong>, while the **source code** is available for **download** via the **<a href="????????">link</a>**.
-  <pre><code>pip install --upgrade ????????   "private code at the moment"</code></pre>
+  The latest version of SAMBA code can be **installed** using the Python Package Index via the <strong>command below</strong>, while the **source code** is available for **download** via the **<a href="https://pypi.org/project/SAMBA-ilum">link</a>**.
+  <pre><code>pip install samba_ilum   "private code at the moment"</code></pre>
 
   ------------------------------------
 
@@ -116,9 +116,9 @@
   ------------------------------------
   
   <p>To run the code, the user must use the command below in the working directory:</p>
-  <pre><code>python -m ????????   "private code at the moment"</code></pre>  
+  <pre><code>python -m samba_ilum   "private code at the moment"</code></pre>  
   <p>or</p>
-  <pre><code>python3 -m ????????   "private code at the moment"</code></pre>
+  <pre><code>python3 -m samba_ilum   "private code at the moment"</code></pre>
 
   ------------------------------------
 
@@ -219,7 +219,7 @@ Direct
 </details>
 
 
-◉ **2nd Step)** In the working directory, run the SAMBA code (**python -m ????????**) and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
+◉ **2nd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
 
 
 <details>
@@ -348,8 +348,8 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
   ------------------------------------
 
-  - Execute the SAMBA code within the working directory (**python -m ????????**), and subsequently select **option [1]** to initiate the generation of bilayers;
-  - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 1"** in its **first** line, and simply execute the SAMBA code (**python -m ????????**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
+  - Execute the SAMBA code within the working directory (**python -m samba_ilum**), and subsequently select **option [1]** to initiate the generation of bilayers;
+  - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 1"** in its **first** line, and simply execute the SAMBA code (**python -m samba_ilum**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
   - Finally, the structural files for the generated bilayers are saved in the **Structures** directory. If the code runs in a **loop**, the structural files for each material combination will be stored in separate folders within the **Structures** directory.
 
   ------------------------------------
@@ -579,7 +579,7 @@ POTCAR_Cr
 </details>
 
 
-◉ **3rd Step)** In the working directory, run the SAMBA code (**python -m ????????**) and choose **option [0]** to create the input file **SAMBA_WorkFlow.input**.
+◉ **3rd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [0]** to create the input file **SAMBA_WorkFlow.input**.
 
 
 <details>
@@ -776,8 +776,8 @@ Through this input file, the user controls the details of the DFT calculations t
 
   ------------------------------------
 
-  - Execute the SAMBA code within the working directory (**python -m ????????**), and subsequently select **option [2]** to initiate the generation of inputs for the selected DFT calculations for all structures within the Structures folder;
-  - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 2"** in its **first** line, and simply execute the SAMBA code (**python -m ????????**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
+  - Execute the SAMBA code within the working directory (**python -m samba_ilum**), and subsequently select **option [2]** to initiate the generation of inputs for the selected DFT calculations for all structures within the Structures folder;
+  - **Alternatively:** You may create the **run.input file** in the working directory, write **"task = 2"** in its **first** line, and simply execute the SAMBA code (**python -m samba_ilum**). This is useful for the execution of the SAMBA code on job schedulers, such as **OpenPBS** and **Slurm**, utilized in high-performance computing (**HPC**) environments;
   - Finally, the input files for the selected DFT calculations for all structures within the Structures folder are saved to the directory defined by the **dir_o** tag in **SAMBA_WorkFlow.input**. The input files for each structure will be stored in separate folders, named after the corresponding structural file.
 
 ------------------------------------
@@ -851,7 +851,7 @@ Completed ===
 
   ------------------------------------
 
-  To customize the DFT calculations, run the SAMBA code (**python -m ????????**) in your working directory and select **option [3]**.
+  To customize the DFT calculations, run the SAMBA code (**python -m samba_ilum**) in your working directory and select **option [3]**.
 
   This action will create the **WorkFlow_INPUTS** folder. It contains the **INCAR files** for the different VASP calculation steps and the inputs for **VASProcar**, the code responsible for post-processing the data and generating plots. As long as the WorkFlow_INPUTS folder exists in the working directory, its files will be used as the default for the high-throughput DFT calculations.
 
@@ -894,7 +894,7 @@ Completed ===
 -----------------------------------
 
 ◉ **4th)** After activating the Python environment, install the following packages **SAMBA**, **VASProcar** and **pymatgen**, using the commands:
-  <pre><code>pip install --upgrade ????????   "private code at the moment"</code></pre>
+  <pre><code>pip install --upgrade samba_ilum</code></pre>
   <pre><code>pip install --upgrade vasprocar</code></pre>
   <pre><code>pip install --upgrade pymatgen</code></pre>
 
