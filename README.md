@@ -167,11 +167,10 @@ Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 # What do you want to run? ===========================================
 # ====================================================================
 # [0] Generate SAMBA execution inputs
-# --------------------------------------------------------------------
 # [1] Heterostructure Generator
 # [2] WorkFlow: High Throughput DFT (inputs + job)
-# --------------------------------------------------------------------
 # [3] Customize internal WorkFlow inputs (INPUTS folder)
+# [4] Confine a material perpendicularly to the plane (hkl)
 ######################################################################
 A tutorial on how to use the SAMBA is available on GitHub at the link:
 https://github.com/Augusto-de-Lelis-Araujo/SAMBA/blob/main/README.md
@@ -182,6 +181,7 @@ https://github.com/Augusto-de-Lelis-Araujo/SAMBA/blob/main/README.md
     <li><strong>Option [1]</strong>: runs the Bilayer Generator, where the selected monolayers are combined to generate bilayers for different twist angles.</li>
     <li><strong>Option [2]</strong>: runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.</li>
     <li><strong>Option [3]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
+    <li><strong>Option [4]</strong>: runs a module that assists the user in extracting monolayers from the bulk material of interest.</li>
   </ul>
 
 ------------------------------------
