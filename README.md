@@ -37,7 +37,7 @@ All data are available in the database of the **INCT – Materials Informatics p
   journal   = {npj Computational Materials},
   year      = {2025},
   doi       = {10.1038/s41524-025-01892-z},
-  url       = {https://doi.org/10.1038/s41524-025-01892-z},
+  url       = {https://www.nature.com/articles/s41524-025-01892-z},
   publisher = {Nature Publishing Group}
 }</code></pre>
 
