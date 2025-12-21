@@ -167,7 +167,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 # What do you want to run? ===========================================
 # ====================================================================
 # [0] Setup: Initialize configuration files for options [1] and [2]
-# [1] Build: Generate twisted hetero BiLayers/Trilayers
+# [1] Build: Generate twisted hetero BiLayers
 # [2] High-Throughput VASP Workflow (Generate VASP inputs and job execution)
 # [3] Extract internal Workflow settings for customizing option [2]
 # [4] Extract Monolayers/Slabs from bulk material
