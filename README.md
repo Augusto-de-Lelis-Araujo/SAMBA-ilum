@@ -166,11 +166,11 @@ Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 ######################################################################
 # What do you want to run? ===========================================
 # ====================================================================
-# [0] Generate SAMBA execution inputs
-# [1] Heterostructure Generator
-# [2] WorkFlow: High Throughput DFT (inputs + job)
-# [3] Customize internal WorkFlow inputs (INPUTS folder)
-# [4] Confine a material perpendicularly to the plane (hkl)
+# [0] Setup: Initialize configuration files for options [1] and [2]
+# [1] Build: Generate twisted hetero BiLayers/Trilayers
+# [2] High-Throughput VASP Workflow (Generate VASP inputs and job execution)
+# [3] Extract internal Workflow settings for customizing option [2]
+# [4] Extract Monolayers/Slabs from bulk material
 ######################################################################
 A tutorial on how to use the SAMBA is available on GitHub at the link:
 https://github.com/Augusto-de-Lelis-Araujo/SAMBA/blob/main/README.md
