@@ -172,8 +172,7 @@ Simulation and Automated Methods for Bilayer Analysis v1.1.0.129
 # [3] Extract Monolayers/Slabs from bulk material                     
 # [4] VASProcar: A Python toolkit for automated post-processing of    
 #                           VASP electronic-structure calculations    
-#                                                                     
-# Setup ==============================================================
+# Setup --------------------------------------------------------------
 # [5] Initialize configuration files for options [1] and [2]          
 # [6] Extract internal Workflow settings for customizing option [2]   
 ######################################################################
