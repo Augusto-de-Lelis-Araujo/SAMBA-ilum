@@ -185,8 +185,8 @@ https://github.com/Augusto-de-Lelis-Araujo/SAMBA/blob/main/README.md
     <li><strong>Option [2]</strong>: runs the High-throughput DFT module, where the POSCAR files of the structures selected by the user (not limited to the bilayers obtained in option [1]) are analyzed in order to generate input files for different types of structural and electronic calculations using the VASP DFT package, along with the corresponding job submission script.</li>
     <li><strong>Option [3]</strong>: runs a module that assists the user in extracting monolayers from the bulk material of interest.</li>
     <li><strong>Option [4]</strong>: runs the VASProcar code: an intuitive tool for the post-processing of the VASP output files.</li>
-    <li><strong>Option [5]</strong>: provides the input files for the Bilayer Generator and the High-throughput DFT module, allowing the user to configure and customize the calculations to be performed.</li>
-    <li><strong>Option [6]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences.</li>
+    <li><strong>Option [5]</strong>: provides the input files for the Bilayer Generator (Option [1]) and the High-throughput DFT module (Option [2]), allowing the user to configure and customize the calculations to be performed.</li>
+    <li><strong>Option [6]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences (for options [2]).</li>
   </ul>
 
 ------------------------------------
