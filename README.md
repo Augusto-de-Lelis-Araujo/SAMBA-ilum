@@ -186,7 +186,7 @@ https://github.com/Augusto-de-Lelis-Araujo/SAMBA/blob/main/README.md
     <li><strong>Option [3]</strong>: runs a module that assists the user in extracting monolayers from the bulk material of interest.</li>
     <li><strong>Option [4]</strong>: runs the VASProcar code: an intuitive tool for the post-processing of the VASP output files.</li>
     <li><strong>Option [5]</strong>: provides the input files for the Bilayer Generator (Option [1]) and the High-throughput DFT module (Option [2]), allowing the user to configure and customize the calculations to be performed.</li>
-    <li><strong>Option [6]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences (for options [2]).</li>
+    <li><strong>Option [6]</strong>: provides the default input files to be used with VASP, which the user can freely modify to further personalize or specialize the calculations according to their preferences (for Option [2]).</li>
   </ul>
 
 ------------------------------------
