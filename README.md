@@ -8,7 +8,7 @@
 <details>
 <summary><strong>Database: Twisted 2D van der Waals Homo and Hetero Bilayers (midb.cloud) </strong></summary>
 
-## +18.000 Bilayers generated
+## +18.000 Bilayers generated (POSCAR files)
 ## +1.000 Bilayers underwent Structural Optimization and Electronic Structure calculations
 
 -----------------------------------
