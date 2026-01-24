@@ -925,10 +925,8 @@ Completed ===
 
 -----------------------------------
 
-◉ **4th)** After activating the Python environment, install the following packages **SAMBA**, **VASProcar** and **pymatgen**, using the commands:
+◉ **4th)** After activating the Python environment, install the package **SAMBA**, using the command:
   <pre><code>pip install --upgrade samba_ilum</code></pre>
-  <pre><code>pip install --upgrade vasprocar</code></pre>
-  <pre><code>pip install --upgrade pymatgen</code></pre>
 
 -----------------------------------
 
