@@ -1,6 +1,6 @@
 <img src="etc/figures/code_logo.png" alt="SAMBA logo"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
 
-# SAMBA (Simulation and Automated Methods for Bilayer Analysis)<br> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
+# SAMBA (Simulation and Automated Methods for Bilayer Analysis)<br>
 
 
 
