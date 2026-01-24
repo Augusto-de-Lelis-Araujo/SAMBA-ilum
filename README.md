@@ -1,6 +1,6 @@
 # SAMBA &copy; 2026 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)   <img src="etc/figures/code_logo_2.png" alt="Descrição" style="vertical-align:middle; width: 300px;">
 
-# SAMBA (Simulation and Automated Methods for Bilayer Analysis)<br>
+# **S**imulation and **A**utomated **M**ethods for **B**ilayer **A**nalysis)<br>
 
 
 
