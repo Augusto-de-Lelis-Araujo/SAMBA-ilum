@@ -29,9 +29,18 @@ All data are available in the database of the **INCT – Materials Informatics p
 
 
 <details>
-  <summary><strong>Article: VASProcar - An intuitive VASP interface post-processing tool for electronic
-structure analysis (doi: <a href="[https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z](https://github.com/Augusto-de-Lelis-Araujo/SAMBA-ilum/edit/main/README.md)</a>)</strong></summary>
+  <summary><strong>Article: A high-throughput framework and database for twisted 2D van der Waals bilayers (doi: <a href="https://doi.org/10.1038/s41524-025-01892-z">10.1038/s41524-025-01892-z</a>)</strong></summary>
   
+  <pre><code>@article{araujo2025twisted,
+  title     = {A high-throughput framework and database for twisted 2D van der Waals bilayers},
+  author    = {Araújo, Augusto L. and Sophia, Pedro H. and Crasto de Lima, F. and Fazzio, Adalberto},
+  journal   = {npj Computational Materials},
+  year      = {2025},
+  doi       = {10.1038/s41524-025-01892-z},
+  url       = {https://www.nature.com/articles/s41524-025-01892-z},
+  publisher = {Nature Publishing Group}
+}</code></pre>
+
   <pre><code>@software{araujo2025vasprocar,
   title     = {VASProcar: Python tools for DFT calculations},
   author    = {A. L. Araújo and R. P. Maciel},
