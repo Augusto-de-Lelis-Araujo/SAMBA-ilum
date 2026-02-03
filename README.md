@@ -262,7 +262,7 @@ Direct
 <details>
   <summary><strong>SAMBA_HeteroStructure.input (Sample file)</strong></summary>
 
-  <pre><code># SAMBA Copyright (C) 2025
+  <pre><code># SAMBA Copyright (C) 2025-2026
 
 #=========================================================================================================================
 # Important notes !!! ====================================================================================================
@@ -277,7 +277,7 @@ Direct
 #=========================================================================================================================
 # Tuning parameters: =====================================================================================================
 #=========================================================================================================================
-dir_o = 'Structures'                   # Heterostructures Output Directory
+dir_o = 'Structures'                  # Heterostructures Output Directory
 
 #===============================================================
 # Enable or Disable code execution in Loop =====================
@@ -307,33 +307,33 @@ if (loop_ht == 1):
 #===============================================================
 # Other parameters =============================================
 #===============================================================
-separation_1 = 3.00                    # Separation distance (in Angs.) between the 1st and 2nd material.
-separation_2 = 3.00                    # Separation distance (in Angs.) between the 2nd and 3rd material.
-vacuum       = 15.0                    # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
+separation_1 = 3.00                   # Separation distance (in Angs.) between the 1st and 2nd material.
+separation_2 = 3.00                   # Separation distance (in Angs.) between the 2nd and 3rd material.
+vacuum       = 15.0                   # Vacuum (in Angs.) to be introduced into the Heterostructure cell.
 #----------------------------------
-cell_fator = [10, 10]                  # Ranges of the loop on the linear combination of vectors A1 and A2.
-                                       # Note: Very high values can lead to excessive code slowness.
+cell_fator = [10, 10]                 # Ranges of the loop on the linear combination of vectors A1 and A2.
+                                      # Note: Very high values can lead to excessive code slowness.
 #----------------------------------
-crit_mod_vector  = 3                   # Percentage variation % of the module between the vectors (A and B) of the lattices: A1_with_A2 and B1_with_B2
-crit_distorc_lattice = 3               # Percentage variation % of the module between the vectors (A and B) of the same lattice: A1_with_B1 and A2_with_B2
-crit_angle_perc = 2                    # Percentage variation % of the angle formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
-crit_angle_diff = 2                    # Variation (in module) of the angle in degrees (º) formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
-crit_area = 5                          # Percentage variation % of the area of the lattices that will make up the Heterostructure: Area1_with_Area2
+crit_mod_vector  = 3                  # Percentage variation % of the module between the vectors (A and B) of the lattices: A1_with_A2 and B1_with_B2
+crit_distorc_lattice = 3              # Percentage variation % of the module between the vectors (A and B) of the same lattice: A1_with_B1 and A2_with_B2
+crit_angle_perc = 2                   # Percentage variation % of the angle formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
+crit_angle_diff = 2                   # Variation (in module) of the angle in degrees (º) formed between the vectors (A and B) of the lattices: Theta1_with_Theta2
+crit_area = 5                         # Percentage variation % of the area of the lattices that will make up the Heterostructure: Area1_with_Area2
 #----------------------------------
-ions_crit_i = 1                        # Criterion for the minimum number of atoms allowed in the Heterostructure.
-ions_crit_f = 100                      # Criterion for the maximum number of atoms allowed in the Heterostructure.
-                                       # Note: When looping many structures, I advise sweeping small ranges of ions for example: (1, 10); (10, 20); (50,60)
+ions_crit_i = 1                       # Criterion for the minimum number of atoms allowed in the Heterostructure.
+ions_crit_f = 100                     # Criterion for the maximum number of atoms allowed in the Heterostructure.
+                                      # Note: When looping many structures, I advise sweeping small ranges of ions for example: (1, 10); (10, 20); (50,60)
 #----------------------------------
-                                       # By default we will always have: angle > 0.0 and angle < 180.0
-angle_min = 15.0                       # Minimum opening angle between vectors A1 and A2
-angle_max = 165.0                      # Maximum opening angle between vectors A1 and A2
+                                      # By default we will always have: angle > 0.0 and angle < 180.0
+angle_min = 15.0                      # Minimum opening angle between vectors A1 and A2
+angle_max = 165.0                     # Maximum opening angle between vectors A1 and A2
 #----------------------------------
-mismatch_type = 0                      # Applied deformation: [0] Distributed proportionally among the materials
-                                       #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
+mismatch_type = 0                     # Applied deformation: [0] Distributed proportionally among the materials
+                                      #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
 #----------------------------------    
-rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
+rot_angle_calc = 'center_cell'        # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
 #----------------------------------
-permutation = 0                        # [0] Removes duplicates by layer permutation ([A, B] <> [B, A]);  [1] allows permuted duplicates
+permutation = 0                       # [0] Removes duplicates by top e bottom layers permutation ([A, B] <> [B, A]) or ([A,B,C] <> [C,B,A]);  [1] allows permuted duplicates
 #----------------------------------</code></pre>
 
 </details>
@@ -352,9 +352,10 @@ permutation = 0                        # [0] Removes duplicates by layer permuta
 
     For **loop_ht=0**, the user must enter in **Lattice1**, **Lattice2** and **Lattice3** the names of the POSCAR files (contained in the **dir_poscar** directory) for the stacking layers. In this case, only the Bi-/Trilayers between these selected materials is created;
 
-    For **loop_ht=1**, the code will operate in a loop, creating Bi-/Trilayers, relating to the combination of the structural files contained in the **dir_poscar_i** directories (i = 1,2,3).
+    For **loop_ht=1**, the code will operate in a loop, creating Bi-/Trilayers, relating to the combination of the structural files contained in the **dir_poscar_i** (i = 1,2,3) directories.
 
-  - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
+  - **separation_1** defines the vertical separation distance (in Å) between **1st** and **2nd** layers in the stack;
+  - **separation_2** defines the vertical separation distance (in Å) between **2nd** and **3rd** layers in the stack;
   - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
   - **cell_fator** defines the ranges of the loop on the linear combination of vectors **A1** and **A2** of the cells present in **dir_poscar**, in order to scan all possible cell combinations. For example, **cell_fator = [3, 5]** defines a loop of **[-3, +3]** over vector **A1** and a loop of **[-5, +5]** over vector **A2**;
   - **crit_mod_vector** defines the percentage tolerance (%) in the comparison of the modulus of the lattice vectors A and B between two different lattices (**A1 with A2** and **B1 with B2**). It is used to check if the two lattices have similar vector sizes;
@@ -382,7 +383,7 @@ permutation = 0                        # [0] Removes duplicates by layer permuta
 
   - **permutation** During the generation of bilayers, this tag controls how duplicates bilayers are removed, where:
 
-    **permutation=0** removes exact duplicates ([A, B] <> [A, B]) and order-equivalent pairs ([A, B] <> [B, A]);
+    **permutation=0** removes exact duplicates ([A, B] <> [A, B]) and top e bottom layers permutation ([A, B] <> [B, A]) or ([A,B,C] <> [C,B,A]);
 
     **permutation=1** removes only exact duplicates ([A, B] <> [A, B]).
 
