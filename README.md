@@ -322,6 +322,8 @@ mismatch_type = 0                      # Applied deformation: [0] Distributed pr
                                        #                      [1], [2] or [3] keeps the 1st, 2nd or 3rd material fixed, deforming the others.
 #----------------------------------    
 rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector with respect to which the rotation angle between the materials is calculated  
+#----------------------------------
+permutation = 0                        # [0] Removes duplicates by layer permutation ([A, B] <> [B, A]);  [1] allows permuted duplicates
 #----------------------------------</code></pre>
 
 </details>
@@ -365,7 +367,13 @@ rot_angle_calc = 'center_cell'         # 'center_cell', 'A1' or 'A2': Vector wit
 
     **rot_angle_calc='A1'** defines the angle needed to align the A1 vector of both cells;
 
-    **rot_angle_calc='A2'** defines the angle needed to align the A2 vector of both cells;
+    **rot_angle_calc='A2'** defines the angle needed to align the A2 vector of both cells.
+
+  - **permutation** During the generation of bilayers, this tag controls how duplicates bilayers are removed, where:
+
+    **permutation=0** removes exact duplicates ([A, B] <> [A, B]) and order-equivalent pairs ([A, B] <> [B, A]);
+
+    **permutation=1** removes only exact duplicates ([A, B] <> [A, B]).
 
     ------------------------------------
 
