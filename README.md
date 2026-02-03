@@ -341,7 +341,7 @@ permutation = 0                        # [0] Removes duplicates by layer permuta
 
     For **loop_ht=0**, the user must enter in **Lattice1** and **Lattice2** the name of the POSCAR files of the bottom and top layers of the stack, respectively. In this case, only the bilayer between these two selected materials is created;
 
-    For **loop_ht=1**, the code will operate in a loop, creating bilayers, referring to the pairwise combination of all structural files contained in the directory defined by **dir_poscar**;
+    For **loop_ht=1**, the code will operate in a loop, creating bilayers, referring to the pairwise combination of all structural files contained in the directory defined by **dir_poscar**.
 
   - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
   - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
@@ -359,7 +359,7 @@ permutation = 0                        # [0] Removes duplicates by layer permuta
 
     **mismatch_type=1** applies structural distortion to the bottom monolayer of the stack;
 
-    **mismatch_type=2** applies structural distortion to the top monolayer of the stack;
+    **mismatch_type=2** applies structural distortion to the top monolayer of the stack.
 
   - **rot_angle_calc** defines the geometric reference used to measure the rotation angle between layers, where:
 
