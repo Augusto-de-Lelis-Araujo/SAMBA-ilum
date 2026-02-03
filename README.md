@@ -278,21 +278,31 @@ Direct
 # Tuning parameters: =====================================================================================================
 #=========================================================================================================================
 dir_o = 'Structures'                   # Heterostructures Output Directory
-dir_poscar = 'POSCAR'                  # Location directory of POSCAR files to be used
 
-#=============================================================================================================
-# Enable or Disable code execution in Loop: functional only to generate bilayers (n_Lattice = 2) =============
-#=============================================================================================================
-loop_ht = 0                            # [0] Disables; [1] Enables the loop, generating heterostructures for all combinations of
-                                       #                                     POSCAR files contained in the "dir_poscar" directory
+#===============================================================
+# Enable or Disable code execution in Loop =====================
+#===============================================================
+loop_ht = 0                           # [0] Disables the generation of heterostructures per loop; you define each layer manually
+                                      # [1] Enables the loop, generating heterostructures for all combinations of POSCAR files contained in the "dir_poscar_i" directories
+
 #===============================================================
 # Parameters if the loop is Disabled ===========================
 #===============================================================
 if (loop_ht == 0):
-   n_Lattice = 2                       # number of materials to be stacked, use 2 or 3.
-   Lattice1  = 'C2.vasp'               # 1st Material "Substrate: Material initially kept fixed
-   Lattice2  = 'hBN.vasp'              # 2nd Material "Material to be deposited on the Substrate"
-   Lattice3  = 'SnTe.vasp'             # 3rd Material "Material to be deposited on the 2nd Material"
+   n_Lattice  = 2                     # number of materials to be stacked, use 2 or 3
+   dir_poscar = 'POSCAR'              # Location directory of POSCAR files to be used
+   Lattice1   = 'C2.vasp'             # 1st Layer "Substrate: Material initially kept fixed.
+   Lattice2   = 'hBN.vasp'            # 2nd Layer "Material to be deposited on the Substrate"
+   Lattice3   = 'SnTe.vasp'           # 3rd Layer "Material to be deposited on the 2nd Material"
+
+#===============================================================
+# Parameters if the loop is Enable =============================
+#===============================================================
+if (loop_ht == 1):
+   n_Lattice    = 2                   # number of layers to be stacked, use 2 or 3.
+   dir_poscar_1 = 'POSCAR.1'          # Location directory of POSCAR files (1st Layer) to be used
+   dir_poscar_2 = 'POSCAR.2'          # Location directory of POSCAR files (2nd Layer) to be used
+   dir_poscar_3 = 'POSCAR.3'          # Location directory of POSCAR files (3rd Layer) to be used
 
 #===============================================================
 # Other parameters =============================================
@@ -335,13 +345,14 @@ permutation = 0                        # [0] Removes duplicates by layer permuta
 
   Through this input file, the user controls the details regarding the generation of bilayers for different Twisted angles, where:
 
-  - **dir_poscar** defines the name of the directory containing the POSCAR files of the monolayers to be used in the generation of the bilayers;
-  - **dir_o** defines the name of the directory to be created by the code, and where the structural files of the generated bilayers will be stored;
-  - **loop_ht** defines how POSCAR files will be used to generate bilayers, where:
+  - **dir_poscar** defines the name of the directory containing the POSCAR files of the monolayers to be used in the generation of the Bi-/Trilayers (for **loop_ht=0**);
+  - **dir_poscar_i** (i = 1,2,3) defines the name of the directory containing the POSCAR files of the monolayers to be used in the generation of the Bi-/Trilayers (for **loop_ht=1**);
+  - **dir_o** defines the name of the directory to be created by the code, and where the structural files of the generated Bi-/Trilayers will be stored;
+  - **loop_ht** defines how POSCAR files will be used to generate Bi-/Trilayers, where:
 
-    For **loop_ht=0**, the user must enter in **Lattice1** and **Lattice2** the name of the POSCAR files of the bottom and top layers of the stack, respectively. In this case, only the bilayer between these two selected materials is created;
+    For **loop_ht=0**, the user must enter in **Lattice1**, **Lattice2** and **Lattice3** the names of the POSCAR files (contained in the **dir_poscar** directory) for the stacking layers. In this case, only the Bi-/Trilayers between these selected materials is created;
 
-    For **loop_ht=1**, the code will operate in a loop, creating bilayers, referring to the pairwise combination of all structural files contained in the directory defined by **dir_poscar**.
+    For **loop_ht=1**, the code will operate in a loop, creating Bi-/Trilayers, relating to the combination of the structural files contained in the **dir_poscar_i** directories (i = 1,2,3).
 
   - **separation_1** defines the vertical separation distance (in Å) between monolayers in the stack;
   - **vacuum** defines the vertical separation (in Å) between periodic images of the cell along the z-axis (due to the periodic boundary condition of the DFT calculation), values above 10Å are usually used;
