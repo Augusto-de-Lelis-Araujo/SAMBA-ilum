@@ -903,7 +903,7 @@ Completed ===
 
   ------------------------------------
 
-  To customize the DFT calculations, run the SAMBA code (**python -m samba_ilum**) in your working directory and select **option [3]**.
+  To customize the DFT calculations, run the SAMBA code (**python -m samba_ilum**) in your working directory and select **option [6]**.
 
   This action will create the **WorkFlow_INPUTS** folder. It contains the **INCAR files** for the different VASP calculation steps and the inputs for **VASProcar**, the code responsible for post-processing the data and generating plots. As long as the WorkFlow_INPUTS folder exists in the working directory, its files will be used as the default for the high-throughput DFT calculations.
 
