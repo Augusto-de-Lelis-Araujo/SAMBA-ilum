@@ -12,9 +12,13 @@
   author    = {Araújo, Augusto L. and Sophia, Pedro H. and Crasto de Lima, F. and Fazzio, Adalberto},
   journal   = {npj Computational Materials},
   year      = {2025},
+  volume    = {12},
+  number    = {1},
+  pages     = {40},
   doi       = {10.1038/s41524-025-01892-z},
   url       = {https://www.nature.com/articles/s41524-025-01892-z},
-  publisher = {Nature Publishing Group}
+  publisher = {Nature Publishing Group},
+  issn    = {2057-3960}
 }</code></pre>
 
   <pre><code>@software{araujo2025vasprocar,
