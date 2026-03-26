@@ -255,7 +255,7 @@ Direct
 </details>
 
 
-◉ **2nd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [0]** to create the input file **SAMBA_HeteroStructure.input**.
+◉ **2nd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [5]** to create the input file **SAMBA_HeteroStructure.input**.
 
 
 <details>
@@ -635,7 +635,7 @@ POTCAR_Cr
 </details>
 
 
-◉ **3rd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [0]** to create the input file **SAMBA_WorkFlow.input**.
+◉ **3rd Step)** In the working directory, run the SAMBA code (**python -m samba_ilum**) and choose **option [5]** to create the input file **SAMBA_WorkFlow.input**.
 
 
 <details>
