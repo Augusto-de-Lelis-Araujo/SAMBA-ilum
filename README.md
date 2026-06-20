@@ -60,7 +60,7 @@ All data are available in the database of the **INCT – Materials Informatics p
 
 
 <details>
-<summary><strong>Publications using SAMBA</strong></summary>
+<summary><strong>SAMBA in the Literature (Citations and Applications)</strong></summary>
 
 -----------------------------------
 
