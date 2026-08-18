@@ -64,6 +64,8 @@ All data are available in the database of the **INCT – Materials Informatics p
 
 -----------------------------------
 
+**[2026] BDIP-Net: Dual-Interaction Graph Learning for Property Prediction of Bilayer Materials** **<a href="https://arxiv.org/abs/2608.14640">link</a>**
+
 **[2026] Controllable Quantum Spin Hall Phases in Bi2Te3-Family van der Waals Heterobilayers** **<a href="https://arxiv.org/abs/2606.20541">link</a>**
 
 **[2026] Intrinsic Instabilities and Mechanical Anisotropy in Halide Perovskite Monolayers** **<a href="https://arxiv.org/abs/2602.21989">link</a>**
